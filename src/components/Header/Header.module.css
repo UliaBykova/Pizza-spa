@@ -1,0 +1,56 @@
+.header {
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    width: 85%;
+}
+
+.list {
+    display: flex;
+}
+
+.list li:not(:last-child) {
+    margin-right: 35px;
+}
+
+a {
+    display: inline-block;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.user, .basket {
+    position: relative;
+}
+
+.user::before, .basket::after {
+    content: '';
+    position: absolute;
+    cursor: pointer;
+}
+
+.user::before {
+    background: url(../../images/userIcon.png);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    left: -25px;
+    top: 6px;
+}
+
+.user:hover, a:hover, .basket:hover {
+    transition: filter .3s ease-out;
+    filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(5500%) contrast(0.7);
+}
+
+.basket::after {
+    background: url(../../images/basketIcon.png);
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    left: -15px;
+    top: 3px;
+    filter: brightness(0) invert(1);
+}
