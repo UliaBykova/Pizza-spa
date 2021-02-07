@@ -1,9 +1,16 @@
-.header {
+header {
     background-color: #282828;
+}
+
+.wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
-    width: 85%;
+    padding: 25px 30px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1680px;
 }
 
 .list {
@@ -14,18 +21,20 @@
     margin-right: 35px;
 }
 
-a {
+.link {
     display: inline-block;
     color: #fff;
     font-size: 23px;
     font-weight: 600;
 }
 
-.user, .basket {
+.user,
+.basket {
     position: relative;
 }
 
-.user::before, .basket::after {
+.user::before,
+.basket::after {
     content: '';
     position: absolute;
     cursor: pointer;
@@ -40,7 +49,9 @@ a {
     top: 6px;
 }
 
-.user:hover, a:hover, .basket:hover {
+.user:hover,
+.link:hover,
+.basket:hover {
     transition: filter .3s ease-out;
     filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(5500%) contrast(0.7);
 }

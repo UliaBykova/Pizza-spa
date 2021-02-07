@@ -1,4 +1,157 @@
 .wrapper {
-    width: 15%;
     text-align: center;
+    background: #000;
+}
+
+.logo {
+    width: 23vh;
+    height: 21vh;
+}
+
+.number {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.workingTime {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.item {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 15%;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 1px solid gray;
+}
+
+.item a {
+    display: block;
+    padding-top: 65px;
+    width: 100%;
+    color: #fff;
+}
+
+.item:nth-child(1) a:before {
+    content: '';
+    position: absolute;
+    width: 68px;
+    height: 60px;
+    background: url('../../images/hit.png');
+    background-size: cover;
+    top: 4px;
+    left: 40%;
+    filter: brightness(0) invert(1);
+}
+
+.item:nth-child(2) a:before {
+    content: '';
+    position: absolute;
+    width: 93px;
+    height: 60px;
+    background: url('../../images/pizza.png');
+    background-size: cover;
+    top: 5px;
+    left: 37%;
+    filter: brightness(0) invert(1);
+}
+
+.item:nth-child(3) a:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    background: url('../../images/japon.png');
+    background-size: cover;
+    top: 10px;
+    left: 33%;
+    filter: brightness(0) invert(1);
+}
+
+.item:nth-child(4) a:before {
+    content: '';
+    position: absolute;
+    width: 72px;
+    height: 60px;
+    background: url('../../images/wok.png');
+    background-size: cover;
+    top: 6px;
+    left: 37%;
+    filter: brightness(0) invert(1);
+}
+
+.item:nth-child(5) a:before {
+    content: '';
+    position: absolute;
+    width: 67px;
+    height: 59px;
+    background: url('../../images/pasta.png');
+    background-size: cover;
+    top: 5px;
+    left: 37%;
+    filter: brightness(0) invert(1);
+}
+
+.item:nth-child(6) a:before {
+    content: '';
+    position: absolute;
+    width: 68px;
+    height: 60px;
+    background: url('../../images/burger.png');
+    background-size: cover;
+    top: 8px;
+    left: 37%;
+    filter: brightness(0) invert(1);
+}
+
+.item:nth-child(7) a:before {
+    content: '';
+    position: absolute;
+    width: 82px;
+    height: 60px;
+    background: url('../../images/salat.png');
+    background-size: cover;
+    top: 8px;
+    left: 37%;
+    filter: brightness(0) invert(1);
+}
+
+.item:nth-child(8) a:before {
+    content: '';
+    position: absolute;
+    width: 68px;
+    height: 80px;
+    background: url('../../images/potabl.png');
+    background-size: cover;
+    top: -4px;
+    left: 40%;
+    filter: brightness(0) invert(1);
+}
+
+.item:nth-child(9) a:before {
+    content: '';
+    position: absolute;
+    width: 68px;
+    height: 63px;
+    background: url('../../images/desert.png');
+    background-size: cover;
+    top: 0;
+    left: 37%;
+    filter: brightness(0) invert(1);
+}
+
+.item a.activeLink::before {
+    filter: brightness(0);
+}
+
+
+.item a.activeLink {
+    color: #000;
+    background: yellow;
 }

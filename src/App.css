@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  background: #000;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -12,6 +16,12 @@ li {
   list-style: none;
 }
 
-.wrapper {
-  display : flex;
+.app {
+  outline: 1px solid green;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1680px;
+  outline: 1px solid red;
 }

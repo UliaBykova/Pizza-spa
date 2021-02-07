@@ -1,28 +1,51 @@
 import React from 'react'
 import s from './Navbar.module.css'
-import logo from './../images/logo.png'
+import logo from './../../images/logoImg.png'
+import { NavLink } from 'react-router-dom'
 
 
 const Navbar = () => {
 
-    console.log(logo);
-    return (
+    return (  
         <div className={s.wrapper}>
-          <div className={s.logo}>
-             <img src={logo} alt="logo"></img>
-          </div>
-          <nav>
-              <ul>
-                  <li>1</li>
-                  <li>2</li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-              </ul>
-          </nav>
+            <div>
+                <a href="/">
+                    <img src={logo} alt="logo" className={s.logo}></img>
+                </a>
+            </div>
+            <div className={s.number}>+7 495 555 55 35</div>
+            <div className={s.workingTime}>С 10:00 до 02:00</div>
+            <nav>
+                <ul>
+                    <li className={s.item}>
+                        <NavLink to="/hit" activeClassName={s.activeLink}>Хит</NavLink>
+                    </li>
+                    <li className={s.item}>
+                        <NavLink to="/pizza" activeClassName={s.activeLink}>Пицца</NavLink>
+                    </li>
+                    <li className={s.item}>
+                        <NavLink to="/japan" activeClassName={s.activeLink}>Япония</NavLink>
+                    </li>
+                    <li className={s.item}>
+                        <NavLink to="/wok" activeClassName={s.activeLink}>Wok</NavLink>
+                    </li>
+                    <li className={s.item}>
+                        <NavLink to="/paste" activeClassName={s.activeLink}>Паста</NavLink>
+                    </li>
+                    <li className={s.item}>
+                        <NavLink to="/burgers" activeClassName={s.activeLink}>Бургеры</NavLink>
+                    </li>
+                    <li className={s.item}>
+                        <NavLink to="/salads" activeClassName={s.activeLink}>Салаты</NavLink>
+                    </li>
+                    <li className={s.item}>
+                        <NavLink to="/potables" activeClassName={s.activeLink}>Напитки</NavLink>
+                    </li>
+                    <li className={s.item}>
+                        <NavLink to="/desserts" activeClassName={s.activeLink}>Десерты</NavLink>
+                    </li>
+                </ul>
+            </nav>
         </div>
     )
 }
