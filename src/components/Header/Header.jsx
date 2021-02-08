@@ -1,4 +1,5 @@
 import React from 'react'
+import Basket from './Basket/Basket';
 import s from './Header.module.css';
 
 const Header = () => {
@@ -7,7 +8,7 @@ const Header = () => {
             <div className={`${s.wrapper} ${s.container}`}>
                 <ul className={s.list}>
                     <li>
-                        <a className={s.link}>Москва</a>
+                        <a className={s.link}>Бонусы</a>
                     </li>
                     <li>
                         <a href="" className={s.link}>АКЦИИ</a>
@@ -15,10 +16,20 @@ const Header = () => {
                     <li>
                         <a href="" className={s.link}>Доставка</a>
                     </li>
+                    <li>
+                        <a href="" className={s.link}>Карьера</a>
+                    </li>
+                    <li>
+                        <a href="" className={s.link}>Отзывы</a>
+                    </li>
                 </ul>
                 <ul className={s.list}>
-                    <li className={s.user}><a className={s.link}>Войти</a></li>
-                    <li className={s.basket}><a></a></li>
+                    <li className={s.user}>
+                        <a className={s.link}>Войти</a>
+                    </li>
+                    <li className={s.basket}>
+                        <Basket />
+                    </li>
                 </ul>
             </div>
         </header>

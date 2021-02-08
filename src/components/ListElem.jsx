@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './ProductsTest.css'
 
-const ProductsTest = () => {
+const ListElem = () => {
     return (
         <div className={s.ylka}>
             1234
@@ -56,4 +56,4 @@ const ProductsTest = () => {
     )
 }
 
-export default ProductsTest;
+export default ListElem;

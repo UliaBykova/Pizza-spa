@@ -1,16 +1,13 @@
-header {
-    background-color: #282828;
-}
-
 .wrapper {
+    position: fixed;
+    background-color: #282828;
     display: flex;
+    left: 17.9vw;
+    top : 0;
     justify-content: space-between;
-    padding: 25px 30px;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: 1680px;
+    padding: 18px 30px;
+    width : 80%;
+    z-index: 22;
 }
 
 .list {
@@ -18,7 +15,7 @@ header {
 }
 
 .list li:not(:last-child) {
-    margin-right: 35px;
+    margin-right: 65px;
 }
 
 .link {
@@ -29,12 +26,12 @@ header {
 }
 
 .user,
-.basket {
+.products {
     position: relative;
 }
 
 .user::before,
-.basket::after {
+.products::after {
     content: '';
     position: absolute;
     cursor: pointer;
@@ -50,18 +47,43 @@ header {
 }
 
 .user:hover,
-.link:hover,
-.basket:hover {
+.link:hover{
     transition: filter .3s ease-out;
     filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(5500%) contrast(0.7);
 }
 
-.basket::after {
+.products::after {
     background: url(../../images/basketIcon.png);
-    background-size: contain;
-    width: 30px;
-    height: 30px;
-    left: -15px;
-    top: 3px;
-    filter: brightness(0) invert(1);
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    left: 9px;
+    top: 6px;
+    filter: brightness(0);
+}
+
+.products {
+    display: flex;
+    background: #fff;
+    padding : 8px 40px;
+    font-size: 16px;
+    color : #000;
+    border-radius: 8%;
+}
+
+.price{
+    position: relative;
+   padding-left: 30px;
+}
+
+.price::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top : -2px;
+    left : 18px;
+    background: #000;
+    width : 1px;
+    height : 25px;
+    z-index: 22;
 }

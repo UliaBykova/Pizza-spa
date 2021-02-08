@@ -16,12 +16,11 @@ li {
   list-style: none;
 }
 
-.app {
-  outline: 1px solid green;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1680px;
-  outline: 1px solid red;
+.content {
+  color : #fff;
+  font-size: 50px;
+  left: 18vw;
+  width : 80%;
+  margin-left:auto
+  
 }
