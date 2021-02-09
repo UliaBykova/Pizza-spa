@@ -1,15 +1,26 @@
-import React from 'react'
+import {useState, React, useEffect} from 'react'
 import ProductElem from './ProductElem/ProductElem';
 import s from './Products.module.css'
-import { connect, useSelector } from "react-redux"
+import { connect, useSelector, useStore } from "react-redux"
 import {requestProducts} from '../redux/products-reducer'
 
-class Products extends React.Component {
-    componentDidMount() {
+const Products = (props) => {
+
+/*     componentDidMount() {
        this.props.requestProducts();
-    }
-    render () {
-/*     const {products} = useSelector((state) => state.productPage) */
+    } */
+
+/*     const {products} = useSelector((state) => state.productPage);
+    console.log(products); */
+
+     let [products, setProducts] = useState([2,3]);
+
+     useEffect(() => {
+         const result = requestProducts();
+      console.log(result); 
+     })
+
+
      return (
      <div className={s.wrapper}>
         <div className={s.content}>
@@ -23,18 +34,20 @@ class Products extends React.Component {
             </div>
         </div>
         <div className={s.productContainer}>
-          <ProductElem products={this.props.products} /> 
+          <ProductElem /* products={this.props.products} */ /> 
         </div>
 {/*             {products ? <h1>{products}</h1> : <h1>Данных нет</h1>} */}
     </div>
 )
-    }
-}
 
+}
+/* 
 let mapStateToProps = (state) => {
     return {
         products : state.productPage.products.data
     }
 }
 
-export default connect(mapStateToProps, {requestProducts})(Products);
+export default connect(mapStateToProps, {requestProducts})(Products); */
+
+export default Products;

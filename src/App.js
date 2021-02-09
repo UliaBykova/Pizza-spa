@@ -10,6 +10,7 @@ import Pizza from './components/Pizza'
 
 
 const App = () => {
+/*   console.log(store.getState().productPage.products.data.japan); */
   return (
     <Provider store={store}>
       <div className="app">
