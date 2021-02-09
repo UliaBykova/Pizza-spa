@@ -13,3 +13,12 @@ export const getAPI = {
         })
     }
 } 
+
+export const productsAPI = {
+    getProducts() {
+        return istance.get(`http://localhost:3000/products`)
+        .then(response => {
+             return response
+        })
+    }
+}

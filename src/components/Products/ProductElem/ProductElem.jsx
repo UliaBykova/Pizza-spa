@@ -3,8 +3,8 @@ import s from './../Products.module.css'
 import pizza from "./../../../images/Bosco.jpg"
 
 const ProductElem = (props) => {
+/*     console.log(props.products.burgers); */
     return (
-        <div className={s.productContainer}>
             <div className={s.productBlock}>
                 <img src={pizza} alt="pizza" className={s.photo} />
                 <div className={s.productContent}>
@@ -28,8 +28,6 @@ const ProductElem = (props) => {
                         <button className={s.btnAdd}>В корзину</button>
                     </div>
                 </div>
-            </div>
-
         </div>
     )
 }

@@ -38,7 +38,7 @@
 }
 
 .productContent {
-  padding : 14px 20px;  
+  padding : 10px 20px 0 20px;  
 }
 
 .photo {
@@ -71,6 +71,7 @@
     border-radius: 6px;
     outline: none;
     border : none;
+    transition: background .3s ease, color .3 ease;
 }
 
 .productBtn:hover {
