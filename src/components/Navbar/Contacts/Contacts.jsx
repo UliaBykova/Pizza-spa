@@ -6,16 +6,12 @@ import telegram from './../../../images/telegram.png'
 
 const Contacts = () => {
     return (
-        <ul class={s.contacts}>
-            <li><a href="/">
-                <img src={vk} alt="instagram" className={s.iconContacts} />
-            </a></li>
-            <li><a href="/">
-                <img src={inst} alt="instagram" className={s.iconContacts} />
-            </a></li>
-            <li><a href="/">
-                <img src={telegram} alt="instagram" className={s.iconContacts} />
-            </a></li>
+        <ul className={s.contacts}>
+            <li>
+                <a href="/"><img src={vk} alt="instagram" className={s.iconContacts} /></a></li>
+            <li>
+                <a href="/"><img src={inst} alt="instagram" className={s.iconContacts} /></a></li>
+            <li><a href="/"><img src={telegram} alt="instagram" className={s.iconContacts} /></a></li>
         </ul>
     )
 }

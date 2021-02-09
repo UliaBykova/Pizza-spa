@@ -1,12 +1,13 @@
 .wrapper {
+    box-sizing: border-box;
     position: fixed;
     background-color: #282828;
     display: flex;
-    left: 17.9vw;
+    left: 340px;
     top : 0;
     justify-content: space-between;
-    padding: 18px 30px;
-    width : 80%;
+    padding: 18px 40px;
+    width : calc(100% - 340px);
     z-index: 22;
 }
 

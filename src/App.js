@@ -3,7 +3,8 @@ import React from 'react'
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import { Route } from 'react-router-dom';
-import ListElem from './components/ListElem';
+import Products from './components/Products/Products'
+
 
 const App = () => {
   return (
@@ -11,8 +12,8 @@ const App = () => {
          <Navbar />
          <Header />
             <div className="content">
-              <Route path='/hit'
-                render={() => <ListElem />} />
+              <Route path='/pizza'
+                render={() => <Products />} />
             </div>
     </div>
   )
