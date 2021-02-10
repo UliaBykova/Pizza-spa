@@ -1,25 +1,20 @@
-import {useState, React, useEffect} from 'react'
+import React, { useEffect } from 'react'
 import ProductElem from './ProductElem/ProductElem';
 import s from './Products.module.css'
-import { connect, useSelector, useStore } from "react-redux"
-import {requestProducts} from '../redux/products-reducer'
+import { connect, useDispatch, useSelector } from "react-redux"
+import {requestProducts, setProductsAC, SET_PRODUCTS} from '../redux/products-reducer'
+import { productsAPI } from '../../api/api';
 
-const Products = (props) => {
+const Products = () => {
+    const state = useSelector((state) => state.productPage);
+    const dispatch = useDispatch();
 
-/*     componentDidMount() {
-       this.props.requestProducts();
-    } */
+     useEffect( async () => {
+            const response = await productsAPI.getProducts();
+            dispatch(setProductsAC(response.data));
+     }, []);
 
-/*     const {products} = useSelector((state) => state.productPage);
-    console.log(products); */
-
-     let [products, setProducts] = useState([2,3]);
-
-     useEffect(() => {
-         const result = requestProducts();
-      console.log(result); 
-     })
-
+        console.log(state);
 
      return (
      <div className={s.wrapper}>
@@ -34,15 +29,14 @@ const Products = (props) => {
             </div>
         </div>
         <div className={s.productContainer}>
-          <ProductElem /* products={this.props.products} */ /> 
+          <ProductElem  /> 
         </div>
 {/*             {products ? <h1>{products}</h1> : <h1>Данных нет</h1>} */}
     </div>
 )
-
 }
-/* 
-let mapStateToProps = (state) => {
+
+/* let mapStateToProps = (state) => {
     return {
         products : state.productPage.products.data
     }

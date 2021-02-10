@@ -10,7 +10,6 @@ import Pizza from './components/Pizza'
 
 
 const App = () => {
-/*   console.log(store.getState().productPage.products.data.japan); */
   return (
     <Provider store={store}>
       <div className="app">
@@ -19,7 +18,7 @@ const App = () => {
             <div className="content">
               <Route path='/pizza'
                 render={() => <Products />} />
-                  <Route path='/hit'
+              <Route path='/hit'
                 render={() => <Pizza />} />
             </div>
       </div>
