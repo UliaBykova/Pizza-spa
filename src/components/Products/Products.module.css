@@ -5,7 +5,7 @@
     width: calk(100%-340px);
 }
 
-.content {
+/* .content {
     margin: 100px 0 50px 0;
 }
 
@@ -22,7 +22,7 @@
     padding: 0 10px;
     outline: none;
     border-radius: 5px;
-}
+} */
 
 .productContainer {
     display: flex;
