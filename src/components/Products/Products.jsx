@@ -15,7 +15,4 @@ const Products = (props) => {
   )
 }
 
-
 export default Products;
-
-/*             {products ? <h1>{products}</h1> : <h1>Данных нет</h1>} */

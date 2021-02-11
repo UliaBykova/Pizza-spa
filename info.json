@@ -259,7 +259,7 @@
                 "id": 201,
                 "name": "Cпайси Лосось",
                 "composition": "Рис, лосось, Спайси соус",
-                "image": "./images/japan/spaicylosos.jpg",
+                "image": "./images/japan/spicylosos.jpg",
                 "price": 80,
                 "weight" : 190
             },
@@ -436,7 +436,7 @@
             {
                 "id": 253,
                 "name": "Сет Гранд Донателло",
-                "composition": "Суши Креветка 2шт., Суши Тунец 2шт., гункан Икра лосося 2шт., Гункан краб 2шт., Горячий ролл Цезарь, Горячий ролл Фудзи, Ролл Донателло, Ролл Дракон, Ролл Калифорния оранжевая, Ролл Филадельфия, Ролл Унаги Рору",
+                "composition": "Суши Креветка 2шт., Суши Тунец 2шт., гункан Икра лосося 2шт., Гункан краб 2шт., Горячий ролл Цезарь, Горячий ролл Фудзи, Ролл Филадельфия, Ролл Унаги Рору",
                 "image": "./images/sets/grandset.jpg",
                 "price": 2300,
                 "weight" : 830
@@ -450,14 +450,6 @@
                 "weight" : 1090
             },
             {
-                "id": 255,
-                "name": "Сет Супер",
-                "composition": "Состав: ролл Саппоро, ролл Калифорния оранжевая, ролл Канада, ролл Гавайский, ролл Овощной, ролл Тунец",
-                "image": "./images/sets/setsuper.jpg",
-                "price": 1600,
-                "weight" : 1100
-            },
-            {
                 "id": 256,
                 "name": "Сет Суши",
                 "composition": "С угрем 3 шт,. С лососем 3 шт., с тунцом 3 шт., с креветкой 3 шт.",
@@ -466,53 +458,19 @@
                 "weight" : 1200
             }
         ],
-        "ossetia": [
-            {
-                "id": 301,
-                "name": "Пирог с картофелем и сыром",
-                "composition": "Картофель, осетинский и адыгейский сыр",
-                "image": "./images/ossetia/pirogkartoshkasyr.jpg",
-                "price": 550,
-                "weight" : 450
-            },
-            {
-                "id": 302,
-                "name": "Пирог с мясом и картошкой",
-                "composition": "Говядина, картофель",
-                "image": "./images/ossetia/pirogmyasnoy.jpg",
-                "price": 850,
-                "weight" : 690
-            },
-            {
-                "id": 303,
-                "name": "Пирог со шпинатом и сыром",
-                "composition": "Шпинат, сыр",
-                "image": "./images/ossetia/pirogshpinatsyr.jpg",
-                "price": 600,
-                "weight" : 600
-            },
-            {
-                "id": 304,
-                "name": "Хачапури по Аджарский",
-                "composition": "Хачапури в форме лодочки с начинкой из сулугуни , имеретинского сыра и яица",
-                "image": "./images/ossetia/hachapuri.jpg",
-                "price": 350,
-                "weight" : 550
-            }
-        ],
         "wok": [
             {
                 "id": 351,
                 "name": "Гречневая лапша с говядиной",
                 "composition": "Гречневая лапша, говядина, морковь, болгарский перчик, лук порей, соль, говяжий бульон, кунжут, соус терияки, масло растительное",
-                "image": "./images/wok/lapshawokjpg",
+                "image": "./images/wok/lapshawok.jpg",
                 "price": 300,
                 "weight" : 360
             },
             {
                 "id": 352,
                 "name": "Пшеничная лапша с курицей и ананасом",
-                "composition": "шеничная лапша, куриная грудка, болгарский перчик, соль, ананас, куриный бульон, кунжут, масло растительное, соус кисло-сладктй (стебель бамбука)",
+                "composition": "шеничная лапша, куриная грудка, болгарский перчик, соль, ананас, куриный бульон, кунжут, масло растительное, соус кисло-сладкий",
                 "image": "./images/wok/lapshagrech.jpg",
                 "price": 260,
                 "weight" : 340
@@ -536,7 +494,7 @@
             {
                 "id": 355,
                 "name": "Рисовая лапша с овощами",
-                "composition": "Рисовая лапша, морковь, болгарский перчик, лук порей, шампиньоны, куриный бульон, соль, масло растительное, кунжут, соус терияки",
+                "composition": "Рисовая лапша, морковь, болгарский перчик, лук порей, шампиньоны, куриный бульон, соль, кунжут, соус терияки",
                 "image": "./images/wok/lapsharis.jpg",
                 "price": 250,
                 "weight" : 310
@@ -630,10 +588,10 @@
             {
                 "id": 501,
                 "name": "Салат Греческий",
-                "composition": "Салат Айсберг, брынза, помидор, огурец, лук красный, перец болгарский, маслины, орегано, масло оливковое ( 300 гр.)",
+                "composition": "Салат Айсберг, брынза, помидор, огурец, лук красный, перец болгарский, маслины, орегано, масло оливковое",
                 "image": "./images/salads/salatgrechesky.jpg",
                 "price": 255,
-                "weight" : 190
+                "weight" : 300
             },
             {
                 "id": 502,
@@ -655,7 +613,7 @@
                 "id": 504,
                 "name": "Салат Цезарь с креветками",
                 "composition": "Салат Романо, креветки, помидоры, сухари, сыр Пармезан, соус Цезарь",
-                "image": "./images/salads/cezarskrevjpg",
+                "image": "./images/salads/cezarskrev.jpg",
                 "price": 389,
                 "weight" : 160
             },
@@ -673,7 +631,7 @@
                 "id": 551,
                 "name": "Лимонад Калиновъ",
                 "composition": "Классический, Тархун, Черешня, Сибирские травы, Клубника, Дыня, Груша, Арбуз, Апельсин",
-                "image": "./images/patables/limonadkalinin.jpg",
+                "image": "./images/potables/limonadkalinin.jpg",
                 "price": 90,
                 "weight" : 0.5
             },
@@ -681,15 +639,15 @@
                 "id": 552,
                 "name": "Квас Очаковский",
                 "composition": "",
-                "image": "./images/patables/kvas.png",
+                "image": "./images/potables/kvas.png",
                 "price": 359,
                 "weight" : 0.5
             },
             {
                 "id": 553,
                 "name": "Сок Rich",
-                "composition": "Персик, вишня, яблоко, ананас, апельсин, грейпфрут, томат, мультифрукт, апел-манго",
-                "image": "./images/patables/rich.jpg",
+                "composition": "Персик, вишня, яблоко, ананас, апельсин, грейпфрут, томат, мультифрукт, манго",
+                "image": "./images/potables/rich.png",
                 "price": 140,
                 "weight" : 1
             },
@@ -697,20 +655,12 @@
                 "id": 554,
                 "name": "Sprite",
                 "composition": "",
-                "image": "./images/patables/sprite.png",
+                "image": "./images/potables/sprite.png",
                 "price": 80,
                 "weight" : 0.5
             }
         ],
-        "desserts": [
-            {
-                "id": 601,
-                "name": "Мороженое Апельсин",
-                "composition": "Апельсиновое мороженое в оболочке настоящего апельсина",
-                "image": "./images/desserts/orange.png",
-                "price": 240,
-                "weight" : 108
-            },
+        "deserts": [
             {
                 "id": 602,
                 "name": "Мороженое Дыня",
@@ -718,22 +668,6 @@
                 "image": "./images/desserts/dinja.png",
                 "price": 240,
                 "weight" : 98
-            },
-            {
-                "id": 603,
-                "name": "Мороженое Лимон",
-                "composition": "Лимонное мороженое в оболочке настоящего лимона",
-                "image": "./images/desserts/limon.png",
-                "price": 240,
-                "weight" : 114
-            },
-            {
-                "id": 604,
-                "name": "Пончик",
-                "composition": "Клубника, сухое молоко",
-                "image": "./images/desserts/ponchik.jfif",
-                "price": 80,
-                "weight" : 60
             },
             {
                 "id": 605,

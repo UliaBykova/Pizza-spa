@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { requestProducts } from '../redux/products-reducer'
 import Preloader from '../common/Preloader/Preloader';
 import s from "./ContentContainer.module.css"
+import RoutersProducts from "./RoutersProducts/RoutersProducts"
 
 const ContentContainer = () => {
    
@@ -18,10 +19,9 @@ const ContentContainer = () => {
 
     return (
         <div className={s.container}>
-              {loading ? <Route path='/pizza'
-               render={() => <Products products={state.products.data.pizza}/> } /> :  <Preloader />}
-{/* {              <Route path='/hit'
-                render={() => <Preloader />} />} */}
+              {loading 
+              ? <RoutersProducts products={state.products.data} />
+              : <Preloader />}
         </div>
     )
 }
