@@ -5,16 +5,6 @@ const istance = axios.create({
     baseURL: 'http://localhost:3000/'
 });
 
-//потом удалить
-export const getAPI = {
-    getTest() {
-        return istance.get(`http://localhost:3000/products?pizza`)
-        .then(response => {
-            return response
-        })
-    }
-} 
-
 export const productsAPI = {
     getProducts() {
         return istance.get(`http://localhost:3000/products`)

@@ -2,7 +2,6 @@ import React from 'react'
 import s from './../Products.module.css'
 
 const ProductElem = (props) => {
-  console.log(props);
     return ( 
            <>
             {

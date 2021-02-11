@@ -5,7 +5,7 @@ import ProductsFilter from './ProductsFilter/ProductsFilter';
 
 const Products = (props) => {
 
-  return (
+  return ( 
     <div className={s.wrapper}>
         <ProductsFilter />
       <div className={s.productContainer}>
