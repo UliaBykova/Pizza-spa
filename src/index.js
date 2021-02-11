@@ -10,6 +10,4 @@ ReactDOM.render(
       <App />
     </BrowserRouter>, document.getElementById('root'));
 
-//json-server --watch info.json
-
 reportWebVitals();

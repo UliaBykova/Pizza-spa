@@ -3,7 +3,7 @@ import { productsAPI } from "../../api/api";
 export const SET_PRODUCTS = 'SET_PRODUCTS';
 
 let initialState = {
-    products : [1, 2]
+    products : []
 }
 
 const productReducer = (state = initialState, action) => {

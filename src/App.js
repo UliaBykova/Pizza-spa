@@ -2,11 +2,9 @@ import './App.css';
 import React from 'react' 
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
-import { Route } from 'react-router-dom';
-import  ProductsContainer from './components/Products/ProductsContainer'
 import {Provider} from "react-redux";
 import store from './components/redux/redux-store';
-import Pizza from './components/Pizza'
+import ContentContainer from './components/Content/ContentContainer';
 
 
 const App = () => {
@@ -16,11 +14,7 @@ const App = () => {
          <Navbar />
          <Header />
             <div className="content">
-              
-              <Route path='/pizza'
-                render={() => <ProductsContainer />} />
-              <Route path='/hit'
-                render={() => <Pizza />} />
+              <ContentContainer />
             </div>
       </div>
     </Provider>
@@ -28,3 +22,5 @@ const App = () => {
 }
 
 export default App;
+
+//json-server --watch info.json

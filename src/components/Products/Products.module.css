@@ -1,44 +1,35 @@
 .wrapper {
     box-sizing: border-box;
     color: #fff;
-    padding: 0 40px ;
+    padding: 0 40px;
     width: calk(100%-340px);
 }
-
-/* .content {
-    margin: 100px 0 50px 0;
-}
-
-.titleBlock {
-    display: flex;
-    justify-content: space-between;
-}
-
-.title {
-    font-size: 29px;
-}
-
-.filter {
-    padding: 0 10px;
-    outline: none;
-    border-radius: 5px;
-} */
 
 .productContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: stretch;
 }
 
 .productBlock {
+    position: relative;
     width: 23%;
-    border: 1px solid rgb(121, 119, 119); 
+    border: 1px solid rgb(121, 119, 119);
     border-radius: 3%;
     font-size: 16px;
+    margin : 0 0 30px 0;
+}
+
+.productBlock:not(:nth-child(4n)) {
+    margin-right: 38px;
 }
 
 .productContent {
-  padding : 10px 20px 0 20px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    padding: 10px 20px 100px 20px;
 }
 
 .photo {
@@ -47,8 +38,10 @@
     object-fit: fill;
 }
 
-.switcherSize, .switcherThickness, .registration {
-    padding : 5px 0;
+.switcherSize,
+.switcherThickness,
+.registration {
+    padding: 5px 0;
 }
 
 .productInfo {
@@ -56,8 +49,9 @@
     justify-content: space-between;
 }
 
-.weight, .description {
-    color : rgb(121, 119, 119);
+.weight,
+.description {
+    color: rgb(121, 119, 119);
 }
 
 .description {
@@ -65,18 +59,17 @@
 }
 
 .productBtn {
-    display : inline-block;
+    display: inline-block;
     border-radius: none;
-    padding : 7px 13px;
+    padding: 7px 13px;
     border-radius: 6px;
     outline: none;
-    border : none;
+    border: none;
     transition: background .3s ease, color .3 ease;
 }
 
 .productBtn:hover {
-    color : #fff;
-    background: #ffcd00;
+    background: yellow;
 }
 
 .productBtn:not(:last-child) {
@@ -84,10 +77,12 @@
 }
 
 .registration {
+    position: absolute;
+    bottom: 10px;
+    width: 88%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 7px;
 }
 
 .price {
@@ -98,9 +93,9 @@
 .btnAdd {
     border-radius: 6px;
     padding: 12px 20px;
-    color : #fff;
+    color: #fff;
     background: #282828;
     outline: none;
-    border : none;
+    border: none;
     font-size: 18px;
 }

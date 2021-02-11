@@ -14,18 +14,6 @@
                  "weightThickM" : 1130
             },
             {
-                "id": 102,
-                "name": "Пицца Морская",
-                "composition": "Сыр, соус ранч, тунец , морепродукты, оливки, лук порей, помидоры черри",
-                "image": "./images/pizza/morskaya.jpg",
-                "priceSizeSmall": 760,
-                "priceSizeMiddle": 820,
-                "weightThinS" : 520,
-                "weightThinM" : 770,
-                "weightThickS" : 900,
-                "weightThickM" : 1200
-            },
-            {
                 "id": 103,
                 "name": "#ХОЧУЕСТЬ",
                 "composition": "Пиццы: Чоризо, Мясная, Фета-Томато,Грибная",
@@ -39,8 +27,8 @@
             },
             {
                 "id": 104,
-                "name": "Пицца Донателло",
-                "composition": "Ранч соус, сыр Моцарелла,сладкий перец,томаты, зелень, грибы, репчатый лук, салями Пепперони, ветчина, свинина, говядина",
+                "name": "Пицца «Донателло»",
+                "composition": "Cыр Моцарелла, томаты, зелень, грибы, салями Пепперони, ветчина, свинина, говядина",
                 "image": "./images/pizza/Donatello.jpg",
                 "priceSizeSmall": 760,
                 "priceSizeMiddle": 820,
@@ -51,7 +39,7 @@
             },
             {
                 "id": 105,
-                "name": "Пицца Ткемали",
+                "name": "Пицца «Ткемали»",
                 "composition": "Соус Донателло, сыр Моцарелла, Говядина, лук репчатый, перец сладкий, соус Ткемали",
                 "image": "./images/pizza/tkemali.jpg",
                 "priceSizeSmall": 670,
@@ -75,7 +63,7 @@
             },
             {
                 "id": 107,
-                "name": "Пицца Гавайская",
+                "name": "Пицца «Гавайская»",
                 "composition": "Сыр Моцарелла, ананас, ветчина",
                 "image": "./images/pizza/Gavayskaya.jpg",
                 "priceSizeSmall": 585,
@@ -99,7 +87,7 @@
             },
             {
                 "id": 109,
-                "name": "Пицца Грибная",
+                "name": "Пицца «Грибная»",
                 "composition": "Сыр Моцарелла,репчатый лук, грибы",
                 "image": "./images/pizza/Gribnaya.jpg",
                 "priceSizeSmall": 530,
@@ -158,18 +146,6 @@
                 "weightThickM" : 1200
             },
             {
-                "id": 114,
-                "name": "Пицца Морская",
-                "composition": "Сыр, соус ранч, тунец , морепродукты, оливки, лук порей, помидоры черри",
-                "image": "./images/pizza/morskaya.jpg",
-                "priceSizeSmall": 760,
-                "priceSizeMiddle": 820,
-                "weightThinS" : 460,
-                "weightThinM" : 680,
-                "weightThickS" : 830,
-                "weightThickM" : 1130
-            },
-            {
                 "id": 115,
                 "name": "Пицца «Профито»",
                 "composition": "Сыр Моцарелла, лук Порей, зелень, свинина, говядина, колбаски",
@@ -183,7 +159,7 @@
             },
             {
                 "id": 116,
-                "name": "Пицца Боско",
+                "name": "Пицца «Боско»",
                 "composition": "Соус Донателло, сыр Моцарелла, грибы жареные лесные, лук репчатый, салат Рукола",
                 "image": "./images/pizza/Bosco.jpg",
                 "priceSizeSmall": 670,
@@ -195,7 +171,7 @@
             },
             {
                 "id": 117,
-                "name": "Пицца Вегетарианская",
+                "name": "Пицца «Вегетарианская»",
                 "composition": "Сыр Моцарелла,сладкий перец, томаты, репчатый лук, грибы, маслины",
                 "image": "./images/pizza/vegetarianskaya.jpg",
                 "priceSizeSmall": 580,
@@ -207,7 +183,7 @@
             },
             {
                 "id": 118,
-                "name": "Пицца Вегетарианская",
+                "name": "Пицца «Вегетарианская»",
                 "composition": "Сыр Моцарелла,сладкий перец, томаты, репчатый лук, грибы, маслины",
                 "image": "./images/pizza/vegetarianskaya.jpg",
                 "priceSizeSmall": 580,
