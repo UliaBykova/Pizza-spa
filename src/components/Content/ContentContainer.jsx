@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react' 
-import { Route } from 'react-router-dom';
-import Products from "../Products/Products";
 import { useDispatch, useSelector } from "react-redux"
 import { requestProducts } from '../redux/products-reducer'
 import Preloader from '../common/Preloader/Preloader';
 import s from "./ContentContainer.module.css"
-import RoutersProducts from "./RoutersProducts/RoutersProducts"
+import Routers from "./Routers/Routers"
 
 const ContentContainer = () => {
    
@@ -20,7 +18,7 @@ const ContentContainer = () => {
     return (
         <div className={s.container}>
               {loading 
-              ? <RoutersProducts products={state.products.data} />
+              ? <Routers products={state.products.data} />
               : <Preloader />}
         </div>
     )

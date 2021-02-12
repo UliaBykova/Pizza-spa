@@ -261,7 +261,7 @@
                 "composition": "Рис, лосось, Спайси соус",
                 "image": "./images/japan/spicylosos.jpg",
                 "price": 80,
-                "weight" : 190
+                "weight" : 90
             },
             {
                 "id": 202,
@@ -269,7 +269,7 @@
                 "composition": "Рис, икра лосося",
                 "image": "./images/japan/ikralososya.jpg",
                 "price": 100,
-                "weight" : 270
+                "weight" : 70
             },
             {
                 "id": 203,
@@ -277,7 +277,7 @@
                 "composition": "Рис, краб",
                 "image": "./images/japan/kani.jpg",
                 "price": 100,
-                "weight" : 210
+                "weight" : 70
             },
             {
                 "id": 204,
@@ -285,7 +285,7 @@
                 "composition": "Рис, икра летучей рыбы",
                 "image": "./images/japan/tobiko.jpg",
                 "price": 80,
-                "weight" : 220
+                "weight" : 80
             },
             {
                 "id": 205,
@@ -293,7 +293,7 @@
                 "composition": "Рис, краб, Спайси соус",
                 "image": "./images/japan/spicykani.jpg",
                 "price": 70,
-                "weight" : 270
+                "weight" : 70
             },
             {
                 "id": 206,
@@ -301,7 +301,7 @@
                 "composition": "Рис, креветка, Спайси соус",
                 "image": "./images/japan/spiciebi.jpg",
                 "price": 100,
-                "weight" : 300
+                "weight" : 90
             },
             {
                 "id": 207,
@@ -309,7 +309,7 @@
                 "composition": "Рис, тунец, Спайси соус",
                 "image": "./images/japan/spicymaguro.jpg",
                 "price": 80,
-                "weight" : 250
+                "weight" : 70
             },
             {
                 "id": 208,
@@ -317,7 +317,7 @@
                 "composition": "Рис, угорь, Спайси соус",
                 "image": "./images/japan/spicyunagi.jpg",
                 "price": 100,
-                "weight" : 220
+                "weight" : 80
             },
             {
                 "id": 209,
@@ -325,7 +325,7 @@
                 "composition": "Рис, тунец",
                 "image": "./images/japan/sushimaguro.jpg",
                 "price": 85,
-                "weight" : 190
+                "weight" : 90
             },
             {
                 "id": 210,
@@ -333,7 +333,7 @@
                 "composition": "Рис, лосось",
                 "image": "./images/japan/sushisyake.jpg",
                 "price": 70,
-                "weight" : 180
+                "weight" : 80
             },
             {
                 "id": 211,
@@ -341,7 +341,7 @@
                 "composition": "Рис, угорь, соус Унаги, кунжут",
                 "image": "./images/japan/sushiunagi.jpg",
                 "price": 90,
-                "weight" : 267
+                "weight" : 67
             },
             {
                 "id": 212,
@@ -349,7 +349,7 @@
                 "composition": "Рис, креветка",
                 "image": "./images/japan/sushieb.jpg",
                 "price": 80,
-                "weight" : 235
+                "weight" : 35
             },
             {
                 "id": 213,
@@ -696,7 +696,7 @@
             {
                 "id": 608,
                 "name": "Чизкейк Шоколадный",
-                "composition": "В добавление к сливочному шоколадному центру чизкейка наверху глазурь из молочного шоколада. Для настоящих любителей шоколада",
+                "composition": "Сверху глазурь из молочного шоколада. Для настоящих любителей шоколада",
                 "image": "./images/desserts/cheesecake.png",
                 "price": 159,
                 "weight" : 120

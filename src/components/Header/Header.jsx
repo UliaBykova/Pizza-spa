@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import Basket from './Basket/Basket';
 import s from './Header.module.css';
 
@@ -8,24 +9,21 @@ const Header = () => {
             <div className={`${s.wrapper} ${s.container}`}>
                 <ul className={s.list}>
                     <li>
-                        <a className={s.link}>Бонусы</a>
+                        <NavLink to="/bonuses" className={s.link}>Бонусы</NavLink>
                     </li>
                     <li>
-                        <a href="" className={s.link}>АКЦИИ</a>
+                        <NavLink to="/promo" className={s.link}>АКЦИИ</NavLink>
                     </li>
                     <li>
-                        <a href="" className={s.link}>Доставка</a>
+                        <NavLink to="/delivery" className={s.link}>Доставка</NavLink>
                     </li>
                     <li>
-                        <a href="" className={s.link}>Карьера</a>
-                    </li>
-                    <li>
-                        <a href="" className={s.link}>Отзывы</a>
+                        <NavLink to="/career" className={s.link}>Карьера</NavLink>
                     </li>
                 </ul>
                 <ul className={s.list}>
                     <li className={s.user}>
-                        <a className={s.link}>Войти</a>
+                        <a href="/" className={s.link}>Войти</a>
                     </li>
                     <li className={s.basket}>
                         <Basket />

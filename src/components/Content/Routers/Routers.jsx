@@ -1,9 +1,10 @@
 import React from 'react' 
 import { Route } from 'react-router-dom';
-import Products from '../../Products/Products';
+import Delivery from '../Delivery/Delivery';
+import Products from '../Products/Products';
 
 
-const RoutersProducts = (props) => {
+const Routers = (props) => {
 
   const japan = props.products.sets.concat(props.products.japan);
 
@@ -17,8 +18,9 @@ const RoutersProducts = (props) => {
         <Route path='/salads' render={() => <Products products={props.products.salads} />} />
         <Route path='/potables' render={() => <Products products={props.products.potables} />} />
         <Route path='/deserts' render={() => <Products products={props.products.deserts} />} />
+        <Route path='/delivery' render={() => <Delivery />} />
         </>
   )
 }
 
-export default RoutersProducts;
+export default Routers;

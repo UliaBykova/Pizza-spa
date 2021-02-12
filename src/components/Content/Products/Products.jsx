@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductElem from './ProductElem/ProductElem';
+import ProductElem from '../../Content/Products/ProductElem/ProductElem';
 import s from './Products.module.css'
 import ProductsFilter from './ProductsFilter/ProductsFilter';
 

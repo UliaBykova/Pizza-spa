@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+}
+
+.map {
+    width: 50%;
+    height: 530px;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 29px;
+    margin-bottom: 30px;
+}
+
+.info {
+    font-size: 23px;
+    margin-bottom: 40px;
+}
+
+.text {
+    margin-bottom: 20px;
+}
