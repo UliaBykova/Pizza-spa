@@ -8,10 +8,10 @@
                 "image": "./images/pizza/vseISrazu.jpg",
                 "priceSizeSmall": 760,
                 "priceSizeMiddle": 890,
-                 "weightThinS" : 460,
-                 "weightThinM" : 680,
-                 "weightThickS" : 830,
-                 "weightThickM" : 1130
+                "weightThinS": 460,
+                "weightThinM": 680,
+                "weightThickS": 830,
+                "weightThickM": 1130
             },
             {
                 "id": 103,
@@ -20,10 +20,10 @@
                 "image": "./images/pizza/HochuEst.jpg",
                 "priceSizeSmall": 820,
                 "priceSizeMiddle": 980,
-                "weightThinS" : 390,
-                "weightThinM" : 550,
-                "weightThickS" : 750,
-                "weightThickM" : 1020
+                "weightThinS": 390,
+                "weightThinM": 550,
+                "weightThickS": 750,
+                "weightThickM": 1020
             },
             {
                 "id": 104,
@@ -32,10 +32,10 @@
                 "image": "./images/pizza/Donatello.jpg",
                 "priceSizeSmall": 760,
                 "priceSizeMiddle": 820,
-                "weightThinS" : 560,
-                "weightThinM" : 680,
-                "weightThickS" : 830,
-                "weightThickM" : 1230
+                "weightThinS": 560,
+                "weightThinM": 680,
+                "weightThickS": 830,
+                "weightThickM": 1230
             },
             {
                 "id": 105,
@@ -44,10 +44,10 @@
                 "image": "./images/pizza/tkemali.jpg",
                 "priceSizeSmall": 670,
                 "priceSizeMiddle": 760,
-                "weightThinS" : 560,
-                "weightThinM" : 660,
-                "weightThickS" : 790,
-                "weightThickM" : 1310
+                "weightThinS": 560,
+                "weightThinM": 660,
+                "weightThickS": 790,
+                "weightThickM": 1310
             },
             {
                 "id": 106,
@@ -56,10 +56,10 @@
                 "image": "./images/pizza/Salyami.jpg",
                 "priceSizeSmall": 630,
                 "priceSizeMiddle": 740,
-                "weightThinS" : 400,
-                "weightThinM" : 510,
-                "weightThickS" : 780,
-                "weightThickM" : 1330
+                "weightThinS": 400,
+                "weightThinM": 510,
+                "weightThickS": 780,
+                "weightThickM": 1330
             },
             {
                 "id": 107,
@@ -68,10 +68,10 @@
                 "image": "./images/pizza/Gavayskaya.jpg",
                 "priceSizeSmall": 585,
                 "priceSizeMiddle": 665,
-                "weightThinS" : 560,
-                "weightThinM" : 680,
-                "weightThickS" : 730,
-                "weightThickM" : 1430
+                "weightThinS": 560,
+                "weightThinM": 680,
+                "weightThickS": 730,
+                "weightThickM": 1430
             },
             {
                 "id": 108,
@@ -80,10 +80,10 @@
                 "image": "./images/pizza/deluks.jpg",
                 "priceSizeSmall": 650,
                 "priceSizeMiddle": 710,
-                "weightThinS" : 460,
-                "weightThinM" : 690,
-                "weightThickS" : 830,
-                "weightThickM" : 1220
+                "weightThinS": 460,
+                "weightThinM": 690,
+                "weightThickS": 830,
+                "weightThickM": 1220
             },
             {
                 "id": 109,
@@ -92,10 +92,10 @@
                 "image": "./images/pizza/Gribnaya.jpg",
                 "priceSizeSmall": 530,
                 "priceSizeMiddle": 620,
-                "weightThinS" : 460,
-                "weightThinM" : 680,
-                "weightThickS" : 830,
-                "weightThickM" : 1130
+                "weightThinS": 460,
+                "weightThinM": 680,
+                "weightThickS": 830,
+                "weightThickM": 1130
             },
             {
                 "id": 110,
@@ -104,10 +104,10 @@
                 "image": "./images/pizza/Evropeyskaya.jpg",
                 "priceSizeSmall": 650,
                 "priceSizeMiddle": 710,
-                "weightThinS" : 460,
-                "weightThinM" : 690,
-                "weightThickS" : 830,
-                "weightThickM" : 1220
+                "weightThinS": 460,
+                "weightThinM": 690,
+                "weightThickS": 830,
+                "weightThickM": 1220
             },
             {
                 "id": 111,
@@ -116,10 +116,10 @@
                 "image": "./images/pizza/Korolevskaya.jpg",
                 "priceSizeSmall": 760,
                 "priceSizeMiddle": 820,
-                "weightThinS" : 560,
-                "weightThinM" : 660,
-                "weightThickS" : 790,
-                "weightThickM" : 1310
+                "weightThinS": 560,
+                "weightThinM": 660,
+                "weightThickS": 790,
+                "weightThickM": 1310
             },
             {
                 "id": 112,
@@ -128,10 +128,10 @@
                 "image": "./images/pizza/Ohonichya.jpg",
                 "priceSizeSmall": 670,
                 "priceSizeMiddle": 760,
-                "weightThinS" : 390,
-                "weightThinM" : 550,
-                "weightThickS" : 750,
-                "weightThickM" : 1020
+                "weightThinS": 390,
+                "weightThinM": 550,
+                "weightThickS": 750,
+                "weightThickM": 1020
             },
             {
                 "id": 113,
@@ -140,10 +140,10 @@
                 "image": "./images/pizza/Peperoni.jpg",
                 "priceSizeSmall": 660,
                 "priceSizeMiddle": 770,
-                "weightThinS" : 520,
-                "weightThinM" : 770,
-                "weightThickS" : 900,
-                "weightThickM" : 1200
+                "weightThinS": 520,
+                "weightThinM": 770,
+                "weightThickS": 900,
+                "weightThickM": 1200
             },
             {
                 "id": 115,
@@ -152,10 +152,10 @@
                 "image": "./images/pizza/Profito.jpg",
                 "priceSizeSmall": 630,
                 "priceSizeMiddle": 720,
-                "weightThinS" : 400,
-                "weightThinM" : 510,
-                "weightThickS" : 780,
-                "weightThickM" : 1330
+                "weightThinS": 400,
+                "weightThinM": 510,
+                "weightThickS": 780,
+                "weightThickM": 1330
             },
             {
                 "id": 116,
@@ -164,10 +164,10 @@
                 "image": "./images/pizza/Bosco.jpg",
                 "priceSizeSmall": 670,
                 "priceSizeMiddle": 760,
-                "weightThinS" : 520,
-                "weightThinM" : 770,
-                "weightThickS" : 900,
-                "weightThickM" : 1200
+                "weightThinS": 520,
+                "weightThinM": 770,
+                "weightThickS": 900,
+                "weightThickM": 1200
             },
             {
                 "id": 117,
@@ -176,10 +176,10 @@
                 "image": "./images/pizza/vegetarianskaya.jpg",
                 "priceSizeSmall": 580,
                 "priceSizeMiddle": 660,
-                "weightThinS" : 400,
-                "weightThinM" : 510,
-                "weightThickS" : 780,
-                "weightThickM" : 1330
+                "weightThinS": 400,
+                "weightThinM": 510,
+                "weightThickS": 780,
+                "weightThickM": 1330
             },
             {
                 "id": 118,
@@ -188,10 +188,10 @@
                 "image": "./images/pizza/vegetarianskaya.jpg",
                 "priceSizeSmall": 580,
                 "priceSizeMiddle": 660,
-                "weightThinS" : 400,
-                "weightThinM" : 510,
-                "weightThickS" : 780,
-                "weightThickM" : 1330
+                "weightThinS": 400,
+                "weightThinM": 510,
+                "weightThickS": 780,
+                "weightThickM": 1330
             },
             {
                 "id": 119,
@@ -200,10 +200,10 @@
                 "image": "./images/pizza/derevenskaya.jpg",
                 "priceSizeSmall": 660,
                 "priceSizeMiddle": 710,
-                "weightThinS" : 560,
-                "weightThinM" : 660,
-                "weightThickS" : 790,
-                "weightThickM" : 1310
+                "weightThinS": 560,
+                "weightThinM": 660,
+                "weightThickS": 790,
+                "weightThickM": 1310
             },
             {
                 "id": 120,
@@ -212,10 +212,10 @@
                 "image": "./images/pizza/Meksikanskaya.jpg",
                 "priceSizeSmall": 630,
                 "priceSizeMiddle": 710,
-                "weightThinS" : 390,
-                "weightThinM" : 550,
-                "weightThickS" : 750,
-                "weightThickM" : 1020
+                "weightThinS": 390,
+                "weightThinM": 550,
+                "weightThickS": 750,
+                "weightThickM": 1020
             },
             {
                 "id": 121,
@@ -224,10 +224,10 @@
                 "image": "./images/pizza/Myasnaya.jpg",
                 "priceSizeSmall": 750,
                 "priceSizeMiddle": 830,
-                "weightThinS" : 460,
-                "weightThinM" : 680,
-                "weightThickS" : 830,
-                "weightThickM" : 1130
+                "weightThinS": 460,
+                "weightThinM": 680,
+                "weightThickS": 830,
+                "weightThickM": 1130
             },
             {
                 "id": 122,
@@ -236,10 +236,10 @@
                 "image": "./images/pizza/Cezar.jpg",
                 "priceSizeSmall": 690,
                 "priceSizeMiddle": 775,
-                "weightThinS" : 400,
-                "weightThinM" : 510,
-                "weightThickS" : 780,
-                "weightThickM" : 1330
+                "weightThinS": 400,
+                "weightThinM": 510,
+                "weightThickS": 780,
+                "weightThickM": 1330
             },
             {
                 "id": 123,
@@ -248,10 +248,10 @@
                 "image": "./images/pizza/Slososem.jpg",
                 "priceSizeSmall": 750,
                 "priceSizeMiddle": 820,
-                "weightThinS" : 460,
-                "weightThinM" : 690,
-                "weightThickS" : 830,
-                "weightThickM" : 1220
+                "weightThinS": 460,
+                "weightThinM": 690,
+                "weightThickS": 830,
+                "weightThickM": 1220
             }
         ],
         "japan": [
@@ -261,7 +261,7 @@
                 "composition": "Рис, лосось, Спайси соус",
                 "image": "./images/japan/spicylosos.jpg",
                 "price": 80,
-                "weight" : 90
+                "weight": 90
             },
             {
                 "id": 202,
@@ -269,7 +269,7 @@
                 "composition": "Рис, икра лосося",
                 "image": "./images/japan/ikralososya.jpg",
                 "price": 100,
-                "weight" : 70
+                "weight": 70
             },
             {
                 "id": 203,
@@ -277,7 +277,7 @@
                 "composition": "Рис, краб",
                 "image": "./images/japan/kani.jpg",
                 "price": 100,
-                "weight" : 70
+                "weight": 70
             },
             {
                 "id": 204,
@@ -285,7 +285,7 @@
                 "composition": "Рис, икра летучей рыбы",
                 "image": "./images/japan/tobiko.jpg",
                 "price": 80,
-                "weight" : 80
+                "weight": 80
             },
             {
                 "id": 205,
@@ -293,7 +293,7 @@
                 "composition": "Рис, краб, Спайси соус",
                 "image": "./images/japan/spicykani.jpg",
                 "price": 70,
-                "weight" : 70
+                "weight": 70
             },
             {
                 "id": 206,
@@ -301,7 +301,7 @@
                 "composition": "Рис, креветка, Спайси соус",
                 "image": "./images/japan/spiciebi.jpg",
                 "price": 100,
-                "weight" : 90
+                "weight": 90
             },
             {
                 "id": 207,
@@ -309,7 +309,7 @@
                 "composition": "Рис, тунец, Спайси соус",
                 "image": "./images/japan/spicymaguro.jpg",
                 "price": 80,
-                "weight" : 70
+                "weight": 70
             },
             {
                 "id": 208,
@@ -317,7 +317,7 @@
                 "composition": "Рис, угорь, Спайси соус",
                 "image": "./images/japan/spicyunagi.jpg",
                 "price": 100,
-                "weight" : 80
+                "weight": 80
             },
             {
                 "id": 209,
@@ -325,7 +325,7 @@
                 "composition": "Рис, тунец",
                 "image": "./images/japan/sushimaguro.jpg",
                 "price": 85,
-                "weight" : 90
+                "weight": 90
             },
             {
                 "id": 210,
@@ -333,7 +333,7 @@
                 "composition": "Рис, лосось",
                 "image": "./images/japan/sushisyake.jpg",
                 "price": 70,
-                "weight" : 80
+                "weight": 80
             },
             {
                 "id": 211,
@@ -341,7 +341,7 @@
                 "composition": "Рис, угорь, соус Унаги, кунжут",
                 "image": "./images/japan/sushiunagi.jpg",
                 "price": 90,
-                "weight" : 67
+                "weight": 67
             },
             {
                 "id": 212,
@@ -349,7 +349,7 @@
                 "composition": "Рис, креветка",
                 "image": "./images/japan/sushieb.jpg",
                 "price": 80,
-                "weight" : 35
+                "weight": 35
             },
             {
                 "id": 213,
@@ -357,7 +357,7 @@
                 "composition": "Рис, авокадо",
                 "image": "./images/japan/avokado.jpg",
                 "price": 90,
-                "weight" : 265
+                "weight": 265
             },
             {
                 "id": 214,
@@ -365,7 +365,7 @@
                 "composition": "Рис, сыр, авокадо, угорь, краб",
                 "image": "./images/japan/tepliyfudzi.jpg",
                 "price": 245,
-                "weight" : 197
+                "weight": 197
             },
             {
                 "id": 215,
@@ -373,7 +373,7 @@
                 "composition": "Рис, Спайси соус, круиная грудка, салат Айсберг, сыр Моцарелла",
                 "image": "./images/japan/tepliykani.jpg",
                 "price": 330,
-                "weight" : 330
+                "weight": 330
             },
             {
                 "id": 216,
@@ -381,7 +381,7 @@
                 "composition": "Рис, майонез, авокадо, огурец, краб, Тобико",
                 "image": "./images/japan/kaliforanzh.jpg",
                 "price": 320,
-                "weight" : 296
+                "weight": 296
             },
             {
                 "id": 217,
@@ -389,7 +389,7 @@
                 "composition": "Рис, майонез, авокадо, огурец краб, кунжут",
                 "image": "./images/japan/kaliforskunzh.jpg",
                 "price": 290,
-                "weight" : 235
+                "weight": 235
             },
             {
                 "id": 218,
@@ -397,7 +397,7 @@
                 "composition": "Рис, сыр, авокадо, огурец, урогь, лосось",
                 "image": "./images/japan/filadel.jpg",
                 "price": 390,
-                "weight" : 190
+                "weight": 190
             },
             {
                 "id": 219,
@@ -405,7 +405,7 @@
                 "composition": "Рис, сыр, угорь, лук Порей, Спайси соус, огурец, кунжут, Тобико",
                 "image": "./images/japan/drakon.jpg",
                 "price": 365,
-                "weight" : 220
+                "weight": 220
             },
             {
                 "id": 220,
@@ -413,7 +413,7 @@
                 "composition": "Рис,сладкий перец, салат Айсберг, огурец, авокадо, кунжут",
                 "image": "./images/japan/ovoshnoy.jpg",
                 "price": 180,
-                "weight" : 210
+                "weight": 210
             }
         ],
         "sets": [
@@ -423,7 +423,7 @@
                 "composition": "Ролл с огурцом, Ролл с авокадо, Ролл овощной",
                 "image": "./images/sets/setovoshnoy.jpg",
                 "price": 410,
-                "weight" : 670
+                "weight": 670
             },
             {
                 "id": 252,
@@ -431,7 +431,7 @@
                 "composition": " Горячий ролл Цезарь, Горячий ролл Кайсен Чиз 0,5, Горячий ролл Темпура 0,5, Горячий ролл Фудзи 0,5",
                 "image": "./images/sets/setgoryachiy.jpg",
                 "price": 605,
-                "weight" : 690
+                "weight": 690
             },
             {
                 "id": 253,
@@ -439,7 +439,7 @@
                 "composition": "Суши Креветка 2шт., Суши Тунец 2шт., гункан Икра лосося 2шт., Гункан краб 2шт., Горячий ролл Цезарь, Горячий ролл Фудзи, Ролл Филадельфия, Ролл Унаги Рору",
                 "image": "./images/sets/grandset.jpg",
                 "price": 2300,
-                "weight" : 830
+                "weight": 830
             },
             {
                 "id": 254,
@@ -447,7 +447,7 @@
                 "composition": "Спайси суши: Тунец 2 шт., Угорь 2 шт., Гребешок 2 шт,. Спайси роллы : Лосось 0,5 Креветка 0,5 Краб 0,5",
                 "image": "./images/sets/ostriyset.jpg",
                 "price": 1070,
-                "weight" : 1090
+                "weight": 1090
             },
             {
                 "id": 256,
@@ -455,7 +455,7 @@
                 "composition": "С угрем 3 шт,. С лососем 3 шт., с тунцом 3 шт., с креветкой 3 шт.",
                 "image": "./images/sets/sushiset.jpg",
                 "price": 800,
-                "weight" : 1200
+                "weight": 1200
             }
         ],
         "wok": [
@@ -465,7 +465,7 @@
                 "composition": "Гречневая лапша, говядина, морковь, болгарский перчик, лук порей, соль, говяжий бульон, кунжут, соус терияки, масло растительное",
                 "image": "./images/wok/lapshawok.jpg",
                 "price": 300,
-                "weight" : 360
+                "weight": 360
             },
             {
                 "id": 352,
@@ -473,7 +473,7 @@
                 "composition": "шеничная лапша, куриная грудка, болгарский перчик, соль, ананас, куриный бульон, кунжут, масло растительное, соус кисло-сладкий",
                 "image": "./images/wok/lapshagrech.jpg",
                 "price": 260,
-                "weight" : 340
+                "weight": 340
             },
             {
                 "id": 353,
@@ -481,7 +481,7 @@
                 "composition": "Пшеничная лапша, свинина, морковь, болгарский перчик, лук порей, соль, бульон, кнжут, соус терияки, масло растительное",
                 "image": "./images/wok/lapshaswin.jpg",
                 "price": 280,
-                "weight" : 420
+                "weight": 420
             },
             {
                 "id": 354,
@@ -489,7 +489,7 @@
                 "composition": "Рисовая лапша, креветка, морковь, болгарский перчик, лук порей, бульон, масло растительное, кунжут, соус терияки",
                 "image": "./images/wok/lapshakrev.jpg",
                 "price": 340,
-                "weight" : 290
+                "weight": 290
             },
             {
                 "id": 355,
@@ -497,7 +497,7 @@
                 "composition": "Рисовая лапша, морковь, болгарский перчик, лук порей, шампиньоны, куриный бульон, соль, кунжут, соус терияки",
                 "image": "./images/wok/lapsharis.jpg",
                 "price": 250,
-                "weight" : 310
+                "weight": 310
             },
             {
                 "id": 356,
@@ -505,7 +505,7 @@
                 "composition": "Яичная лапша, куриная грудка, морковь, болгарский перчик, лук порей,соль, куриный бульон, кунжут, соус терияки, масло растительное",
                 "image": "./images/wok/lapshayai.jpg",
                 "price": 260,
-                "weight" : 350
+                "weight": 350
             }
         ],
         "paste": [
@@ -515,7 +515,7 @@
                 "composition": "Фетучини в сливочном соусе, нежное филе красной рыбы, икра красная, сыр пармезан, помидоры черри",
                 "image": "./images/paste/salmone.jpg",
                 "price": 395,
-                "weight" : 220
+                "weight": 220
             },
             {
                 "id": 402,
@@ -523,7 +523,7 @@
                 "composition": "Фетучини с соусом песто, тигровые креветки, сыр пармезан, томаты черри",
                 "image": "./images/paste/fetuchinnipestokrevedki.jpg",
                 "price": 375,
-                "weight" : 290
+                "weight": 290
             },
             {
                 "id": 403,
@@ -531,7 +531,7 @@
                 "composition": "Спагетти с густым мясным соусом, балонез, сыр пармезан, помидоры черр",
                 "image": "./images/paste/spagettibaloneze.jpg",
                 "price": 295,
-                "weight" : 310
+                "weight": 310
             },
             {
                 "id": 404,
@@ -539,7 +539,7 @@
                 "composition": "Спагетти в сливочном соусе, сыр пармезан, обжаренный бекон, яйцо, помидоры черри",
                 "image": "./images/paste/spagettikarbonarra.jpg",
                 "price": 290,
-                "weight" : 350
+                "weight": 350
             },
             {
                 "id": 405,
@@ -547,7 +547,7 @@
                 "composition": "Фетучини в сливочном соусе, ветчина, свежие шампиньоны, сыр пармезан, помидоры черри",
                 "image": "./images/paste/fetuchinnivetchinagriby.jpg",
                 "price": 290,
-                "weight" : 190
+                "weight": 190
             }
         ],
         "burgers": [
@@ -557,7 +557,7 @@
                 "composition": "Пшеничная булочка, двойной сыр Чеддер, фирменный соус Донателло, котлета из 100% говядины, перчик Халапеньо, томаты, Гуакамоле, соус Сальса, красный лук",
                 "image": "./images/burgers/mehiko.jpg",
                 "price": 339,
-                "weight" : 260
+                "weight": 260
             },
             {
                 "id": 452,
@@ -565,7 +565,7 @@
                 "composition": "Пшеничная булочка, котлета из говяжего фарша, бекон, сыр, томаты, листья салата, лук, соленый огурец, фирменный Бургер соус",
                 "image": "./images/burgers/donatello.jpg",
                 "price": 329,
-                "weight" : 300
+                "weight": 300
             },
             {
                 "id": 453,
@@ -573,7 +573,7 @@
                 "composition": "Пышная пшеничная булка со злаками, говяжья котлета, сыр Моцарелла, томаты, Руккола, соус Песто, соус Бальзамико, фирменный Бургер соус",
                 "image": "./images/burgers/italyano.jpg",
                 "price": 319,
-                "weight" : 320
+                "weight": 320
             },
             {
                 "id": 454,
@@ -581,7 +581,7 @@
                 "composition": "Пышная пшеничная булка, говяжья котлета, фирменный Бургер соус, двойной сыр Чеддер, томаты, соленый огурчик, салат Айсберг",
                 "image": "./images/burgers/klassiko.jpg",
                 "price": 309,
-                "weight" : 190
+                "weight": 190
             }
         ],
         "salads": [
@@ -591,7 +591,7 @@
                 "composition": "Салат Айсберг, брынза, помидор, огурец, лук красный, перец болгарский, маслины, орегано, масло оливковое",
                 "image": "./images/salads/salatgrechesky.jpg",
                 "price": 255,
-                "weight" : 300
+                "weight": 300
             },
             {
                 "id": 502,
@@ -599,7 +599,7 @@
                 "composition": "Помидорчики Черри, сыр Моцарелла Чильеджина, хлеб Чиабатта, соус Песто, чеснок, оливковое масло",
                 "image": "./images/salads/salatpresto.jpg",
                 "price": 359,
-                "weight" : 240
+                "weight": 240
             },
             {
                 "id": 503,
@@ -607,7 +607,7 @@
                 "composition": "Филе тунца, Болгарский перчик, сельдерей, каперсы, йогуртовая заправка",
                 "image": "./images/salads/stuncom.jpg",
                 "price": 349,
-                "weight" : 230
+                "weight": 230
             },
             {
                 "id": 504,
@@ -615,7 +615,7 @@
                 "composition": "Салат Романо, креветки, помидоры, сухари, сыр Пармезан, соус Цезарь",
                 "image": "./images/salads/cezarskrev.jpg",
                 "price": 389,
-                "weight" : 160
+                "weight": 160
             },
             {
                 "id": 505,
@@ -623,7 +623,7 @@
                 "composition": "Салат Романо, куриное филе, помидоры, сухари, сыр Пармезан, соус Цезарь",
                 "image": "./images/salads/cezarskur.jpg",
                 "price": 359,
-                "weight" : 230
+                "weight": 230
             }
         ],
         "potables": [
@@ -633,7 +633,7 @@
                 "composition": "Классический, Тархун, Черешня, Сибирские травы, Клубника, Дыня, Груша, Арбуз, Апельсин",
                 "image": "./images/potables/limonadkalinin.jpg",
                 "price": 90,
-                "weight" : 0.5
+                "weight": 0.5
             },
             {
                 "id": 552,
@@ -641,7 +641,7 @@
                 "composition": "",
                 "image": "./images/potables/kvas.png",
                 "price": 359,
-                "weight" : 0.5
+                "weight": 0.5
             },
             {
                 "id": 553,
@@ -649,7 +649,7 @@
                 "composition": "Персик, вишня, яблоко, ананас, апельсин, грейпфрут, томат, мультифрукт, манго",
                 "image": "./images/potables/rich.png",
                 "price": 140,
-                "weight" : 1
+                "weight": 1
             },
             {
                 "id": 554,
@@ -657,7 +657,7 @@
                 "composition": "",
                 "image": "./images/potables/sprite.png",
                 "price": 80,
-                "weight" : 0.5
+                "weight": 0.5
             }
         ],
         "deserts": [
@@ -667,7 +667,7 @@
                 "composition": "Молочное мороженое с кусочками дыни в натуральной оболочке настоящей дыни",
                 "image": "./images/desserts/dinja.png",
                 "price": 240,
-                "weight" : 98
+                "weight": 98
             },
             {
                 "id": 605,
@@ -675,7 +675,7 @@
                 "composition": "Два слоя крем-сыра Маскарпоне на печенье Савоярди, пропитаны кофе и украшены какао",
                 "image": "./images/desserts/trmsu.png",
                 "price": 170,
-                "weight" : 110
+                "weight": 110
             },
             {
                 "id": 606,
@@ -683,7 +683,7 @@
                 "composition": "Вкус фисташки с нежным муссом и спелой малиной - невероятно сочный",
                 "image": "./images/desserts/tortfist.png",
                 "price": 175,
-                "weight" : 190
+                "weight": 190
             },
             {
                 "id": 607,
@@ -691,7 +691,7 @@
                 "composition": "Сырный крем Филадельфия, приготовленный из свежих яиц и сливок, с пикантным вкусом лимона на кусочке хрустящего теста",
                 "image": "./images/desserts/chkny.png",
                 "price": 159,
-                "weight" : 100
+                "weight": 100
             },
             {
                 "id": 608,
@@ -699,8 +699,22 @@
                 "composition": "Сверху глазурь из молочного шоколада. Для настоящих любителей шоколада",
                 "image": "./images/desserts/cheesecake.png",
                 "price": 159,
-                "weight" : 120
+                "weight": 120
             }
         ]
-    }
+    },
+    "promo": [
+        {
+            "id": 700,
+            "image": "./images/promo/sales1.jpg"
+        },
+        {
+            "id": 701,
+            "image": "./images/promo/sales2.jpg"
+        },
+        {
+            "id": 702,
+            "image": "./images/promo/sales3.jpg"
+        }
+    ]
 }

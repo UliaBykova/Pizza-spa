@@ -23,7 +23,7 @@ const Header = () => {
                 </ul>
                 <ul className={s.list}>
                     <li className={s.user}>
-                        <a href="/" className={s.link}>Войти</a>
+                        <button className={s.enterBtn}>Войти</button>
                     </li>
                     <li className={s.basket}>
                         <Basket />

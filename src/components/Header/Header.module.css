@@ -1,11 +1,12 @@
 .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     box-sizing: border-box;
     position: fixed;
     background-color: #282828;
-    display: flex;
     left: 340px;
     top : 0;
-    justify-content: space-between;
     padding: 18px 40px;
     width : calc(100% - 340px);
     z-index: 22;
@@ -19,11 +20,17 @@
     margin-right: 65px;
 }
 
-.link {
-    display: inline-block;
+.link, .enterBtn {
     color: #fff;
     font-size: 23px;
     font-weight: 600;
+}
+
+.enterBtn {
+  background: transparent;
+  outline: none;
+  border : none;
+  padding: 4px 0;
 }
 
 .user,

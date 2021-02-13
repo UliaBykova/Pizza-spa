@@ -13,3 +13,13 @@ export const productsAPI = {
         })
     }
 }
+
+export const promoAPI = {
+    getPromo() {
+        return istance.get(`http://localhost:3000/promo`)
+        .then(response => {
+             return response
+        })
+    }
+}
+
