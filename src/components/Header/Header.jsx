@@ -5,6 +5,8 @@ import s from './Header.module.css';
 
 const Header = (props) => {
 
+    const setModal = () => {props.setModalActive(true);}
+
     return (
         <header>
             <div className={`${s.wrapper} ${s.container}`}>
@@ -24,7 +26,7 @@ const Header = (props) => {
                 </ul>
                 <ul className={s.list}>
                     <li className={s.user}>
-                        <button className={s.enterBtn} onClick={() => props.setModalActive(true)}>Войти</button>
+                        <button className={s.enterBtn} onClick={setModal}>Войти</button>
                     </li>
                     <li className={s.basket}>
                         <Basket />

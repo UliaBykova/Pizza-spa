@@ -1,13 +1,14 @@
 import React from 'react'
 import s from './ModalElem.module.css'
 
-const ModalElem = ({active, setActive, children}) => {
+const ModalElem = ({ active, setActive, children }) => {
     return (
-         <div className={active ?  `${s.modal} ${s.active}` : `${s.modal}` } onClick={() => setActive(false)}>
-             <div className={s.content} onClick={e => e.stopPropagation()}>
-                 {children}
-             </div>
-         </div>
+        <div className={active ? `${s.modal} ${s.active}` : `${s.modal}`} onClick={() => setActive(false)}>
+            <div className={s.content} onClick={e => e.stopPropagation()}>
+                <button className={s.close} onClick={() => setActive(false)}></button>
+                {children}
+            </div>
+        </div>
     )
 }
 

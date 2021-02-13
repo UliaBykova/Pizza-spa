@@ -1,12 +1,12 @@
 import './App.css';
-import React, { useState } from 'react' 
+import React, { useState } from 'react'
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
-import {Provider} from "react-redux";
+import { Provider } from "react-redux";
 import store from './components/redux/redux-store';
 import ContentContainer from './components/Content/ContentContainer';
 import ModalElem from './components/common/Modal/ModalElem';
-
+import Auth from './components/Auth/Auth';
 
 const App = () => {
 
@@ -15,19 +15,19 @@ const App = () => {
   return (
     <Provider store={store}>
       <div className="app">
-         <Navbar />
-         <Header setModalActive={setModalActive} />
-            <div className="content">
-              <ContentContainer />
-              <ModalElem active={modalActive} setActive={setModalActive}>
-                 <p>12</p>
-              </ModalElem>
-            </div>
+        <Navbar />
+        <Header setModalActive={setModalActive} />
+        <div className="content">
+          <ContentContainer />
+          <ModalElem active={modalActive} setActive={setModalActive}>
+              <Auth />
+          </ModalElem>
+        </div>
       </div>
     </Provider>
   )
 }
 
-export default App;
+export default App;/*  */
 
 //json-server --watch info.json
