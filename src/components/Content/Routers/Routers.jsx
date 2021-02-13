@@ -8,7 +8,7 @@ import Promo from '../Promo/Promo';
 
 const Routers = (props) => {
 
-  const [modalActive, setModalActive] = useState(true);
+/*   const [modalActive, setModalActive] = useState(true); */
 
   const japan = props.products.sets.concat(props.products.japan);
 
@@ -25,10 +25,10 @@ const Routers = (props) => {
         <Route path='/delivery' render={() => <Delivery />} />
         <Route path='/promo' render={() => <Promo promo={props.promo} />} />
 
-        <button style={{margin : "100px", background : "red"}} onClick={() => setModalActive(true)}>Открыть</button>
+{/*         <button style={{margin : "100px", background : "red"}} onClick={() => setModalActive(true)}>Открыть</button>
         <ModalElem active={modalActive} setActive={setModalActive}>
           <p>12</p>
-        </ModalElem>
+        </ModalElem> */}
         </>
   )
 }

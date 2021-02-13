@@ -3,7 +3,8 @@ import { NavLink } from 'react-router-dom';
 import Basket from './Basket/Basket';
 import s from './Header.module.css';
 
-const Header = () => {
+const Header = (props) => {
+
     return (
         <header>
             <div className={`${s.wrapper} ${s.container}`}>
@@ -23,7 +24,7 @@ const Header = () => {
                 </ul>
                 <ul className={s.list}>
                     <li className={s.user}>
-                        <button className={s.enterBtn}>Войти</button>
+                        <button className={s.enterBtn} onClick={() => props.setModalActive(true)}>Войти</button>
                     </li>
                     <li className={s.basket}>
                         <Basket />

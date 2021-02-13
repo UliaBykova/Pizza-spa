@@ -1,20 +1,27 @@
 import './App.css';
-import React from 'react' 
+import React, { useState } from 'react' 
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import {Provider} from "react-redux";
 import store from './components/redux/redux-store';
 import ContentContainer from './components/Content/ContentContainer';
+import ModalElem from './components/common/Modal/ModalElem';
 
 
 const App = () => {
+
+  const [modalActive, setModalActive] = useState(true);
+
   return (
     <Provider store={store}>
       <div className="app">
          <Navbar />
-         <Header />
+         <Header setModalActive={setModalActive} />
             <div className="content">
               <ContentContainer />
+              <ModalElem active={modalActive} setActive={setModalActive}>
+                 <p>12</p>
+              </ModalElem>
             </div>
       </div>
     </Provider>
