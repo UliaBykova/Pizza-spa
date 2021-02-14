@@ -716,5 +716,31 @@
             "id": 702,
             "image": "./images/promo/sales3.jpg"
         }
-    ]
+    ],
+    "basket": {
+        "selectedElem": [
+            {
+                "id": 101,
+                "name": "#ВСЁИСРАЗУ",
+                "composition": "Пиццы: Охотничья, Делюкс, Карри, 4сыра",
+                "image": "./images/pizza/vseISrazu.jpg",
+                "priceSizeSmall": 760,
+                "priceSizeMiddle": 890,
+                "weightThinS": 460,
+                "weightThinM": 680,
+                "weightThickS": 830,
+                "weightThickM": 1130
+            },
+            {
+                "id": 351,
+                "name": "Гречневая лапша с говядиной",
+                "composition": "Гречневая лапша, говядина, морковь, болгарский перчик, лук порей, соль, говяжий бульон, кунжут, соус терияки, масло растительное",
+                "image": "./images/wok/lapshawok.jpg",
+                "price": 300,
+                "weight": 360
+            }
+        ],
+        "amountElem": 2,
+        "sum": 0
+    }
 }

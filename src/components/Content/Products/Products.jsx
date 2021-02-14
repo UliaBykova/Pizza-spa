@@ -5,9 +5,11 @@ import ProductsFilter from './ProductsFilter/ProductsFilter';
 
 const Products = (props) => {
 
+  
+
   return ( 
     <div className={s.wrapper}>
-        <ProductsFilter />
+        <ProductsFilter title={props.title} />
       <div className={s.productContainer}>
         <ProductElem products={props.products} />
       </div>

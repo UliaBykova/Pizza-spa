@@ -20,7 +20,7 @@ const ContentContainer = () => {
     return (
         <div className={s.container}>
               {loading 
-              ? <Routers products={state.productPage.products.data} promo={state.promoPage.promo.data} />
+              ? <Routers state={state} />
               : <Preloader />}
         </div>
     )

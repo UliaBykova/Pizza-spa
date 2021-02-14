@@ -1,0 +1,9 @@
+.container {
+    width: 100%;
+    outline: 1px solid yellow;
+}
+
+.title {
+    font-size: 29px;
+    margin-bottom: 30px;
+}

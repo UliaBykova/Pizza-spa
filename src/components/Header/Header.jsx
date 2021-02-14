@@ -1,11 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import Basket from './Basket/Basket';
+import BasketContainer from './BasketContainer/BasketContainer';
 import s from './Header.module.css';
 
 const Header = (props) => {
 
-    const setModal = () => {props.setModalActive(true);}
+    const setModal = () => {props.setModalActive(true)}
 
     return (
         <header>
@@ -29,7 +29,7 @@ const Header = (props) => {
                         <button className={s.enterBtn} onClick={setModal}>Войти</button>
                     </li>
                     <li className={s.basket}>
-                        <Basket />
+                        <BasketContainer />
                     </li>
                 </ul>
             </div>

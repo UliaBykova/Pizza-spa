@@ -10,7 +10,7 @@ import Auth from './components/Auth/Auth';
 
 const App = () => {
 
-  const [modalActive, setModalActive] = useState(true);
+  const [modalActive, setModalActive] = useState(false);
 
   return (
     <Provider store={store}>
