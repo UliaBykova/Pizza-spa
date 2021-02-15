@@ -1,15 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import SwitchersPizza from '../SwitchersPizza/SwitchersPizza';
 import s from './../Products.module.css'
 
 const ProductElem = (props) => {
 
-    const [amount, setAmount] = useState(0);
-    const onSetAmount = () => { setAmount(amount + 1) };
-
-    function handleClick(id, e) {
-        e.preventDefault();
-        console.log(id);
+    let onAddElemToBasket = (elem) => {
+        props.updateBasket(elem, props.basket.selectedElem);
     }
 
     return (
@@ -29,7 +25,7 @@ const ProductElem = (props) => {
                             {elem.priceSizeSmall ? <SwitchersPizza /> : null}
                             <div className={s.registration}>
                                 <span className={s.price}> {elem.priceSizeSmall || elem.price} &#8381;</span>
-                                <button className={s.btnAdd} onClick={(e) => this.handleClick(id, e) }       >В корзину</button>
+                                <button className={s.btnAdd} onClick={() => { onAddElemToBasket(elem) }}>В корзину</button>
                             </div>
                         </div>
                     </div>)

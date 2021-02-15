@@ -29,5 +29,8 @@ export const basketAPI = {
         .then(response => {
             return response
         })
+    },
+    updateBasket(elem, arr) {
+       return istance.patch(`basket`, {selectedElem : arr }) 
     }
 }

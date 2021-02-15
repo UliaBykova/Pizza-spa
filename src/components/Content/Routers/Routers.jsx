@@ -1,8 +1,9 @@
 import React from 'react'
 import { Route } from 'react-router-dom';
 import Delivery from '../Delivery/Delivery';
-import Order from '../Order/Order';
-import Products from '../Products/Products';
+import Order from '../Order/Order/Order';
+import OrderContainer from '../Order/OrderContainer';
+import ProductsContainer from '../Products/ProductsContainer';
 import Promo from '../Promo/Promo';
 
 
@@ -12,17 +13,17 @@ const Routers = (props) => {
 
   return (
     <>
-      <Route path='/pizza' render={() => <Products products={products.pizza} title="Пицца" />} />
-      <Route path='/japan' render={() => <Products products={japan} title="Япония" />} />
-      <Route path='/wok' render={() => <Products products={products.wok} title="Wok" />} />
-      <Route path='/paste' render={() => <Products products={products.paste} title="Паста" />} />
-      <Route path='/burgers' render={() => <Products products={products.burgers} title="Бургеры" />} />
-      <Route path='/salads' render={() => <Products products={products.salads} title="Салаты" />} />
-      <Route path='/potables' render={() => <Products products={products.potables} title="Напитки" />} />
-      <Route path='/deserts' render={() => <Products products={products.deserts} title="Десерты" />} />
+      <Route path='/pizza' render={() => <ProductsContainer products={products.pizza} title="Пицца" />} />
+      <Route path='/japan' render={() => <ProductsContainer products={japan} title="Япония" basket={props.state.basketPage} />} />
+      <Route path='/wok' render={() => <ProductsContainer products={products.wok} title="Wok" />} />
+      <Route path='/paste' render={() => <ProductsContainer products={products.paste} title="Паста" />} />
+      <Route path='/burgers' render={() => <ProductsContainer products={products.burgers} title="Бургеры" />} />
+      <Route path='/salads' render={() => <ProductsContainer products={products.salads} title="Салаты" />} />
+      <Route path='/potables' render={() => <ProductsContainer products={products.potables} title="Напитки" />} />
+      <Route path='/deserts' render={() => <ProductsContainer products={products.deserts} title="Десерты" />} />
       <Route path='/delivery' render={() => <Delivery />} />
       <Route path='/promo' render={() => <Promo promo={props.state.promoPage.promo.data} />} />
-      <Route path='/basket' render={() => <Order basket={props.state.basketPage} />} />
+      <Route path='/basket' render={() => <OrderContainer basket={props.state.basketPage} />} />
     </>
   )
 }

@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import s from './Order.module.css'
 
 const Order = (props) => {
+
+    console.log(props.basket.selectedElem);
+
 
     return (
         <div className={s.container}>
