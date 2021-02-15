@@ -4,8 +4,10 @@ import s from './../Products.module.css'
 
 const ProductElem = (props) => {
 
+
     let onAddElemToBasket = (elem) => {
-        props.updateBasket(elem, props.basket.selectedElem);
+        props.addProductToBasket(elem);
+    /*     props.updateBasket(elem); */
     }
 
     return (

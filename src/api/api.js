@@ -30,7 +30,7 @@ export const basketAPI = {
             return response
         })
     },
-    updateBasket(elem, arr) {
-       return istance.patch(`basket`, {selectedElem : arr }) 
+    updateBasket(elem) {
+       return istance.patch(`basket`, {selectedElem : elem }) 
     }
 }

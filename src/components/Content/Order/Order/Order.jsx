@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import s from './Order.module.css'
 
 const Order = (props) => {
 
-    console.log(props.basket.selectedElem);
+  /*   console.log(props.basket.selectedElem); */
 
 
     return (

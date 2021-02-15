@@ -46,9 +46,9 @@ export const requestSelectedElem = () => {
     }
 }
 
-export const updateBasket = (elem, arr) => {
+export const updateBasket = (elem) => {
     return (dispatch) => {
-        basketAPI.updateBasket(elem , arr).then(response => {
+        basketAPI.updateBasket(elem).then(response => {
             dispatch(addProductToBasketAC(elem));
         })
     }
