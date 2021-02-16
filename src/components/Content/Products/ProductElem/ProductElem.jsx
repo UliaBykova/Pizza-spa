@@ -6,8 +6,8 @@ const ProductElem = (props) => {
 
 
     let onAddElemToBasket = (elem) => {
-        props.addProductToBasket(elem);
-    /*     props.updateBasket(elem); */
+  /*       props.addProductToBasket(elem); */
+        props.updateBasket(elem);
     }
 
     return (

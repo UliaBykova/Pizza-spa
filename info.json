@@ -718,7 +718,60 @@
     }
   ],
   "basket": {
-    "selectedElem": [],
+    "selectedElem": [
+      {
+        "id": 252,
+        "name": "Сет Горячий",
+        "composition": " Горячий ролл Цезарь, Горячий ролл Кайсен Чиз 0,5, Горячий ролл Темпура 0,5, Горячий ролл Фудзи 0,5",
+        "image": "./images/sets/setgoryachiy.jpg",
+        "price": 605,
+        "weight": 690
+      },
+      {
+        "id": 251,
+        "name": "Сет Вегетарианский",
+        "composition": "Ролл с огурцом, Ролл с авокадо, Ролл овощной",
+        "image": "./images/sets/setovoshnoy.jpg",
+        "price": 410,
+        "weight": 670
+      },
+      {
+        "id": 253,
+        "name": "Сет Гранд Донателло",
+        "composition": "Суши Креветка 2шт., Суши Тунец 2шт., гункан Икра лосося 2шт., Гункан краб 2шт., Горячий ролл Цезарь, Горячий ролл Фудзи, Ролл Филадельфия, Ролл Унаги Рору",
+        "image": "./images/sets/grandset.jpg",
+        "price": 2300,
+        "weight": 830
+      },
+      {
+        "id": 251,
+        "name": "Сет Вегетарианский",
+        "composition": "Ролл с огурцом, Ролл с авокадо, Ролл овощной",
+        "image": "./images/sets/setovoshnoy.jpg",
+        "price": 410,
+        "weight": 670
+      },
+      {
+        "id": 253,
+        "name": "Сет Гранд Донателло",
+        "composition": "Суши Креветка 2шт., Суши Тунец 2шт., гункан Икра лосося 2шт., Гункан краб 2шт., Горячий ролл Цезарь, Горячий ролл Фудзи, Ролл Филадельфия, Ролл Унаги Рору",
+        "image": "./images/sets/grandset.jpg",
+        "price": 2300,
+        "weight": 830
+      },
+      {
+        "id": 103,
+        "name": "#ХОЧУЕСТЬ",
+        "composition": "Пиццы: Чоризо, Мясная, Фета-Томато,Грибная",
+        "image": "./images/pizza/HochuEst.jpg",
+        "priceSizeSmall": 820,
+        "priceSizeMiddle": 980,
+        "weightThinS": 390,
+        "weightThinM": 550,
+        "weightThickS": 750,
+        "weightThickM": 1020
+      }
+    ],
     "amountElem": 0,
     "sum": 0
   }

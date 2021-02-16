@@ -8,29 +8,33 @@ const istance = axios.create({
 export const productsAPI = {
     getProducts() {
         return istance.get(`products`)
-        .then(response => {
-             return response
-        })
+            .then(response => {
+                return response
+            })
     }
 }
 
 export const promoAPI = {
     getPromo() {
         return istance.get(`promo`)
-        .then(response => {
-             return response
-        })
+            .then(response => {
+                return response
+            })
     }
 }
 
 export const basketAPI = {
     getBasket() {
         return istance.get(`basket`)
-        .then(response => {
-            return response
-        })
+            .then(response => {
+                return response.data
+            })
     },
-    updateBasket(elem) {
-       return istance.patch(`basket`, {selectedElem : elem }) 
+    async updateBasket(elem) {
+        const basketResponse = await basketAPI.getBasket();
+        return await istance.post(`basket`, {
+            ...basketResponse,
+            selectedElem: [...basketResponse.selectedElem, elem],
+        });
     }
 }

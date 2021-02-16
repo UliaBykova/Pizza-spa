@@ -3,7 +3,7 @@ import s from './Order.module.css'
 
 const Order = (props) => {
 
-  /*   console.log(props.basket.selectedElem); */
+    console.log(props.basket.selectedElem);
 
 
     return (
