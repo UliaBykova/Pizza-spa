@@ -1,9 +1,135 @@
 .container {
     width: 100%;
-    outline: 1px solid yellow;
 }
 
 .title {
     font-size: 29px;
     margin-bottom: 30px;
+}
+
+.blockInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background: #161616;
+}
+
+.descriptionBlock {
+    display: flex;
+    align-items: flex-start;
+    width: 70%;
+}
+
+.photo {
+    width: 10vw;
+    height: 100%;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.name {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.composition {
+    color: rgb(121, 119, 119);
+    font-size: 20px;
+}
+
+.detailsBlock {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    padding-right: 80px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.amount {
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.amountBtn {
+    width: 27px;
+    height: 27px;
+    color: #fff;
+    font-size: 23px;
+    background: #373737;
+    outline: none;
+    border: none;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.close {
+    position: absolute;
+    right: 40px;
+    top: 42%;
+    width: 25px;
+    height: 25px;
+    opacity: 0.5;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 13px;
+    top: -4px;
+    content: ' ';
+    height: 30px;
+    width: 2px;
+    background-color: rgb(128, 126, 126);
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.deliveryInfo {
+    margin: 50px 0 60px 0;
+    font-size: 23px;
+}
+
+.deliveryResult {
+    color: rgb(121, 119, 119);
+}
+
+.registration {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sum {
+    color : yellow;
+    font-weight: 600;
+}
+
+.orderBtn {
+    color : #333;
+    background: rgb(255, 251, 0);
+    padding : 10px 22px;
+    font-size: 20px;
+    outline: none;
+    border : none;
 }

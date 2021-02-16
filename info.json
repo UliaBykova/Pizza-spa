@@ -720,59 +720,39 @@
   "basket": {
     "selectedElem": [
       {
-        "id": 252,
-        "name": "Сет Горячий",
-        "composition": " Горячий ролл Цезарь, Горячий ролл Кайсен Чиз 0,5, Горячий ролл Темпура 0,5, Горячий ролл Фудзи 0,5",
-        "image": "./images/sets/setgoryachiy.jpg",
-        "price": 605,
-        "weight": 690
+        "id": 209,
+        "name": "Суши Магуро (тунец)",
+        "composition": "Рис, тунец",
+        "image": "./images/japan/sushimaguro.jpg",
+        "price": 85,
+        "weight": 90
       },
       {
-        "id": 251,
-        "name": "Сет Вегетарианский",
-        "composition": "Ролл с огурцом, Ролл с авокадо, Ролл овощной",
-        "image": "./images/sets/setovoshnoy.jpg",
-        "price": 410,
-        "weight": 670
+        "id": 210,
+        "name": "Суши Сяке (лосось)",
+        "composition": "Рис, лосось",
+        "image": "./images/japan/sushisyake.jpg",
+        "price": 70,
+        "weight": 80
       },
       {
-        "id": 253,
-        "name": "Сет Гранд Донателло",
-        "composition": "Суши Креветка 2шт., Суши Тунец 2шт., гункан Икра лосося 2шт., Гункан краб 2шт., Горячий ролл Цезарь, Горячий ролл Фудзи, Ролл Филадельфия, Ролл Унаги Рору",
-        "image": "./images/sets/grandset.jpg",
-        "price": 2300,
-        "weight": 830
+        "id": 211,
+        "name": "Суши Унаги (угорь)",
+        "composition": "Рис, угорь, соус Унаги, кунжут",
+        "image": "./images/japan/sushiunagi.jpg",
+        "price": 90,
+        "weight": 67
       },
       {
-        "id": 251,
-        "name": "Сет Вегетарианский",
-        "composition": "Ролл с огурцом, Ролл с авокадо, Ролл овощной",
-        "image": "./images/sets/setovoshnoy.jpg",
-        "price": 410,
-        "weight": 670
-      },
-      {
-        "id": 253,
-        "name": "Сет Гранд Донателло",
-        "composition": "Суши Креветка 2шт., Суши Тунец 2шт., гункан Икра лосося 2шт., Гункан краб 2шт., Горячий ролл Цезарь, Горячий ролл Фудзи, Ролл Филадельфия, Ролл Унаги Рору",
-        "image": "./images/sets/grandset.jpg",
-        "price": 2300,
-        "weight": 830
-      },
-      {
-        "id": 103,
-        "name": "#ХОЧУЕСТЬ",
-        "composition": "Пиццы: Чоризо, Мясная, Фета-Томато,Грибная",
-        "image": "./images/pizza/HochuEst.jpg",
-        "priceSizeSmall": 820,
-        "priceSizeMiddle": 980,
-        "weightThinS": 390,
-        "weightThinM": 550,
-        "weightThickS": 750,
-        "weightThickM": 1020
+        "id": 217,
+        "name": "Калифорния с кунжутом Ролл",
+        "composition": "Рис, майонез, авокадо, огурец краб, кунжут",
+        "image": "./images/japan/kaliforskunzh.jpg",
+        "price": 290,
+        "weight": 235
       }
     ],
-    "amountElem": 0,
-    "sum": 0
+    "amountElem": 4,
+    "sum": 535
   }
 }

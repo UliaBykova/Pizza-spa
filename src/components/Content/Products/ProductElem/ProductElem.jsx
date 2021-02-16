@@ -4,10 +4,11 @@ import s from './../Products.module.css'
 
 const ProductElem = (props) => {
 
+    const amount = props.basket.amountElem;
+    const sum = props.basket.sum;
 
-    let onAddElemToBasket = (elem) => {
-  /*       props.addProductToBasket(elem); */
-        props.updateBasket(elem);
+    const onAddElemToBasket = (elem, price) => {
+        props.updateBasket(elem, amount+1, sum+price);
     }
 
     return (
@@ -27,7 +28,7 @@ const ProductElem = (props) => {
                             {elem.priceSizeSmall ? <SwitchersPizza /> : null}
                             <div className={s.registration}>
                                 <span className={s.price}> {elem.priceSizeSmall || elem.price} &#8381;</span>
-                                <button className={s.btnAdd} onClick={() => { onAddElemToBasket(elem) }}>В корзину</button>
+                                <button className={s.btnAdd} onClick={() => { onAddElemToBasket(elem, elem.price) }}>В корзину</button>
                             </div>
                         </div>
                     </div>)

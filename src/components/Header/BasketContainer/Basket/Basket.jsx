@@ -5,7 +5,6 @@ import s from './../../Header.module.css';
 const Basket = (props) => {
 
     const basketPage = props.basketPage;
-/*     console.log(basketPage); */
 
     return (
         <NavLink to="/basket" className={s.link}>

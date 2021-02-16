@@ -1,58 +1,69 @@
-import { basketAPI } from '../../api/api';
+import {
+    basketAPI
+} from '../../api/api';
 
 const SET_SELECTED_ELEM = 'SET_SELECTED_ELEM';
 const ADD_PRODUCT_TO_BASKET = 'ADD_PRODUCT_TO_BASKET';
-const UPDATE_BASKET = 'UPDATE_BASKET';
+const DELETE_PRODUCT_TO_BASKET = 'DELETE_PRODUCT_TO_BASKET';
 
 let initialState = {
-	selectedElem: [],
-	amountElem: 0,
-	sum: 0,
+    selectedElem: [],
+    amountElem: 0,
+    sum: 0,
 };
 
 const basketReducer = (state = initialState, action) => {
-	switch (action.type) {
-		case SET_SELECTED_ELEM: {
-			return {
-				...state,
-				selectedElem: action.selectedElem,
-			};
-		}
-		case ADD_PRODUCT_TO_BASKET: {
-			return {
-				...state,
-				selectedElem: [...state.selectedElem, action.elem],
-			};
-		}
-		default:
-			return state;
-	}
+    switch (action.type) {
+        case SET_SELECTED_ELEM: {
+            return {
+                ...state,
+                selectedElem: action.selectedElem,
+                amountElem : action.amountElem, 
+                sum : action.sum
+            };
+        }
+        case ADD_PRODUCT_TO_BASKET: {
+            return {
+                ...state,
+                selectedElem: [...state.selectedElem, action.elem], 
+                amountElem : action.amount, 
+                sum : action.sum
+            };
+        }
+        default:
+            return state;
+    }
 };
 
-export const setSelectedElemAC = (selectedElem) => ({
-	type: SET_SELECTED_ELEM,
-	selectedElem,
+export const setSelectedElemAC = (selectedElem, amountElem, sum) => ({
+    type: SET_SELECTED_ELEM,
+    selectedElem, amountElem, sum
 });
 
-export const addProductToBasketAC = (elem) => ({
-	type: ADD_PRODUCT_TO_BASKET,
-	elem,
+export const addProductToBasketAC = (elem, amount, sum) => ({
+    type: ADD_PRODUCT_TO_BASKET,
+    elem, amount, sum
 });
+
+export const deleteProductToBasketAC = (productId) => ({
+    type : DELETE_PRODUCT_TO_BASKET,
+    productId
+})
 
 export const requestSelectedElem = () => {
-	return (dispatch) => {
-		basketAPI.getBasket().then((response) => {
-			dispatch(setSelectedElemAC(response.selectedElem));
-		});
-	};
+    return (dispatch) => {
+        basketAPI.getBasket().then((response) => {
+            dispatch(setSelectedElemAC(response.selectedElem, response.amountElem, response.sum));
+        });
+    };
 };
 
-export const updateBasket = (elem) => {
-	return (dispatch) => {
-		basketAPI.updateBasket(elem).then(() => {
-			dispatch(addProductToBasketAC(elem));
-		});
-	};
+export const updateBasket = (elem, amount, sum) => {
+    return (dispatch) => {
+        basketAPI.updateBasket(elem, amount, sum).then(() => {
+            dispatch(addProductToBasketAC(elem, amount, sum));
+        });
+    };
 };
 
 export default basketReducer;

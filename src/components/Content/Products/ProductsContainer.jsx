@@ -7,7 +7,7 @@ class ProductsContainer extends React.Component {
 
     render() {
         return (
-            <Products products={this.props.products} title={this.props.title} addProductToBasket={this.props.addProductToBasket} updateBasket = {this.props.updateBasket}
+            <Products products={this.props.products} title={this.props.title} updateBasket = {this.props.updateBasket}
                   basket={this.props.basket} />
         )
     }

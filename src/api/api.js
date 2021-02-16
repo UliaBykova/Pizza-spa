@@ -30,11 +30,13 @@ export const basketAPI = {
                 return response.data
             })
     },
-    async updateBasket(elem) {
+    async updateBasket(elem, amount, sum) {
         const basketResponse = await basketAPI.getBasket();
         return await istance.post(`basket`, {
             ...basketResponse,
             selectedElem: [...basketResponse.selectedElem, elem],
+            amountElem : amount, 
+            sum : sum
         });
     }
 }

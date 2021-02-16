@@ -5,14 +5,13 @@ import { requestSelectedElem } from '../../redux/basket-reducer';
 
 const BasketContainer = () => {
 
-  const basketPage = useSelector(state => state.basketPage.selectedElem.data);
+  const basketPage = useSelector(state => state.basketPage);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(requestSelectedElem());
   }, [])
 
-/*   console.log(basketPage); */
 
   return (
     <div>
