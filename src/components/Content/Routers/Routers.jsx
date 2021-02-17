@@ -12,7 +12,7 @@ const Routers = (props) => {
 
   return (
     <>
-      <Route path='/pizza' render={() => <ProductsContainer products={products.pizza} title="Пицца" basket={props.state.basketPage} />} />
+      <Route path='/pizza' render={() => <ProductsContainer products={products.pizza} title="Пицца" basket={props.state.basketPage} indicatorPizza={true} />} />
       <Route path='/japan' render={() => <ProductsContainer products={japan} title="Япония" basket={props.state.basketPage} />} />
       <Route path='/wok' render={() => <ProductsContainer products={products.wok} title="Wok" basket={props.state.basketPage} />} />
       <Route path='/paste' render={() => <ProductsContainer products={products.paste} title="Паста" basket={props.state.basketPage} />} />

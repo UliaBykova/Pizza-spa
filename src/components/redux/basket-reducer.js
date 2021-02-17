@@ -78,9 +78,9 @@ export const updateBasket = (elem, amount, sum) => {
     };
 };
 
-export const deleteProductTC = (id) => {
+export const deleteProductTC = (productId) => {
     return (dispatch) => {
-        basketAPI.deleteProduct(id).then((response) => {
+        basketAPI.deleteProduct(productId).then((response) => {
             dispatch(deleteProductToBasketAC(response[0], response[1], response[2]));
         })
     }
