@@ -720,39 +720,15 @@
   "basket": {
     "selectedElem": [
       {
-        "id": 209,
-        "name": "Суши Магуро (тунец)",
-        "composition": "Рис, тунец",
-        "image": "./images/japan/sushimaguro.jpg",
-        "price": 85,
-        "weight": 90
-      },
-      {
-        "id": 210,
-        "name": "Суши Сяке (лосось)",
-        "composition": "Рис, лосось",
-        "image": "./images/japan/sushisyake.jpg",
-        "price": 70,
-        "weight": 80
-      },
-      {
-        "id": 211,
-        "name": "Суши Унаги (угорь)",
-        "composition": "Рис, угорь, соус Унаги, кунжут",
-        "image": "./images/japan/sushiunagi.jpg",
-        "price": 90,
-        "weight": 67
-      },
-      {
-        "id": 217,
-        "name": "Калифорния с кунжутом Ролл",
-        "composition": "Рис, майонез, авокадо, огурец краб, кунжут",
-        "image": "./images/japan/kaliforskunzh.jpg",
-        "price": 290,
-        "weight": 235
+        "id": 351,
+        "name": "Гречневая лапша с говядиной",
+        "composition": "Гречневая лапша, говядина, морковь, болгарский перчик, лук порей, соль, говяжий бульон, кунжут, соус терияки, масло растительное",
+        "image": "./images/wok/lapshawok.jpg",
+        "price": 300,
+        "weight": 360
       }
     ],
-    "amountElem": 4,
-    "sum": 535
+    "amountElem": 1,
+    "sum": 300
   }
 }

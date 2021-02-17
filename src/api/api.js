@@ -1,4 +1,5 @@
 import * as axios from 'axios';
+import basketReducer, { deleteProductToBasketAC } from '../components/redux/basket-reducer';
 
 const istance = axios.create({
     withCredentials: true,
@@ -38,5 +39,16 @@ export const basketAPI = {
             amountElem : amount, 
             sum : sum
         });
+    },
+    async deleteProduct(id) {
+        const basketResponse = await basketAPI.getBasket();
+        const result = await istance.post(`basket`, {
+            ...basketResponse,
+            selectedElem : [...basketResponse.selectedElem.filter(elem => elem.id !== id)],
+            amountElem : basketResponse.amountElem-1,
+            sum : basketResponse.sum - [...basketResponse.selectedElem].find(elem => elem.id === id).price
+        })
+        return [result.data.selectedElem, result.data.amountElem, result.data.sum];
     }
+    
 }

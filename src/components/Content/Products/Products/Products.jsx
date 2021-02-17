@@ -11,7 +11,7 @@ const Products = (props) => {
     <div className={s.wrapper}>
       <ProductsFilter title={props.title} />
       <div className={s.productContainer}>
-        <ProductElem products={props.products} basket={props.basket} addProductToBasket={props.addProductToBasket} updateBasket={props.updateBasket} />
+        <ProductElem products={props.products} basket={props.basket} updateBasket={props.updateBasket} />
       </div>
     </div>
   )

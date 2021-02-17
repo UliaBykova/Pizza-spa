@@ -18,17 +18,25 @@ const basketReducer = (state = initialState, action) => {
             return {
                 ...state,
                 selectedElem: action.selectedElem,
-                amountElem : action.amountElem, 
-                sum : action.sum
+                amountElem: action.amountElem,
+                sum: action.sum
             };
         }
         case ADD_PRODUCT_TO_BASKET: {
             return {
                 ...state,
-                selectedElem: [...state.selectedElem, action.elem], 
-                amountElem : action.amount, 
-                sum : action.sum
+                selectedElem: [...state.selectedElem, action.elem],
+                amountElem: action.amount,
+                sum: action.sum
             };
+        }
+        case DELETE_PRODUCT_TO_BASKET: {
+            return {
+                ...state,
+                selectedElem: action.selectedElem,
+                amountElem : action.amountElem,
+                sum : action.sum
+            }
         }
         default:
             return state;
@@ -37,17 +45,21 @@ const basketReducer = (state = initialState, action) => {
 
 export const setSelectedElemAC = (selectedElem, amountElem, sum) => ({
     type: SET_SELECTED_ELEM,
-    selectedElem, amountElem, sum
+    selectedElem,
+    amountElem,
+    sum
 });
 
 export const addProductToBasketAC = (elem, amount, sum) => ({
     type: ADD_PRODUCT_TO_BASKET,
-    elem, amount, sum
+    elem,
+    amount,
+    sum
 });
 
-export const deleteProductToBasketAC = (productId) => ({
-    type : DELETE_PRODUCT_TO_BASKET,
-    productId
+export const deleteProductToBasketAC = (selectedElem, amountElem, sum) => ({
+    type: DELETE_PRODUCT_TO_BASKET,
+    selectedElem, amountElem, sum
 })
 
 export const requestSelectedElem = () => {
@@ -65,5 +77,13 @@ export const updateBasket = (elem, amount, sum) => {
         });
     };
 };
+
+export const deleteProductTC = (id) => {
+    return (dispatch) => {
+        basketAPI.deleteProduct(id).then((response) => {
+            dispatch(deleteProductToBasketAC(response[0], response[1], response[2]));
+        })
+    }
+}
 
 export default basketReducer;
