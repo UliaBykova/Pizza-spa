@@ -19,17 +19,17 @@ const productReducer = (state = initialState, action) => {
 			return { ...state, loading: action.loading };
 		}
 		case SET_SIZE_PIZZA: {
-			     debugger;
+/* 			debugger; */
+			const pizzaState = state.products.data;
+			console.log(pizzaState);
 			return {
-				...state,
-				pizza: state.products.data.pizza.map((el) => {
-                   return {...el, finalPrice: 350}
-/* 					if (el.id === action.productId) {
-						console.log(el.finalPrice);
-						return { ...el, finalPrice: 350};
-					}
-					return el; */
-				}),
+				...pizzaState,
+				products: {
+					data: {
+						...state.products.data,
+						pizza: action.arrPizza,
+					},
+				},
 			};
 		}
 		default:
@@ -42,9 +42,9 @@ export const toggleIsLoadingAC = (loading) => ({
 	type: TOGGLE_IS_LOADING,
 	loading,
 });
-export const setSizePizzaAC = (productId) => ({
+export const setSizePizzaAC = (arrPizza) => ({
 	type: SET_SIZE_PIZZA,
-	productId,
+	arrPizza,
 });
 
 export const requestProducts = () => {
@@ -54,6 +54,14 @@ export const requestProducts = () => {
 		productsAPI.getProducts().then((data) => {
 			dispatch(setProductsAC(data));
 			dispatch(toggleIsLoadingAC(true));
+		});
+	};
+};
+
+export const setSizePizza = (productId, smallPizza) => {
+	return (dispatch) => {
+		productsAPI.setPricePizza(productId, smallPizza).then((data) => {
+			dispatch(setSizePizzaAC(data));
 		});
 	};
 };

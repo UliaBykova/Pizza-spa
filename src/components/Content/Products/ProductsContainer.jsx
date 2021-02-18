@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import Products from './Products/Products';
 import React from 'react';
 import { updateBasket } from '../../redux/basket-reducer';
-import { setSizePizzaAC } from '../../redux/products-reducer';
+import { setSizePizza } from '../../redux/products-reducer';
 
 class ProductsContainer extends React.Component {
 	render() {
@@ -19,15 +19,7 @@ class ProductsContainer extends React.Component {
 	}
 }
 
-/* const mapDispatchToProps = (dispatch) => {
-    return {
-      addElemToBasket : () => {
-          dispatch(addProductToBasketAC())
-      }
-    }
-} */
-
 export default ProductsContainer = connect(null, {
 	updateBasket: updateBasket,
-	setSizePizza: setSizePizzaAC,
+	setSizePizza: setSizePizza,
 })(ProductsContainer);

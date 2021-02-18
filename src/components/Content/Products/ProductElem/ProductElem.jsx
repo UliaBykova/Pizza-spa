@@ -9,7 +9,6 @@ const ProductElem = (props) => {
 		props.updateBasket(elem, amount + 1, sum + price);
 	};
 
-/*     const [sizePizza, setSizePizza] = useState(true); */
 
 	return (
 		<>
@@ -25,12 +24,12 @@ const ProductElem = (props) => {
 							<div className={s.description}>{elem.composition}</div>
 						</div>
 
-						{props.indicatorPizza ? <SwitchersPizza setSizePizza={props.setSizePizza} id={elem.id} /* setSizePizza={setSizePizza} */  /> : null}
+						{props.indicatorPizza ? <SwitchersPizza setSizePizza={props.setSizePizza} elem={elem} /* setSizePizza={setSizePizza} */  /> : null}
 
 						<div className={s.registration}>
 							<span className={s.price}>
-                   {/*             { sizePizza ? elem.priceSizeSmall : elem.priceSizeMiddle } &#8381; */}
-							{elem.priceSizeSmall || elem.price} &#8381; 
+                               { props.indicatorPizza ? elem.priceSizeSmall : elem.priceSizeMiddle } &#8381;
+						{/* 	{elem.finalPrice || elem.price} &#8381;  */}
 							</span>
 							<button
 								className={s.btnAdd}
