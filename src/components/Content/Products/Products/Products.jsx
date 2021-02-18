@@ -14,7 +14,6 @@ const Products = (props) => {
 					products={props.products}
 					basket={props.basket}
 					updateBasket={props.updateBasket}
-					setSizePizza={props.setSizePizza}
 					indicatorPizza={props.indicatorPizza}
 				/>
 			</div>

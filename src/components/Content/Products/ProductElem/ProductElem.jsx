@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState } from 'react';
 import SwitchersPizza from '../SwitchersPizza/SwitchersPizza';
 import s from './../Products.module.css';
 
@@ -9,6 +9,7 @@ const ProductElem = (props) => {
 		props.updateBasket(elem, amount + 1, sum + price);
 	};
 
+	const [price, setPrice] = useState(0);
 
 	return (
 		<>
@@ -24,17 +25,22 @@ const ProductElem = (props) => {
 							<div className={s.description}>{elem.composition}</div>
 						</div>
 
-						{props.indicatorPizza ? <SwitchersPizza setSizePizza={props.setSizePizza} elem={elem} /* setSizePizza={setSizePizza} */  /> : null}
+						{props.indicatorPizza ? (
+							<SwitchersPizza
+								elem={elem}
+								price={price}
+								setPrice={setPrice}
+							/>
+						) : null}
 
 						<div className={s.registration}>
 							<span className={s.price}>
-                               { props.indicatorPizza ? elem.priceSizeSmall : elem.priceSizeMiddle } &#8381;
-						{/* 	{elem.finalPrice || elem.price} &#8381;  */}
+								{props.indicatorPizza ? elem.finalPrice : elem.price} &#8381;
 							</span>
 							<button
 								className={s.btnAdd}
 								onClick={() => {
-									onAddElemToBasket(elem, elem.price);
+									onAddElemToBasket(elem, elem.price || elem.finalPrice);
 								}}
 							>
 								В корзину

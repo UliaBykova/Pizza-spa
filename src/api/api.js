@@ -10,22 +10,7 @@ export const productsAPI = {
 		return istance.get(`products`).then((response) => {
 			return response;
 		});
-	},
-	async setPricePizza(productId, smallPizza) {
-		const productsResponse = await productsAPI.getProducts();
-		const result = await istance.post(`products`, {
-			...productsResponse.data,
-			pizza: productsResponse.data.pizza.map((el) =>
-				el.id === productId
-					? {
-							...el,
-							finalPrice: smallPizza ? el.priceSizeSmall : el.priceSizeMiddle,
-					  }
-					: el
-			),
-		});
-		return result.data.pizza;
-	},
+	}
 };
 
 export const promoAPI = {

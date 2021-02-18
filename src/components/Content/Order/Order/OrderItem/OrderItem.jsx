@@ -21,7 +21,7 @@ const OrderItem = (props) => {
 					<div className={s.amount}>1</div>
 					<button className={s.amountBtn}>+</button>
 				</div>
-				<div className={s.price}> {props.elem.price} &#8381;</div>
+				<div className={s.price}> {props.elem.price || props.elem.finalPrice} &#8381;</div>
 				<button
 					className={s.close}
 					onClick={() => {
