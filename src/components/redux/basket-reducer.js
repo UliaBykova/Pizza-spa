@@ -25,7 +25,7 @@ const basketReducer = (state = initialState, action) => {
         case ADD_PRODUCT_TO_BASKET: {
             return {
                 ...state,
-                selectedElem: [...state.selectedElem, action.elem],
+                selectedElem: [...state.selectedElem, {...action.elem, amount : 1, weightPizza : action.weightPizza ? 'Традиционное' : 'Тонкое' }],
                 amountElem: action.amount,
                 sum: action.sum
             };
@@ -50,11 +50,12 @@ export const setSelectedElemAC = (selectedElem, amountElem, sum) => ({
     sum
 });
 
-export const addProductToBasketAC = (elem, amount, sum) => ({
+export const addProductToBasketAC = (elem, amount, sum, weightPizza) => ({
     type: ADD_PRODUCT_TO_BASKET,
     elem,
     amount,
-    sum
+    sum,
+    weightPizza
 });
 
 export const deleteProductToBasketAC = (selectedElem, amountElem, sum) => ({
@@ -70,10 +71,11 @@ export const requestSelectedElem = () => {
     };
 };
 
-export const updateBasket = (elem, amount, sum) => {
+export const updateBasket = (elem, amount, sum, weightPizza) => {
     return (dispatch) => {
-        basketAPI.updateBasket(elem, amount, sum).then(() => {
-            dispatch(addProductToBasketAC(elem, amount, sum));
+        basketAPI.updateBasket(elem, amount, sum, weightPizza).then((response) => {
+           console.log(response);
+            dispatch(addProductToBasketAC(elem, amount, sum,weightPizza));
         });
     };
 };

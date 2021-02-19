@@ -1,12 +1,13 @@
 .switcherSize,
 .switcherThickness {
-    padding: 5px 0;
+    padding: 7px 0;
 }
 
 .productBtn {
+    font-size: 14px;
     display: inline-block;
     border-radius: none;
-    padding: 7px 13px;
+    padding: 10px 15px;
     border-radius: 6px;
     outline: none;
     border: none;
@@ -23,4 +24,8 @@
 
 .switchers{
     padding-bottom: 40px;
+}
+
+.active {
+    background: yellow;
 }

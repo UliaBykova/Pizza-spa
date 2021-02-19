@@ -27,14 +27,25 @@
     margin-right: 20px;
 }
 
+.contentInfo {
+    padding-bottom: 10px;
+}
+
 .name {
     font-size: 23px;
-    margin: 5px 0 10px 0;
+    margin: 5px 0 0 0;
 }
 
 .composition {
     color: rgb(121, 119, 119);
     font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.pizzaInfo {
+    font-size: 15px;
+    color : #dd9c0fd0;
+    font-weight: 700;
 }
 
 .detailsBlock {

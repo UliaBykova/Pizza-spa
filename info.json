@@ -718,8 +718,75 @@
     }
   ],
   "basket": {
-    "selectedElem": [],
-    "amountElem": 0,
-    "sum": 0
+    "selectedElem": [
+      {
+        "id": 111,
+        "name": "Пицца «Королевская»",
+        "composition": "Фирменный соус, сыр Моцарелла, ананас, оливки, зелень, томаты, креветки, ветчина",
+        "image": "./images/pizza/Korolevskaya.jpg",
+        "priceSizeSmall": 760,
+        "priceSizeMiddle": 820,
+        "price": 760,
+        "weightSmall": 660,
+        "weightMiddle": 1190,
+        "weight": 660,
+        "amount": 1,
+        "weightPizza": "Традиционное"
+      },
+      {
+        "id": 112,
+        "name": "Пицца «Охотничья»",
+        "composition": "Сыр Моцарелла, сладкий перец, лук Порей, маслины, говядина, свинина, колбаски",
+        "image": "./images/pizza/Ohonichya.jpg",
+        "priceSizeSmall": 670,
+        "priceSizeMiddle": 760,
+        "price": 760,
+        "weightSmall": 750,
+        "weightMiddle": 1020,
+        "weight": 1020,
+        "amount": 1,
+        "weightPizza": "Традиционное"
+      },
+      {
+        "id": 110,
+        "name": "Пицца «Европейская»",
+        "composition": "Сыр Моцарелла, грибы, ветчина, говядина",
+        "image": "./images/pizza/Evropeyskaya.jpg",
+        "priceSizeSmall": 650,
+        "priceSizeMiddle": 710,
+        "price": 650,
+        "weightSmall": 700,
+        "weightMiddle": 1150,
+        "weight": 700,
+        "amount": 1,
+        "weightPizza": "Тонкое"
+      },
+      {
+        "id": 401,
+        "name": "Фетучини сальмоне",
+        "composition": "Фетучини в сливочном соусе, нежное филе красной рыбы, икра красная, сыр пармезан, помидоры черри",
+        "image": "./images/paste/salmone.jpg",
+        "price": 395,
+        "weight": 220,
+        "amount": 1,
+        "weightPizza": "Тонкое"
+      },
+      {
+        "id": 121,
+        "name": "Пицца «Мясная»",
+        "composition": "Сыр Моцарелла, салями Пепперони, ветчина, свинина, говядина",
+        "image": "./images/pizza/Myasnaya.jpg",
+        "priceSizeSmall": 750,
+        "priceSizeMiddle": 830,
+        "price": 750,
+        "weightSmall": 680,
+        "weightMiddle": 1130,
+        "weight": 680,
+        "amount": 1,
+        "weightPizza": "Тонкое"
+      }
+    ],
+    "amountElem": 5,
+    "sum": 3315
   }
 }

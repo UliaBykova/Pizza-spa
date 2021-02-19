@@ -3,14 +3,21 @@ import SwitchersPizza from '../SwitchersPizza/SwitchersPizza';
 import s from './../Products.module.css';
 
 const ProductElem = (props) => {
+	
+	let weightPizza;
 	const amount = props.basket.amountElem;
 	const sum = props.basket.sum;
 	const onAddElemToBasket = (elem, price) => {
-		props.updateBasket(elem, amount + 1, sum + price);
+		props.updateBasket(elem, amount + 1, sum + price, weightPizza);
 	};
 
 	const [price, setPrice] = useState(0);
 	const [weight, setWeight] = useState(0);
+
+	const setWeightPizza = (bool) => {
+		weightPizza = bool;
+	}
+
 
 	return (
 		<>
@@ -27,7 +34,14 @@ const ProductElem = (props) => {
 						</div>
 
 						{props.indicatorPizza ? (
-							<SwitchersPizza elem={elem} price={price} setPrice={setPrice} weight={weight} setWeight={setWeight} />
+							<SwitchersPizza
+								elem={elem}
+								price={price}
+								setPrice={setPrice}
+								weight={weight}
+								setWeight={setWeight}
+								setWeightPizza={setWeightPizza}
+							/>
 						) : null}
 
 						<div className={s.registration}>

@@ -10,7 +10,7 @@ export const productsAPI = {
 		return istance.get(`products`).then((response) => {
 			return response;
 		});
-	}
+	},
 };
 
 export const promoAPI = {
@@ -27,15 +27,14 @@ export const basketAPI = {
 			return response.data;
 		});
 	},
-	async updateBasket(elem, amount, sum) {
+	async updateBasket(elem, amount, sum, weightPizza) {
 		const basketResponse = await basketAPI.getBasket();
 		return await istance.post(`basket`, {
 			...basketResponse,
-			selectedElem: [...basketResponse.selectedElem, elem],
+			selectedElem: [...basketResponse.selectedElem, {...elem , amount: 1, weightPizza : weightPizza ? 'Традиционное' : 'Тонкое' }],
 			amountElem: amount,
-			sum: sum,
+			sum: sum
 		});
-
 	},
 	async deleteProduct(id) {
 		const basketResponse = await basketAPI.getBasket();

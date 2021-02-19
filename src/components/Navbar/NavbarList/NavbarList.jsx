@@ -16,12 +16,6 @@ const NavbarList = () => {
         <nav>
             <ul className={s.list}>
                 <li className={s.item}>
-                    <NavLink to="/hit" activeClassName={s.activeLink}>
-                        <img src={imgHit} className={s.icon}></img>
-                        <span>Хит</span>
-                    </NavLink>
-                </li>
-                <li className={s.item}>
                     <NavLink to="/pizza" activeClassName={s.activeLink}>
                         <img src={imgPizza} className={s.icon}></img>
                         <span>Пицца</span>
