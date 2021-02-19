@@ -35,6 +35,7 @@ export const basketAPI = {
 			amountElem: amount,
 			sum: sum,
 		});
+
 	},
 	async deleteProduct(id) {
 		const basketResponse = await basketAPI.getBasket();

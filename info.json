@@ -8,11 +8,10 @@
         "image": "./images/pizza/vseISrazu.jpg",
         "priceSizeSmall": 760,
         "priceSizeMiddle": 890,
-        "finalPrice": 760,
-        "weightThinS": 460,
-        "weightThinM": 680,
-        "weightThickS": 830,
-        "weightThickM": 1130
+        "price": 760,
+        "weightSmall": 680,
+        "weightMiddle": 1130,
+        "weight": 680
       },
       {
         "id": 103,
@@ -21,11 +20,10 @@
         "image": "./images/pizza/HochuEst.jpg",
         "priceSizeSmall": 820,
         "priceSizeMiddle": 980,
-        "finalPrice": 820,
-        "weightThinS": 390,
-        "weightThinM": 550,
-        "weightThickS": 750,
-        "weightThickM": 1020
+        "price": 820,
+        "weightSmall": 750,
+        "weightMiddle": 1020,
+        "weight": 750
       },
       {
         "id": 104,
@@ -34,11 +32,10 @@
         "image": "./images/pizza/Donatello.jpg",
         "priceSizeSmall": 760,
         "priceSizeMiddle": 820,
-        "finalPrice": 760,
-        "weightThinS": 560,
-        "weightThinM": 680,
-        "weightThickS": 830,
-        "weightThickM": 1230
+        "price": 760,
+        "weightSmall": 680,
+        "weightMiddle": 1230,
+        "weight": 680
       },
       {
         "id": 105,
@@ -47,11 +44,10 @@
         "image": "./images/pizza/tkemali.jpg",
         "priceSizeSmall": 670,
         "priceSizeMiddle": 760,
-        "finalPrice": 670,
-        "weightThinS": 560,
-        "weightThinM": 660,
-        "weightThickS": 790,
-        "weightThickM": 1310
+        "price": 670,
+        "weightSmall": 660,
+        "weightMiddle": 1310,
+        "weight": 660
       },
       {
         "id": 106,
@@ -60,11 +56,10 @@
         "image": "./images/pizza/Salyami.jpg",
         "priceSizeSmall": 630,
         "priceSizeMiddle": 740,
-        "finalPrice": 630,
-        "weightThinS": 400,
-        "weightThinM": 510,
-        "weightThickS": 780,
-        "weightThickM": 1330
+        "price": 630,
+        "weightSmall": 780,
+        "weightMiddle": 1330,
+        "weight": 780
       },
       {
         "id": 107,
@@ -73,11 +68,10 @@
         "image": "./images/pizza/Gavayskaya.jpg",
         "priceSizeSmall": 585,
         "priceSizeMiddle": 665,
-        "finalPrice": 585,
-        "weightThinS": 560,
-        "weightThinM": 680,
-        "weightThickS": 730,
-        "weightThickM": 1430
+        "price": 585,
+        "weightSmall": 730,
+        "weightMiddle": 1430,
+        "weight": 730
       },
       {
         "id": 108,
@@ -86,11 +80,10 @@
         "image": "./images/pizza/deluks.jpg",
         "priceSizeSmall": 650,
         "priceSizeMiddle": 710,
-        "finalPrice": 650,
-        "weightThinS": 460,
-        "weightThinM": 690,
-        "weightThickS": 830,
-        "weightThickM": 1220
+        "price": 650,
+        "weightSmall": 690,
+        "weightMiddle": 1220,
+        "weight": 690
       },
       {
         "id": 109,
@@ -99,11 +92,10 @@
         "image": "./images/pizza/Gribnaya.jpg",
         "priceSizeSmall": 530,
         "priceSizeMiddle": 620,
-        "finalPrice": 530,
-        "weightThinS": 460,
-        "weightThinM": 680,
-        "weightThickS": 830,
-        "weightThickM": 1130
+        "price": 530,
+        "weightSmall": 680,
+        "weightMiddle": 1130,
+        "weight": 680
       },
       {
         "id": 110,
@@ -112,11 +104,10 @@
         "image": "./images/pizza/Evropeyskaya.jpg",
         "priceSizeSmall": 650,
         "priceSizeMiddle": 710,
-        "finalPrice": 650,
-        "weightThinS": 460,
-        "weightThinM": 690,
-        "weightThickS": 830,
-        "weightThickM": 1220
+        "price": 650,
+        "weightSmall": 700,
+        "weightMiddle": 1150,
+        "weight": 700
       },
       {
         "id": 111,
@@ -125,11 +116,10 @@
         "image": "./images/pizza/Korolevskaya.jpg",
         "priceSizeSmall": 760,
         "priceSizeMiddle": 820,
-        "finalPrice": 760,
-        "weightThinS": 560,
-        "weightThinM": 660,
-        "weightThickS": 790,
-        "weightThickM": 1310
+        "price": 760,
+        "weightSmall": 660,
+        "weightMiddle": 1190,
+        "weight": 660
       },
       {
         "id": 112,
@@ -138,11 +128,10 @@
         "image": "./images/pizza/Ohonichya.jpg",
         "priceSizeSmall": 670,
         "priceSizeMiddle": 760,
-        "finalPrice": 670,
-        "weightThinS": 390,
-        "weightThinM": 550,
-        "weightThickS": 750,
-        "weightThickM": 1020
+        "price": 670,
+        "weightSmall": 750,
+        "weightMiddle": 1020,
+        "weight": 750
       },
       {
         "id": 113,
@@ -151,11 +140,10 @@
         "image": "./images/pizza/Peperoni.jpg",
         "priceSizeSmall": 660,
         "priceSizeMiddle": 770,
-        "finalPrice": 660,
-        "weightThinS": 520,
-        "weightThinM": 770,
-        "weightThickS": 900,
-        "weightThickM": 1200
+        "price": 660,
+        "weightSmall": 900,
+        "weightMiddle": 1200,
+        "weight": 900
       },
       {
         "id": 115,
@@ -164,11 +152,10 @@
         "image": "./images/pizza/Profito.jpg",
         "priceSizeSmall": 630,
         "priceSizeMiddle": 720,
-        "finalPrice": 630,
-        "weightThinS": 400,
-        "weightThinM": 510,
-        "weightThickS": 780,
-        "weightThickM": 1330
+        "price": 630,
+        "weightSmall": 780,
+        "weightMiddle": 1330,
+        "weight": 780
       },
       {
         "id": 116,
@@ -177,11 +164,10 @@
         "image": "./images/pizza/Bosco.jpg",
         "priceSizeSmall": 670,
         "priceSizeMiddle": 760,
-        "finalPrice": 670,
-        "weightThinS": 520,
-        "weightThinM": 770,
-        "weightThickS": 900,
-        "weightThickM": 1200
+        "price": 670,
+        "weightSmall": 770,
+        "weightMiddle": 1200,
+        "weight": 770
       },
       {
         "id": 117,
@@ -190,11 +176,10 @@
         "image": "./images/pizza/vegetarianskaya.jpg",
         "priceSizeSmall": 580,
         "priceSizeMiddle": 660,
-        "finalPrice": 580,
-        "weightThinS": 400,
-        "weightThinM": 510,
-        "weightThickS": 780,
-        "weightThickM": 1330
+        "price": 580,
+        "weightSmall": 980,
+        "weightMiddle": 1330,
+        "weight": 980
       },
       {
         "id": 118,
@@ -203,11 +188,10 @@
         "image": "./images/pizza/vegetarianskaya.jpg",
         "priceSizeSmall": 580,
         "priceSizeMiddle": 660,
-        "finalPrice": 580,
-        "weightThinS": 400,
-        "weightThinM": 510,
-        "weightThickS": 780,
-        "weightThickM": 1330
+        "price": 580,
+        "weightSmall": 780,
+        "weightMiddle": 1230,
+        "weight": 780
       },
       {
         "id": 119,
@@ -216,11 +200,10 @@
         "image": "./images/pizza/derevenskaya.jpg",
         "priceSizeSmall": 660,
         "priceSizeMiddle": 710,
-        "finalPrice": 660,
-        "weightThinS": 560,
-        "weightThinM": 660,
-        "weightThickS": 790,
-        "weightThickM": 1310
+        "price": 660,
+        "weightSmall": 680,
+        "weightMiddle": 1030,
+        "weight": 680
       },
       {
         "id": 120,
@@ -229,11 +212,10 @@
         "image": "./images/pizza/Meksikanskaya.jpg",
         "priceSizeSmall": 630,
         "priceSizeMiddle": 710,
-        "finalPrice": 630,
-        "weightThinS": 390,
-        "weightThinM": 550,
-        "weightThickS": 750,
-        "weightThickM": 1020
+        "price": 630,
+        "weightSmall": 720,
+        "weightMiddle": 1130,
+        "weight": 720
       },
       {
         "id": 121,
@@ -242,11 +224,10 @@
         "image": "./images/pizza/Myasnaya.jpg",
         "priceSizeSmall": 750,
         "priceSizeMiddle": 830,
-        "finalPrice": 750,
-        "weightThinS": 460,
-        "weightThinM": 680,
-        "weightThickS": 830,
-        "weightThickM": 1130
+        "price": 750,
+        "weightSmall": 680,
+        "weightMiddle": 1130,
+        "weight": 680
       },
       {
         "id": 122,
@@ -255,11 +236,10 @@
         "image": "./images/pizza/Cezar.jpg",
         "priceSizeSmall": 690,
         "priceSizeMiddle": 775,
-        "finalPrice": 690,
-        "weightThinS": 400,
-        "weightThinM": 510,
-        "weightThickS": 780,
-        "weightThickM": 1330
+        "price": 690,
+        "weightSmall": 880,
+        "weightMiddle": 1170,
+        "weight": 880
       },
       {
         "id": 123,
@@ -268,11 +248,10 @@
         "image": "./images/pizza/Slososem.jpg",
         "priceSizeSmall": 750,
         "priceSizeMiddle": 820,
-        "finalPrice": 750,
-        "weightThinS": 460,
-        "weightThinM": 690,
-        "weightThickS": 830,
-        "weightThickM": 1220
+        "price": 750,
+        "weightSmall": 830,
+        "weightMiddle": 1220,
+        "weight": 830
       }
     ],
     "japan": [
@@ -739,35 +718,8 @@
     }
   ],
   "basket": {
-    "selectedElem": [
-      {
-        "id": 101,
-        "name": "#ВСЁИСРАЗУ",
-        "composition": "Пиццы: Охотничья, Делюкс, Карри, 4сыра",
-        "image": "./images/pizza/vseISrazu.jpg",
-        "priceSizeSmall": 760,
-        "priceSizeMiddle": 890,
-        "finalPrice": 890,
-        "weightThinS": 460,
-        "weightThinM": 680,
-        "weightThickS": 830,
-        "weightThickM": 1130
-      },
-      {
-        "id": 103,
-        "name": "#ХОЧУЕСТЬ",
-        "composition": "Пиццы: Чоризо, Мясная, Фета-Томато,Грибная",
-        "image": "./images/pizza/HochuEst.jpg",
-        "priceSizeSmall": 820,
-        "priceSizeMiddle": 980,
-        "finalPrice": 980,
-        "weightThinS": 390,
-        "weightThinM": 550,
-        "weightThickS": 750,
-        "weightThickM": 1020
-      }
-    ],
-    "amountElem": 2,
-    "sum": 1870
+    "selectedElem": [],
+    "amountElem": 0,
+    "sum": 0
   }
 }

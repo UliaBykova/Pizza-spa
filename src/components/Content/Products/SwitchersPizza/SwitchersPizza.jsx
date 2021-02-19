@@ -1,6 +1,15 @@
 import s from './SwitchersPizza.module.css';
 
 const SwitchersPizza = (props) => {
+	const onSetPrice = (smallPizza) => {
+		if (smallPizza) {
+			props.setPrice((props.elem.price = props.elem.priceSizeSmall));
+			props.setWeight((props.elem.weight = props.elem.weightSmall));
+		} else {
+			props.setPrice((props.elem.price = props.elem.priceSizeMiddle));
+			props.setWeight((props.elem.weight = props.elem.weightMiddle));
+		}
+	};
 
 	return (
 		<div className={s.switchers}>
@@ -8,7 +17,7 @@ const SwitchersPizza = (props) => {
 				<button
 					className={s.productBtn}
 					onClick={() => {
-	       		props.setPrice(props.elem.finalPrice = props.elem.priceSizeSmall)
+						onSetPrice(true);
 					}}
 				>
 					23 см
@@ -16,7 +25,7 @@ const SwitchersPizza = (props) => {
 				<button
 					className={s.productBtn}
 					onClick={() => {
-						props.setPrice(props.elem.finalPrice = props.elem.priceSizeMiddle)
+						onSetPrice(false);
 					}}
 				>
 					30 см
