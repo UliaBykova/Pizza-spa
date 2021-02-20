@@ -5,8 +5,8 @@ import OrderContainer from '../Order/OrderContainer';
 import ProductsContainer from '../Products/ProductsContainer';
 import Promo from '../Promo/Promo';
 
-
 const Routers = (props) => {
+
   const products = props.state.productPage.products.data;
   const japan = products.sets.concat(products.japan);
 

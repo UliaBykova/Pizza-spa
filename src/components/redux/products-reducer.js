@@ -13,27 +13,27 @@ const productReducer = (state = initialState, action) => {
 		case SET_PRODUCTS: {
 			return { ...state, products: action.products };
 		}
-		case TOGGLE_IS_LOADING: {
+/* 		case TOGGLE_IS_LOADING: {
 			return { ...state, loading: action.loading };
-		}
+		} */
 		default:
 			return state;
 	}
 };
 
 export const setProductsAC = (products) => ({ type: SET_PRODUCTS, products });
-export const toggleIsLoadingAC = (loading) => ({
+/* export const toggleIsLoadingAC = (loading) => ({
 	type: TOGGLE_IS_LOADING,
 	loading,
-});
+}); */
 
 export const requestProducts = () => {
 	return (dispatch) => {
-		dispatch(toggleIsLoadingAC(false));
+/* 		dispatch(toggleIsLoadingAC(false)); */
 
 		productsAPI.getProducts().then((data) => {
 			dispatch(setProductsAC(data));
-			dispatch(toggleIsLoadingAC(true));
+/* 			dispatch(toggleIsLoadingAC(true)); */
 		});
 	};
 };

@@ -6,3 +6,8 @@
     font-size: 29px;
     margin-bottom: 30px;
 }
+
+.promo {
+    display: flex;
+    justify-content: center;
+}

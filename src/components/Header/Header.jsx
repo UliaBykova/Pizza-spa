@@ -12,16 +12,10 @@ const Header = (props) => {
             <div className={`${s.wrapper} ${s.container}`}>
                 <ul className={s.list}>
                     <li>
-                        <NavLink to="/bonuses" className={s.link}>Бонусы</NavLink>
-                    </li>
-                    <li>
                         <NavLink to="/promo" className={s.link}>АКЦИИ</NavLink>
                     </li>
                     <li>
                         <NavLink to="/delivery" className={s.link}>Доставка</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/career" className={s.link}>Карьера</NavLink>
                     </li>
                 </ul>
                 <ul className={s.list}>
