@@ -13,7 +13,7 @@ const MySwiper = (props) => {
         speed: 1000,
         autoHeight : true,
 		autoplay: {
-			delay: 5000,
+			delay: 4000,
 			disableOnInteraction: false,
 		},
 		coverflowEffect: {
@@ -23,7 +23,7 @@ const MySwiper = (props) => {
 	};
 
 	return (
-		<Swiper {...params} className={s.container}>
+		<Swiper {...params} className={`${s.container} ${s.swiper}`}>
 			{props.promo.map((el) => {
 				return (
 					<SwiperSlide key={el.id}>

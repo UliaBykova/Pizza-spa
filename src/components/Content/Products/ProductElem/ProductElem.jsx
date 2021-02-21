@@ -18,7 +18,6 @@ const ProductElem = (props) => {
 		weightPizza = bool;
 	}
 
-
 	return (
 		<>
 			{props.products.map((elem) => (
@@ -33,7 +32,7 @@ const ProductElem = (props) => {
 							<div className={s.description}>{elem.composition}</div>
 						</div>
 
-						{props.indicatorPizza ? (
+						{elem.indicatorPizza ? (
 							<SwitchersPizza
 								elem={elem}
 								price={price}

@@ -11,7 +11,8 @@
         "price": 760,
         "weightSmall": 680,
         "weightMiddle": 1130,
-        "weight": 680
+        "weight": 680,
+        "indicatorPizza": true
       },
       {
         "id": 103,
@@ -23,7 +24,8 @@
         "price": 820,
         "weightSmall": 750,
         "weightMiddle": 1020,
-        "weight": 750
+        "weight": 750,
+        "indicatorPizza": true
       },
       {
         "id": 104,
@@ -35,7 +37,8 @@
         "price": 760,
         "weightSmall": 680,
         "weightMiddle": 1230,
-        "weight": 680
+        "weight": 680,
+        "indicatorPizza": true
       },
       {
         "id": 105,
@@ -47,7 +50,8 @@
         "price": 670,
         "weightSmall": 660,
         "weightMiddle": 1310,
-        "weight": 660
+        "weight": 660,
+        "indicatorPizza": true
       },
       {
         "id": 106,
@@ -59,7 +63,8 @@
         "price": 630,
         "weightSmall": 780,
         "weightMiddle": 1330,
-        "weight": 780
+        "weight": 780,
+        "indicatorPizza": true
       },
       {
         "id": 107,
@@ -71,7 +76,8 @@
         "price": 585,
         "weightSmall": 730,
         "weightMiddle": 1430,
-        "weight": 730
+        "weight": 730,
+        "indicatorPizza": true
       },
       {
         "id": 108,
@@ -83,7 +89,8 @@
         "price": 650,
         "weightSmall": 690,
         "weightMiddle": 1220,
-        "weight": 690
+        "weight": 690,
+        "indicatorPizza": true
       },
       {
         "id": 109,
@@ -95,7 +102,8 @@
         "price": 530,
         "weightSmall": 680,
         "weightMiddle": 1130,
-        "weight": 680
+        "weight": 680,
+        "indicatorPizza": true
       },
       {
         "id": 110,
@@ -107,7 +115,8 @@
         "price": 650,
         "weightSmall": 700,
         "weightMiddle": 1150,
-        "weight": 700
+        "weight": 700,
+        "indicatorPizza": true
       },
       {
         "id": 111,
@@ -119,7 +128,8 @@
         "price": 760,
         "weightSmall": 660,
         "weightMiddle": 1190,
-        "weight": 660
+        "weight": 660,
+        "indicatorPizza": true
       },
       {
         "id": 112,
@@ -131,7 +141,8 @@
         "price": 670,
         "weightSmall": 750,
         "weightMiddle": 1020,
-        "weight": 750
+        "weight": 750,
+        "indicatorPizza": true
       },
       {
         "id": 113,
@@ -143,7 +154,8 @@
         "price": 660,
         "weightSmall": 900,
         "weightMiddle": 1200,
-        "weight": 900
+        "weight": 900,
+        "indicatorPizza": true
       },
       {
         "id": 115,
@@ -155,7 +167,8 @@
         "price": 630,
         "weightSmall": 780,
         "weightMiddle": 1330,
-        "weight": 780
+        "weight": 780,
+        "indicatorPizza": true
       },
       {
         "id": 116,
@@ -167,7 +180,8 @@
         "price": 670,
         "weightSmall": 770,
         "weightMiddle": 1200,
-        "weight": 770
+        "weight": 770,
+        "indicatorPizza": true
       },
       {
         "id": 117,
@@ -179,7 +193,8 @@
         "price": 580,
         "weightSmall": 980,
         "weightMiddle": 1330,
-        "weight": 980
+        "weight": 980,
+        "indicatorPizza": true
       },
       {
         "id": 118,
@@ -191,7 +206,8 @@
         "price": 580,
         "weightSmall": 780,
         "weightMiddle": 1230,
-        "weight": 780
+        "weight": 780,
+        "indicatorPizza": true
       },
       {
         "id": 119,
@@ -203,7 +219,8 @@
         "price": 660,
         "weightSmall": 680,
         "weightMiddle": 1030,
-        "weight": 680
+        "weight": 680,
+        "indicatorPizza": true
       },
       {
         "id": 120,
@@ -215,7 +232,8 @@
         "price": 630,
         "weightSmall": 720,
         "weightMiddle": 1130,
-        "weight": 720
+        "weight": 720,
+        "indicatorPizza": true
       },
       {
         "id": 121,
@@ -227,7 +245,8 @@
         "price": 750,
         "weightSmall": 680,
         "weightMiddle": 1130,
-        "weight": 680
+        "weight": 680,
+        "indicatorPizza": true
       },
       {
         "id": 122,
@@ -239,7 +258,8 @@
         "price": 690,
         "weightSmall": 880,
         "weightMiddle": 1170,
-        "weight": 880
+        "weight": 880,
+        "indicatorPizza": true
       },
       {
         "id": 123,
@@ -251,7 +271,8 @@
         "price": 750,
         "weightSmall": 830,
         "weightMiddle": 1220,
-        "weight": 830
+        "weight": 830,
+        "indicatorPizza": true
       }
     ],
     "japan": [
@@ -629,35 +650,59 @@
     "potables": [
       {
         "id": 551,
-        "name": "Лимонад Калиновъ",
-        "composition": "Классический, Тархун, Черешня, Сибирские травы, Клубника, Дыня, Груша, Арбуз, Апельсин",
-        "image": "./images/potables/limonadkalinin.jpg",
-        "price": 90,
-        "weight": 0.5
-      },
-      {
-        "id": 552,
-        "name": "Квас Очаковский",
-        "composition": "",
-        "image": "./images/potables/kvas.png",
-        "price": 359,
-        "weight": 0.5
-      },
-      {
-        "id": 553,
         "name": "Сок Rich",
         "composition": "Персик, вишня, яблоко, ананас, апельсин, грейпфрут, томат, мультифрукт, манго",
         "image": "./images/potables/rich.png",
         "price": 140,
-        "weight": 1
+        "weight": 250
+      },
+      {
+        "id": 552,
+        "name": "Sprite",
+        "composition": "",
+        "image": "./images/potables/spriteCucumber.png",
+        "price": 80,
+        "weight": 0.5
       },
       {
         "id": 554,
-        "name": "Sprite",
+        "name": "Coca-Cola",
         "composition": "",
-        "image": "./images/potables/sprite.png",
-        "price": 80,
+        "image": "./images/potables/cola.png",
+        "price": 139,
         "weight": 0.5
+      },
+      {
+        "id": 555,
+        "name": "Coca-Cola Zero",
+        "composition": "",
+        "image": "./images/potables/colaLight.png",
+        "price": 99,
+        "weight": 0.5
+      },
+      {
+        "id": 556,
+        "name": "Fanta",
+        "composition": "",
+        "image": "./images/potables/fanta.png",
+        "price": 139,
+        "weight": 0.5
+      },
+      {
+        "id": 557,
+        "name": "Fuzetea Зеленый Цитрус",
+        "composition": "",
+        "image": "./images/potables/fuzeTea.png",
+        "price": 999,
+        "weight": 0.5
+      },
+      {
+        "id": 558,
+        "name": "Сок Rich",
+        "composition": "",
+        "image": "./images/potables/richXL.png",
+        "price": 189,
+        "weight": 1
       }
     ],
     "deserts": [
@@ -700,6 +745,108 @@
         "image": "./images/desserts/cheesecake.png",
         "price": 159,
         "weight": 120
+      }
+    ],
+    "hit": [
+      {
+        "id": 103,
+        "name": "#ХОЧУЕСТЬ",
+        "composition": "Пиццы: Чоризо, Мясная, Фета-Томато,Грибная",
+        "image": "./images/pizza/HochuEst.jpg",
+        "priceSizeSmall": 820,
+        "priceSizeMiddle": 980,
+        "price": 820,
+        "weightSmall": 750,
+        "weightMiddle": 1020,
+        "weight": 750,
+        "indicatorPizza": true
+      },
+      {
+        "id": 107,
+        "name": "Пицца «Гавайская»",
+        "composition": "Сыр Моцарелла, ананас, ветчина",
+        "image": "./images/pizza/Gavayskaya.jpg",
+        "priceSizeSmall": 585,
+        "priceSizeMiddle": 665,
+        "price": 585,
+        "weightSmall": 730,
+        "weightMiddle": 1430,
+        "weight": 730,
+        "indicatorPizza": true
+      },
+      {
+        "id": 108,
+        "name": "Пицца «Делюкс»",
+        "composition": "Сыр Моцарелла,грибы, лук репчатый, сладкий перец,салями Пепперони, свинина",
+        "image": "./images/pizza/deluks.jpg",
+        "priceSizeSmall": 650,
+        "priceSizeMiddle": 710,
+        "price": 650,
+        "weightSmall": 690,
+        "weightMiddle": 1220,
+        "weight": 690,
+        "indicatorPizza": true
+      },
+      {
+        "id": 118,
+        "name": "Пицца «Вегетарианская»",
+        "composition": "Сыр Моцарелла,сладкий перец, томаты, репчатый лук, грибы, маслины",
+        "image": "./images/pizza/vegetarianskaya.jpg",
+        "priceSizeSmall": 580,
+        "priceSizeMiddle": 660,
+        "price": 580,
+        "weightSmall": 780,
+        "weightMiddle": 1230,
+        "weight": 780,
+        "indicatorPizza": true
+      },
+      {
+        "id": 206,
+        "name": "Спайси Креветка",
+        "composition": "Рис, креветка, Спайси соус",
+        "image": "./images/japan/spiciebi.jpg",
+        "price": 100,
+        "weight": 90
+      },
+      {
+        "id": 207,
+        "name": "Спайси Тунец",
+        "composition": "Рис, тунец, Спайси соус",
+        "image": "./images/japan/spicymaguro.jpg",
+        "price": 80,
+        "weight": 70
+      },
+      {
+        "id": 219,
+        "name": "Дракон",
+        "composition": "Рис, сыр, угорь, лук Порей, Спайси соус, огурец, кунжут, Тобико",
+        "image": "./images/japan/drakon.jpg",
+        "price": 365,
+        "weight": 220
+      },
+      {
+        "id": 209,
+        "name": "Суши Магуро (тунец)",
+        "composition": "Рис, тунец",
+        "image": "./images/japan/sushimaguro.jpg",
+        "price": 85,
+        "weight": 90
+      },
+      {
+        "id": 452,
+        "name": "Бургер «Донателло»",
+        "composition": "Пшеничная булочка, котлета из говяжего фарша, бекон, сыр, томаты, листья салата, лук, соленый огурец, фирменный Бургер соус",
+        "image": "./images/burgers/donatello.jpg",
+        "price": 329,
+        "weight": 300
+      },
+      {
+        "id": 453,
+        "name": "Бургер Итальяно",
+        "composition": "Пышная пшеничная булка со злаками, говяжья котлета, сыр Моцарелла, томаты, Руккола, соус Песто, соус Бальзамико, фирменный Бургер соус",
+        "image": "./images/burgers/italyano.jpg",
+        "price": 319,
+        "weight": 320
       }
     ]
   },
@@ -784,9 +931,24 @@
         "weight": 680,
         "amount": 1,
         "weightPizza": "Тонкое"
+      },
+      {
+        "id": 108,
+        "name": "Пицца «Делюкс»",
+        "composition": "Сыр Моцарелла,грибы, лук репчатый, сладкий перец,салями Пепперони, свинина",
+        "image": "./images/pizza/deluks.jpg",
+        "priceSizeSmall": 650,
+        "priceSizeMiddle": 710,
+        "price": 710,
+        "weightSmall": 690,
+        "weightMiddle": 1220,
+        "weight": 1220,
+        "indicatorPizza": true,
+        "amount": 1,
+        "weightPizza": "Традиционное"
       }
     ],
-    "amountElem": 5,
-    "sum": 3315
+    "amountElem": 6,
+    "sum": 4025
   }
 }

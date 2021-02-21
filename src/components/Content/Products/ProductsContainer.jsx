@@ -9,7 +9,7 @@ class ProductsContainer extends React.Component {
 			<Products
 				products={this.props.products}
 				title={this.props.title}
-				indicatorPizza={this.props.indicatorPizza}
+				indicatorHit={this.props.indicatorHit}
 				updateBasket={this.props.updateBasket}
 				basket={this.props.basket}
 			/>

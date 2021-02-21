@@ -28,7 +28,7 @@ const ContentContainer = () => {
      { !products || !promo ? <Preloader /> 
       :  <>
        <Switch>
-       <Route path='/pizza' render={() => <ProductsContainer products={products.pizza} title="Пицца" basket={state.basketPage} indicatorPizza={true} />} />
+       <Route path='/pizza' render={() => <ProductsContainer products={products.pizza} title="Пицца" basket={state.basketPage} />} />
       <Route path='/japan' render={() => <ProductsContainer products={products.sets.concat(products.japan)} title="Япония" basket={state.basketPage} />} />
       <Route path='/wok' render={() => <ProductsContainer products={products.wok} title="Wok" basket={state.basketPage} />} />
       <Route path='/paste' render={() => <ProductsContainer products={products.paste} title="Паста" basket={state.basketPage} />} />
@@ -39,7 +39,7 @@ const ContentContainer = () => {
       <Route path='/promo' render={() => <Promo promo={promo} />} />
       <Route path='/basket' render={() => <OrderContainer basket={state.basketPage} />} />
       <Route path='/delivery' render={() => <Delivery />} />
-      <Route path='' render={() => <HomePage promo={promo} />} />
+      <Route path='' render={() => <HomePage promo={promo} products={products.hit} title="Хиты" basket={state.basketPage} indicatorHit={true} />} />
       </Switch>
       </>}
         </div>

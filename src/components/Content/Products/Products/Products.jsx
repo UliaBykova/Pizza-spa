@@ -4,17 +4,16 @@ import s from './../Products.module.css';
 import ProductsFilter from '../ProductsFilter/ProductsFilter';
 
 const Products = (props) => {
-	/*   console.log(props); */
+
 
 	return (
 		<div className={s.wrapper}>
-			<ProductsFilter title={props.title} />
+			<ProductsFilter title={props.title} indicatorHit={props.indicatorHit} />
 			<div className={s.productContainer}>
 				<ProductElem
 					products={props.products}
 					basket={props.basket}
 					updateBasket={props.updateBasket}
-					indicatorPizza={props.indicatorPizza}
 				/>
 			</div>
 		</div>
