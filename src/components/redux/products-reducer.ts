@@ -1,9 +1,12 @@
+import { Dispatch } from 'redux';
 import { productsAPI } from '../../api/api';
 import { ElemType } from '../../types/types';
+import { AppStateType } from './redux-store';
 
 const SET_PRODUCTS = 'SET_PRODUCTS';
 
 type InitialStateType = typeof initialState;
+type ActionTypes = SetProductsACType;
 
 let initialState = {
 	products: [] as Array<ElemType>,
@@ -25,8 +28,11 @@ export const setProductsAC = (products: Array<ElemType>) : SetProductsACType => 
 	products,
 });
 
+type GetStateType = () => AppStateType;
+type DispatchType = Dispatch<ActionTypes>;
+
 export const requestProducts = () => {
-	return (dispatch: any) => {
+	return (dispatch : DispatchType, getState : GetStateType) => {
 		productsAPI.getProducts().then((data: any) => {
 			dispatch(setProductsAC(data));
 		});
