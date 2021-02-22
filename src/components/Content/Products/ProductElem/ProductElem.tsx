@@ -1,20 +1,27 @@
 import React, { useState } from 'react';
+import { BasketType, ElemType } from '../../../../types/types';
 import SwitchersPizza from '../SwitchersPizza/SwitchersPizza';
 import s from './../Products.module.css';
 
-const ProductElem = (props) => {
-	
-	let weightPizza;
+type PropsType = {
+	basket : BasketType
+	products : Array<ElemType> 
+	updateBasket : (elem : any, amount : number, sumPrice : number, weightPizza : boolean) => void
+}
+
+const ProductElem: React.FC<PropsType> = (props) => {
+
+	let weightPizza : boolean;
 	const amount = props.basket.amountElem;
 	const sum = props.basket.sum;
-	const onAddElemToBasket = (elem, price) => {
+	const onAddElemToBasket = (elem : ElemType, price : number) => {
 		props.updateBasket(elem, amount + 1, sum + price, weightPizza);
 	};
 
-	const [price, setPrice] = useState(0);
-	const [weight, setWeight] = useState(0);
+	const [price, setPrice] = useState<number>(1);
+	const [weight, setWeight] = useState<number>(0);
 
-	const setWeightPizza = (bool) => {
+	const setWeightPizza = (bool : boolean) => {
 		weightPizza = bool;
 	}
 

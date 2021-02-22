@@ -1,7 +1,9 @@
+import { Dispatch } from 'redux';
 import {
     basketAPI
 } from '../../api/api';
-import { ElemType } from '../../types/types';
+import { BasketType, ElemType } from '../../types/types';
+import { AppStateType } from './redux-store';
 
 const SET_SELECTED_ELEM = 'SET_SELECTED_ELEM';
 const ADD_PRODUCT_TO_BASKET = 'ADD_PRODUCT_TO_BASKET';
@@ -15,7 +17,7 @@ let initialState = {
     sum: 0,
 };
 
-const basketReducer = (state = initialState, action : any) : InitialStateType => {
+const basketReducer = (state = initialState, action : ActionTypes) : InitialStateType => {
     switch (action.type) {
         case SET_SELECTED_ELEM: {
             return {
@@ -66,32 +68,36 @@ export const deleteProductToBasketAC = (selectedElem : Array<ElemType>, amountEl
     selectedElem, amountElem, sum
 })
 
+type GetStateType = () => AppStateType;
+type DispatchType = Dispatch<ActionTypes>;
+
 export const requestSelectedElem = () => {
-    return (dispatch : any) => {
-        basketAPI.getBasket().then((response : any) => {
+    return (dispatch : DispatchType, getState : GetStateType) => {      
+        basketAPI.getBasket().then((response : BasketType) => {
             dispatch(setSelectedElemAC(response.selectedElem, response.amountElem, response.sum));
         });
     };
 };
 
 export const updateBasket = (elem : ElemType, amount : number, sum : number, weightPizza : boolean) => {
-    return (dispatch : any) => {
-        basketAPI.updateBasket(elem, amount, sum, weightPizza).then((response) => {
-           console.log(response);
+    return (dispatch : DispatchType, getState : GetStateType) => {
+        basketAPI.updateBasket(elem, amount, sum, weightPizza).then(() => {
             dispatch(addProductToBasketAC(elem, amount, sum, weightPizza));
         });
     };
 };
 
 export const deleteProductTC = (productId : number) => {
-    return (dispatch : any) => {
-        basketAPI.deleteProduct(productId).then((response) => {
+    return (dispatch : DispatchType, getState : GetStateType) => {
+        basketAPI.deleteProduct(productId).then((response : Array<Array<ElemType> & number>) => {
             dispatch(deleteProductToBasketAC(response[0], response[1], response[2]));
         })
     }
 }
 
 export default basketReducer;
+
+type ActionTypes = SetSelectedElemACType | AddProductToBasketACType | DeleteProductToBasketACType;
 
 type SetSelectedElemACType = {
     type: typeof SET_SELECTED_ELEM,

@@ -11,8 +11,12 @@ let reducers = combineReducers({
   basketPage : basketReducer
 })
 
+type ReducersType = typeof reducers;
+export type AppStateType = ReturnType<ReducersType>;
+
 const store = createStore(reducers, applyMiddleware(thunkMiddleware));
 
+//@ts-ignore
 window.store = store;
 
 export default store;

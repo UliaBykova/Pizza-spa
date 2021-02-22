@@ -19,3 +19,8 @@ export type PromoType = {
     image : string   
   }
   
+export type BasketType = {
+	selectedElem:  Array<ElemType>
+    amountElem: number
+    sum: number
+}
