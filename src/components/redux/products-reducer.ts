@@ -1,4 +1,4 @@
-import { ProductsAPIType } from './../../api/api';
+import { ProductsAPIType, TServerData } from './../../api/api';
 import { Dispatch } from 'redux';
 import { productsAPI } from '../../api/api';
 import { ElemType } from '../../types/types';
@@ -24,7 +24,7 @@ const productReducer = (state = initialState, action: any) => {
 	}
 };
 
-export const setProductsAC = (products: Array<ElemType>) : SetProductsACType => ({
+export const setProductsAC = (products: TServerData) : SetProductsACType => ({
 	type: SET_PRODUCTS,
 	products,
 });
@@ -54,5 +54,5 @@ export default productReducer;
 
 type SetProductsACType = {
 	type: typeof SET_PRODUCTS
-	products : Array<ElemType>
+	products : TServerData
 }
