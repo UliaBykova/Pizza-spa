@@ -6,21 +6,20 @@ const istance = axios.create({
 	baseURL: 'http://localhost:3000/',
 });
 
-type ProductsAPIType = {
+export type ProductsAPIType = {
     data : Array<ElemType>
 	config? : AxiosRequestConfig
-	headers : any
-	request : any
-	url : string
+	headers? : any
+	request? : any
+	url? : string
 	status : number
-	statusText : string
+	statusText? : string
 }
 /* get<T = any, R = AxiosResponse<T>>(url: string, config?: AxiosRequestConfig): Promise<R>; */
 export const productsAPI = {
-	getProducts() : Promise<AxiosResponse<ProductsAPIType>> {
-		return istance.get(`products`).then((response) => {
-			console.log(response);
-			return response;
+	getProducts() :Promise<AxiosResponse<ProductsAPIType>> {
+		return istance.get(`products`).then((data) => {
+			return data;
 		});
 	},
 };
