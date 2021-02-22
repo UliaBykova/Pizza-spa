@@ -7,7 +7,7 @@ const istance = axios.create({
 });
 
 export type ProductsAPIType = {
-    data : Array<ElemType>
+    data : { [key:string]: Array<ElemType>}
 	config? : AxiosRequestConfig
 	headers? : any
 	request? : any

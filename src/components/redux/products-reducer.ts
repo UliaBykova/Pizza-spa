@@ -34,12 +34,21 @@ type DispatchType = Dispatch<ActionTypes>;
 
 export const requestProducts = () => {
 	return (dispatch : DispatchType, getState : GetStateType) => {
-		productsAPI.getProducts().then((data : any) => {
- 	    	console.log(data);	 
+		productsAPI.getProducts().then((data) => {
+			console.log(data);
 			dispatch(setProductsAC(data));
 		});
 	};
 };
+
+/* export const requestProducts = () => {
+	return (dispatch : DispatchType, getState : GetStateType) => {
+		productsAPI.getProducts().then((data : any) => {
+			console.log(data);
+			dispatch(setProductsAC(data));
+		});
+	};
+}; */
 
 export default productReducer;
 
