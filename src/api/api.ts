@@ -6,8 +6,13 @@ const istance = axios.create({
 	baseURL: 'http://localhost:3000/',
 });
 
+type ProductsKeys = "pizza" | "japan" | "sets" | "wok" | "paste" | "salads" | "potables" | "deserts" | "hit";
+
+export type TServerData = { [key in ProductsKeys]: Array<ElemType> };
+
+// не нужно
 export type ProductsAPIType = {
-    data : { [key:string]: Array<ElemType>}
+  data: { [key in ProductsKeys]: Array<ElemType>}
 	config? : AxiosRequestConfig
 	headers? : any
 	request? : any
@@ -17,8 +22,8 @@ export type ProductsAPIType = {
 }
 /* get<T = any, R = AxiosResponse<T>>(url: string, config?: AxiosRequestConfig): Promise<R>; */
 export const productsAPI = {
-	getProducts() :Promise<AxiosResponse<ProductsAPIType>> {
-		return istance.get(`products`).then((data) => {
+	getProducts() {
+		return istance.get<TServerData>(`products`).then(({ data }) => {
 			return data;
 		});
 	},
