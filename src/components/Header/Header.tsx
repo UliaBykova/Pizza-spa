@@ -9,9 +9,6 @@ type TProps = {
 
 const Header:React.FC<TProps> = (props) => {
 
-    console.log(props);
-    
-
     const setModal = () => {props.setModalActive(true)}
 
     return (

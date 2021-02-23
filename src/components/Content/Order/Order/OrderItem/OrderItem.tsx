@@ -32,7 +32,7 @@ const OrderItem: React.FC<TProps> = (props) => {
 			<div className={s.detailsBlock}>
 				<div className={s.quantity}>
 					<button className={s.amountBtn}>-</button>
-					<div className={s.amount}>1</div>
+					<div className={s.amount}>{elem.countProduct ? elem.countProduct : 1}</div>
 					<button className={s.amountBtn}>+</button>
 				</div>
 				<div className={s.price}> {elem.price} &#8381;</div>

@@ -6,16 +6,16 @@ import s from './../Products.module.css';
 type TProps = {
 	basket : TBasket
 	products : Array<TElem> 
-	updateBasket : (elem : any, amount : number, sumPrice : number, weightPizza : boolean) => void
+	updateBasket : (selectedElem : Array<TElem>, elem : TElem,  weightPizza : boolean) => void
 }
 
 const ProductElem: React.FC<TProps> = (props) => {
 
 	let weightPizza : boolean;
-	const amount = props.basket.amountElem;
+	const selectedElem = props.basket.selectedElem;
 	const sum = props.basket.sum;
-	const onAddElemToBasket = (elem : TElem, price : number) => {
-		props.updateBasket(elem, amount + 1, sum + price, weightPizza);
+	const onAddElemToBasket = (elem : TElem) => {
+		props.updateBasket(selectedElem, elem, weightPizza);
 	};
 
 	const [price, setPrice] = useState<number>(1);
@@ -55,7 +55,7 @@ const ProductElem: React.FC<TProps> = (props) => {
 							<button
 								className={s.btnAdd}
 								onClick={() => {
-									onAddElemToBasket(elem, elem.price);
+									onAddElemToBasket(elem);
 								}}
 							>
 								В корзину

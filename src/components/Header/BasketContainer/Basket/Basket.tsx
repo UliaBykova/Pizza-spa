@@ -8,8 +8,10 @@ type TProps = {
 }
 
 const Basket:React.FC<TProps> = (props) => {
-
+ /*   debugger; */
     const basketPage = props.basketPage;
+    console.log(basketPage);
+    
 
     return (
         <NavLink to="/basket" className={s.link}>

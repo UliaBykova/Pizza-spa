@@ -1,5 +1,5 @@
 import './App.css';
-import React, { FunctionComponent, useState } from 'react'
+import React, { useState } from 'react'
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import { Provider } from "react-redux";
@@ -8,7 +8,7 @@ import ContentContainer from './components/Content/ContentContainer';
 import ModalElem from './components/common/Modal/ModalElem';
 import Auth from './components/Auth/Auth';
 
-const App = () => {
+const App= () => {
 
   const [modalActive, setModalActive] = useState(false);
 

@@ -478,7 +478,7 @@
       {
         "id": 352,
         "name": "Пшеничная лапша с курицей и ананасом",
-        "composition": "шеничная лапша, куриная грудка, болгарский перчик, соль, ананас, куриный бульон, кунжут, масло растительное, соус кисло-сладкий",
+        "composition": "Пшеничная лапша, куриная грудка, болгарский перчик, соль, ананас, куриный бульон, кунжут, масло растительное, соус кисло-сладкий",
         "image": "./images/wok/lapshagrech.jpg",
         "price": 260,
         "weight": 340
@@ -854,32 +854,32 @@
   "basket": {
     "selectedElem": [
       {
-        "id": 252,
-        "name": "Сет Горячий",
-        "composition": " Горячий ролл Цезарь, Горячий ролл Кайсен Чиз 0,5, Горячий ролл Темпура 0,5, Горячий ролл Фудзи 0,5",
-        "image": "./images/sets/setgoryachiy.jpg",
-        "price": 605,
-        "weight": 690,
-        "amount": 1,
+        "id": 351,
+        "name": "Гречневая лапша с говядиной",
+        "composition": "Гречневая лапша, говядина, морковь, болгарский перчик, лук порей, соль, говяжий бульон, кунжут, соус терияки, масло растительное",
+        "image": "./images/wok/lapshawok.jpg",
+        "price": 300,
+        "weight": 360,
+        "countProduct": 2,
         "weightPizza": "Тонкое"
       },
       {
-        "id": 108,
-        "name": "Пицца «Делюкс»",
-        "composition": "Сыр Моцарелла,грибы, лук репчатый, сладкий перец,салями Пепперони, свинина",
-        "image": "./images/pizza/deluks.jpg",
-        "priceSizeSmall": 650,
-        "priceSizeMiddle": 710,
-        "price": 650,
-        "weightSmall": 690,
-        "weightMiddle": 1220,
-        "weight": 690,
+        "id": 101,
+        "name": "#ВСЁИСРАЗУ",
+        "composition": "Пиццы: Охотничья, Делюкс, Карри, 4сыра",
+        "image": "./images/pizza/vseISrazu.jpg",
+        "priceSizeSmall": 760,
+        "priceSizeMiddle": 890,
+        "price": 760,
+        "weightSmall": 680,
+        "weightMiddle": 1130,
+        "weight": 680,
         "indicatorPizza": true,
-        "amount": 1,
+        "countProduct": 2,
         "weightPizza": "Тонкое"
       }
     ],
     "amountElem": 4,
-    "sum": 2075
+    "sum": 2120
   }
 }

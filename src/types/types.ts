@@ -10,8 +10,8 @@ export type TElem = {
     weightMiddle?: number
     weight: number
     indicatorPizza?: boolean
-    amount: number
     weightPizza?: string
+    countProduct? : number
 }
 
 export type TPromo = {

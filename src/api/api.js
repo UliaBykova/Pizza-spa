@@ -1,4 +1,3 @@
-import { ElemType } from './../types/types';
 import axios from 'axios';
 
 const istance = axios.create({
@@ -29,21 +28,30 @@ export const basketAPI = {
 			return response.data;
 		});
 	},
-	async updateBasket(elem, amount, sum, weightPizza) {
+	async updateBasket(elem, weightPizza) {
 		const basketResponse = await basketAPI.getBasket();
 		return await istance.post(`basket`, {
 			...basketResponse,
-			selectedElem: [...basketResponse.selectedElem, {...elem , amount: 1, weightPizza : weightPizza ? 'Традиционное' : 'Тонкое' }],
-			amountElem: amount,
-			sum: sum
+			selectedElem: [...basketResponse.selectedElem, {...elem, countProduct: 1, weightPizza : weightPizza ? 'Традиционное' : 'Тонкое' }],
+			amountElem: [...basketResponse.selectedElem].reduce((sum, elem) => sum + elem.countProduct, 1),
+			sum: basketResponse.sum + elem.price
 		});
+	},
+	async checkBasket(repeatElem) {
+       const basketResponse = await basketAPI.getBasket();
+	   return await istance.post(`basket`, {
+		   ...basketResponse, 
+		   selectedElem : [...[...basketResponse.selectedElem].filter((elem) => elem.id !== repeatElem.id), {...repeatElem, countProduct : (repeatElem.countProduct ? repeatElem.countProduct : 1 ) + 1 }],
+		   amountElem: [...basketResponse.selectedElem].reduce((sum, elem) => sum + elem.countProduct, 1),
+		   sum: basketResponse.sum + repeatElem.price
+	   })
 	},
 	async deleteProduct(id) {
 		const basketResponse = await basketAPI.getBasket();
 		const result = await istance.post(`basket`, {
 			...basketResponse,
 			selectedElem: [
-				...basketResponse.selectedElem.filter((elem ) => elem.id !== id),
+				...basketResponse.selectedElem.filter((elem) => elem.id !== id),
 			],
 			amountElem: basketResponse.amountElem - 1,
 			sum:
