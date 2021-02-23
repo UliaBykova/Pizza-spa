@@ -1,8 +1,14 @@
 import React from 'react';
+import { TBasket } from '../../../../types/types';
 import s from './Order.module.css';
 import OrderItem from './OrderItem/OrderItem';
 
-const Order = (props) => {
+type TProps = {
+	basket : TBasket
+	deleteProductToBasket : (id : number) => void
+}
+
+const Order: React.FC<TProps> = (props) => {
 	return (
 		<div className={s.container}>
 			<h3 className={s.title}>Корзина</h3>

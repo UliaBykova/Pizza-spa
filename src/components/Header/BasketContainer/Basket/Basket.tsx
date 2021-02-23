@@ -1,8 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { TBasket } from '../../../../types/types';
 import s from './../../Header.module.css';
 
-const Basket = (props) => {
+type TProps = {
+    basketPage : TBasket
+}
+
+const Basket:React.FC<TProps> = (props) => {
 
     const basketPage = props.basketPage;
 

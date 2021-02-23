@@ -1,9 +1,13 @@
 import react from 'react';
 import s from './ProductsFilter.module.css';
 
-const ProductsFilter = (props) => {
+type TProps = {
+	title : string
+	indicatorHit : boolean
+}
 
- 
+const ProductsFilter:React.FC<TProps> = (props) => {
+
 	return (
 		<div className={s.content}>
 			<div className={s.titleBlock}>

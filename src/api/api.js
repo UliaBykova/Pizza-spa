@@ -1,30 +1,19 @@
 import { ElemType } from './../types/types';
-import axios, {AxiosResponse, AxiosRequestConfig} from 'axios';
+import axios from 'axios';
 
 const istance = axios.create({
 	withCredentials: true,
 	baseURL: 'http://localhost:3000/',
 });
 
-export type ProductsAPIType = {
-    data : { [key:string]: Array<ElemType>}
-	config? : AxiosRequestConfig
-	headers? : any
-	request? : any
-	url? : string
-	status : number
-	statusText? : string
-}
-/* get<T = any, R = AxiosResponse<T>>(url: string, config?: AxiosRequestConfig): Promise<R>; */
+
 export const productsAPI = {
-	getProducts() :Promise<AxiosResponse<ProductsAPIType>> {
+	getProducts() {
 		return istance.get(`products`).then((data) => {
 			return data;
 		});
 	},
 };
-
-/* productsAPI.getProducts().then((Response) => Response.data.data. ) */
 
 export const promoAPI = {
 	getPromo() {
@@ -40,7 +29,7 @@ export const basketAPI = {
 			return response.data;
 		});
 	},
-	async updateBasket(elem : ElemType, amount : number, sum : number, weightPizza : boolean) {
+	async updateBasket(elem, amount, sum, weightPizza) {
 		const basketResponse = await basketAPI.getBasket();
 		return await istance.post(`basket`, {
 			...basketResponse,
@@ -49,12 +38,12 @@ export const basketAPI = {
 			sum: sum
 		});
 	},
-	async deleteProduct(id : number) {
+	async deleteProduct(id) {
 		const basketResponse = await basketAPI.getBasket();
 		const result = await istance.post(`basket`, {
 			...basketResponse,
 			selectedElem: [
-				...basketResponse.selectedElem.filter((elem : ElemType ) => elem.id !== id),
+				...basketResponse.selectedElem.filter((elem ) => elem.id !== id),
 			],
 			amountElem: basketResponse.amountElem - 1,
 			sum:

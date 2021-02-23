@@ -3,7 +3,14 @@ import { NavLink } from 'react-router-dom';
 import BasketContainer from './BasketContainer/BasketContainer';
 import s from './Header.module.css';
 
-const Header = (props) => {
+type TProps = {
+    setModalActive : ((modalActive: boolean) => boolean);
+}
+
+const Header:React.FC<TProps> = (props) => {
+
+    console.log(props);
+    
 
     const setModal = () => {props.setModalActive(true)}
 

@@ -1,14 +1,16 @@
-import { PromoType } from './../../types/types';
+import { TPromo } from './../../types/types';
 import { promoAPI } from "../../api/api";
+import { AppStateType } from './redux-store';
+import { Dispatch } from 'redux';
 
 const SET_PROMO = 'SET_PROMO';
 
-export type InitialStateType = {
-  promo : Array<PromoType> 
-}
+type InitialStateType = typeof initialState;
 
-let initialState : InitialStateType = {
-    promo : []
+type ActionTypes = SetPromoACType;
+
+let initialState = {
+    promo : [] as Array<TPromo> 
 }
 
 const promoReducer = (state = initialState, action : any) : InitialStateType => {
@@ -21,10 +23,13 @@ const promoReducer = (state = initialState, action : any) : InitialStateType => 
     }
 }
 
-export const setPromoAC = (promo : PromoType ): SetPromoACType => ({type : SET_PROMO, promo});
+export const setPromoAC = (promo : TPromo ): SetPromoACType => ({type : SET_PROMO, promo});
+
+type GetStateType = () => AppStateType;
+type DispatchType = Dispatch<ActionTypes>;
 
 export const requestPromo = () => {
-    return (dispatch : any) => {
+    return (dispatch : DispatchType, getState : GetStateType) => {
         promoAPI.getPromo().then((data : any) => {
             dispatch(setPromoAC(data));
         })
@@ -36,5 +41,5 @@ export default promoReducer;
 
 type SetPromoACType = {
     type : typeof SET_PROMO,
-    promo : PromoType 
+    promo : TPromo 
 }

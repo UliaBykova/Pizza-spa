@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import s from './SwitchersPizza.module.css';
 
-const SwitchersPizza = (props) => {
 
+const SwitchersPizza = (props) => {
 
 	const [activeSize, setActiveSize] = useState(true);
 	const [activeWeight, setActiveWeight] = useState(true);

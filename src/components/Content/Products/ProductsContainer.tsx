@@ -2,22 +2,22 @@ import { connect } from 'react-redux';
 import Products from './Products/Products';
 import React from 'react';
 import { updateBasket } from '../../redux/basket-reducer';
-import { BasketType, ElemType } from '../../../types/types';
+import { TBasket, TElem } from '../../../types/types';
 
-type OwnPropsType = {
+type TOwnProps = {
 	title : string
-	basket : BasketType
-	products : Array<ElemType> 
+	basket : TBasket
+	products : Array<TElem> 
 	indicatorHit?  : boolean 
 }
 
-type MapDispatchPropsType = {
+type TMapDispatchProps = {
 	updateBasket : (elem : any, amount : number, sumPrice : number, weightPizza : boolean) => void
 }
 
-type PropsType = OwnPropsType & MapDispatchPropsType;
+type TProps = TOwnProps & TMapDispatchProps;
 
-class ProductsContainer extends React.Component<PropsType> {
+class ProductsContainer extends React.Component<TProps> {
 
 	render() {
 		return (
@@ -33,7 +33,7 @@ class ProductsContainer extends React.Component<PropsType> {
 }
 
 
-export default connect <null,MapDispatchPropsType, OwnPropsType>
+export default connect <null,TMapDispatchProps, TOwnProps>
 (null, {
 	updateBasket: updateBasket
 })(ProductsContainer);

@@ -2,8 +2,20 @@ import React from 'react';
 import ProductsContainer from '../Products/ProductsContainer';
 import MySwiper from './MySwiper/MySwiper';
 import s from './HomePage.module.css';
+import {TBasket, TElem} from '../../../types/types';
 
-const HomePage = (props) => {
+type TProps = {
+	promo : [{
+		id : number
+		image : string   
+	  }]
+	products : Array<TElem>
+	title : string
+	basket : TBasket
+	indicatorHit : boolean
+}
+
+const HomePage:React.FC<TProps> = (props) => {
 	return (
 		<div className={s.container}>
 			<MySwiper promo={props.promo} />

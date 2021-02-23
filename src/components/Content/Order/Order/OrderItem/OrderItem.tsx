@@ -1,10 +1,16 @@
 import React from 'react';
+import { TElem } from '../../../../../types/types';
 import s from './../Order.module.css';
 
-const OrderItem = (props) => {
+type TProps = {
+	elem : TElem
+	deleteProductToBasket : (id : number) => void
+}
+
+const OrderItem: React.FC<TProps> = (props) => {
 
 	const elem = props.elem;
-	const onDeleteProductToBasket = (id) => {
+	const onDeleteProductToBasket = (id : number) => {
 		props.deleteProductToBasket(id);
 	};
 

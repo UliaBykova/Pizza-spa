@@ -2,7 +2,7 @@ import { Dispatch } from 'redux';
 import {
     basketAPI
 } from '../../api/api';
-import { BasketType, ElemType } from '../../types/types';
+import { TBasket, TElem } from '../../types/types';
 import { AppStateType } from './redux-store';
 
 const SET_SELECTED_ELEM = 'SET_SELECTED_ELEM';
@@ -12,7 +12,7 @@ const DELETE_PRODUCT_TO_BASKET = 'DELETE_PRODUCT_TO_BASKET';
 type InitialStateType = typeof initialState;
 
 let initialState = {
-    selectedElem: [] as Array<ElemType>,
+    selectedElem: [] as Array<TElem>,
     amountElem: 0,
     sum: 0,
 };
@@ -48,14 +48,14 @@ const basketReducer = (state = initialState, action : ActionTypes) : InitialStat
     }
 };
 
-export const setSelectedElemAC = (selectedElem : Array<ElemType>, amountElem : number , sum : number) : SetSelectedElemACType  => ({
+export const setSelectedElemAC = (selectedElem : Array<TElem>, amountElem : number , sum : number) : SetSelectedElemACType  => ({
     type: SET_SELECTED_ELEM,
     selectedElem,
     amountElem,
     sum
 });
 
-export const addProductToBasketAC = (elem : ElemType, amount : number, sum : number, weightPizza : boolean) : AddProductToBasketACType => ({
+export const addProductToBasketAC = (elem : TElem, amount : number, sum : number, weightPizza : boolean) : AddProductToBasketACType => ({
     type: ADD_PRODUCT_TO_BASKET,
     elem,
     amount,
@@ -63,7 +63,7 @@ export const addProductToBasketAC = (elem : ElemType, amount : number, sum : num
     weightPizza
 });
 
-export const deleteProductToBasketAC = (selectedElem : Array<ElemType>, amountElem : number, sum : number) : DeleteProductToBasketACType => ({
+export const deleteProductToBasketAC = (selectedElem : Array<TElem>, amountElem : number, sum : number) : DeleteProductToBasketACType => ({
     type: DELETE_PRODUCT_TO_BASKET,
     selectedElem, amountElem, sum
 })
@@ -73,13 +73,13 @@ type DispatchType = Dispatch<ActionTypes>;
 
 export const requestSelectedElem = () => {
     return (dispatch : DispatchType, getState : GetStateType) => {      
-        basketAPI.getBasket().then((response : BasketType) => {
+        basketAPI.getBasket().then((response : TBasket) => {
             dispatch(setSelectedElemAC(response.selectedElem, response.amountElem, response.sum));
         });
     };
 };
 
-export const updateBasket = (elem : ElemType, amount : number, sum : number, weightPizza : boolean) => {
+export const updateBasket = (elem : TElem, amount : number, sum : number, weightPizza : boolean) => {
     return (dispatch : DispatchType, getState : GetStateType) => {
         basketAPI.updateBasket(elem, amount, sum, weightPizza).then(() => {
             dispatch(addProductToBasketAC(elem, amount, sum, weightPizza));
@@ -89,7 +89,7 @@ export const updateBasket = (elem : ElemType, amount : number, sum : number, wei
 
 export const deleteProductTC = (productId : number) => {
     return (dispatch : DispatchType, getState : GetStateType) => {
-        basketAPI.deleteProduct(productId).then((response : Array<Array<ElemType> & number>) => {
+        basketAPI.deleteProduct(productId).then((response : Array<Array<TElem> & number>) => {
             dispatch(deleteProductToBasketAC(response[0], response[1], response[2]));
         })
     }
@@ -101,14 +101,14 @@ type ActionTypes = SetSelectedElemACType | AddProductToBasketACType | DeleteProd
 
 type SetSelectedElemACType = {
     type: typeof SET_SELECTED_ELEM,
-    selectedElem : Array<ElemType>
+    selectedElem : Array<TElem>
     amountElem : number
     sum : number
 }
 
 type AddProductToBasketACType = {
     type : typeof ADD_PRODUCT_TO_BASKET
-    elem : ElemType
+    elem : TElem
     amount : number
     sum : number
     weightPizza : string | boolean
@@ -116,7 +116,7 @@ type AddProductToBasketACType = {
 
 type DeleteProductToBasketACType = {
     type: typeof DELETE_PRODUCT_TO_BASKET
-    selectedElem :  Array<ElemType>
+    selectedElem :  Array<TElem>
     amountElem : number
     sum : number
 }

@@ -1,4 +1,4 @@
-export type ElemType = {
+export type TElem = {
     id: number
     name: string
     composition: string
@@ -14,13 +14,13 @@ export type ElemType = {
     weightPizza?: string
 }
 
-export type PromoType = {
+export type TPromo = {
     id : number
-    image : string   
+    image : string 
   }
   
-export type BasketType = {
-	selectedElem:  Array<ElemType>
+export type TBasket = {
+	selectedElem:  Array<TElem>
     amountElem: number
     sum: number
 }

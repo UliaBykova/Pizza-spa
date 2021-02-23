@@ -22,7 +22,7 @@ const MyMap = () => {
                         }} />
                     <Polygon
                         geometry={{
-                            type: "Circle",
+                            type: 'Circle',
                             coordinates: [43.0416, 44.6718],
                             radius: 3300
                         }}

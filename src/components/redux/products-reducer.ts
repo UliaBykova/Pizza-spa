@@ -1,7 +1,6 @@
-import { ProductsAPIType } from './../../api/api';
 import { Dispatch } from 'redux';
-import { productsAPI } from '../../api/api';
-import { ElemType } from '../../types/types';
+import { productsAPI} from '../../api/api';
+import { TElem } from '../../types/types';
 import { AppStateType } from './redux-store';
 
 const SET_PRODUCTS = 'SET_PRODUCTS';
@@ -10,7 +9,7 @@ type InitialStateType = typeof initialState;
 type ActionTypes = SetProductsACType;
 
 let initialState = {
-	products: [] as Array<ElemType>,
+	products: [] as Array<TElem>,
 	loading: false,
 };
 
@@ -24,7 +23,7 @@ const productReducer = (state = initialState, action: any) => {
 	}
 };
 
-export const setProductsAC = (products: Array<ElemType>) : SetProductsACType => ({
+export const setProductsAC = (products: TServerData) : SetProductsACType => ({
 	type: SET_PRODUCTS,
 	products,
 });
@@ -34,25 +33,18 @@ type DispatchType = Dispatch<ActionTypes>;
 
 export const requestProducts = () => {
 	return (dispatch : DispatchType, getState : GetStateType) => {
-		productsAPI.getProducts().then((data) => {
-			console.log(data);
+		productsAPI.getProducts().then((data : any)=> {
 			dispatch(setProductsAC(data));
 		});
 	};
 };
 
-/* export const requestProducts = () => {
-	return (dispatch : DispatchType, getState : GetStateType) => {
-		productsAPI.getProducts().then((data : any) => {
-			console.log(data);
-			dispatch(setProductsAC(data));
-		});
-	};
-}; */
-
 export default productReducer;
+type ProductsKeys = "pizza" | "japan" | "sets" | "wok" | "paste" | "salads" | "potables" | "deserts" | "hit";
+type TServerData = { [key in ProductsKeys]: Array<TElem> };
+
 
 type SetProductsACType = {
 	type: typeof SET_PRODUCTS
-	products : Array<ElemType>
+	products : TServerData
 }

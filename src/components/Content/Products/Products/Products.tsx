@@ -2,17 +2,17 @@ import React from 'react';
 import ProductElem from '../ProductElem/ProductElem';
 import s from './../Products.module.css';
 import ProductsFilter from '../ProductsFilter/ProductsFilter';
-import { BasketType, ElemType } from '../../../../types/types';
+import { TBasket, TElem } from '../../../../types/types';
 
-type PropsType = {
-	basket : BasketType
-	products : Array<ElemType> 
+type TProps = {
+	basket : TBasket
+	products : Array<TElem> 
 	updateBasket : (elem : any, amount : number, sumPrice : number, weightPizza : boolean) => void, 
 	title : string
 	indicatorHit? : boolean
 }
 
-const Products : React.FC<PropsType> = (props : any) => {
+const Products : React.FC<TProps> = (props : any) => {
 
 	return (
 		<div className={s.wrapper}>

@@ -852,8 +852,34 @@
     }
   ],
   "basket": {
-    "selectedElem": [],
-    "amountElem": 2,
-    "sum": 820
+    "selectedElem": [
+      {
+        "id": 252,
+        "name": "Сет Горячий",
+        "composition": " Горячий ролл Цезарь, Горячий ролл Кайсен Чиз 0,5, Горячий ролл Темпура 0,5, Горячий ролл Фудзи 0,5",
+        "image": "./images/sets/setgoryachiy.jpg",
+        "price": 605,
+        "weight": 690,
+        "amount": 1,
+        "weightPizza": "Тонкое"
+      },
+      {
+        "id": 108,
+        "name": "Пицца «Делюкс»",
+        "composition": "Сыр Моцарелла,грибы, лук репчатый, сладкий перец,салями Пепперони, свинина",
+        "image": "./images/pizza/deluks.jpg",
+        "priceSizeSmall": 650,
+        "priceSizeMiddle": 710,
+        "price": 650,
+        "weightSmall": 690,
+        "weightMiddle": 1220,
+        "weight": 690,
+        "indicatorPizza": true,
+        "amount": 1,
+        "weightPizza": "Тонкое"
+      }
+    ],
+    "amountElem": 4,
+    "sum": 2075
   }
 }

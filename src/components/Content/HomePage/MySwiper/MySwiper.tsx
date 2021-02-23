@@ -4,7 +4,16 @@ import SwiperCore, { Autoplay } from 'swiper';
 import '../../../../../node_modules/swiper/swiper-bundle.css';
 import s from '../HomePage.module.css';
 
-const MySwiper = (props) => {
+type TProps = {
+	promo : [{
+		id : number
+		image : string   
+	  }]
+};
+
+const MySwiper:React.FC<TProps> = (props) => {
+
+	const promo = props.promo;
 	SwiperCore.use([Autoplay]);
 
 	const params = {
@@ -24,7 +33,7 @@ const MySwiper = (props) => {
 
 	return (
 		<Swiper {...params} className={`${s.container} ${s.swiper}`}>
-			{props.promo.map((el) => {
+			{promo.map((el) => {
 				return (
 					<SwiperSlide key={el.id}>
 						<img src={el.image} alt="promo" className={s.promo}></img>

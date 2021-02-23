@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react'
+import React, { FunctionComponent, useState } from 'react'
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import { Provider } from "react-redux";
@@ -19,7 +19,7 @@ const App = () => {
         <Header setModalActive={setModalActive} />
         <div className="content">
           <ContentContainer />
-          <ModalElem active={modalActive} setActive={setModalActive}>
+          <ModalElem modalActive={modalActive} setModalActive={setModalActive}>
               <Auth />
           </ModalElem>
         </div>
@@ -31,3 +31,4 @@ const App = () => {
 export default App;/*  */
 
 //json-server --watch info.json
+

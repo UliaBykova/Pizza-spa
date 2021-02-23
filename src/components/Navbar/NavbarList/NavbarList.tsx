@@ -1,6 +1,5 @@
 import react from "react"
 import s from './../Navbar.module.css'
-import imgHit from './../../../images/hit.png'
 import imgPizza from './../../../images/pizza.png'
 import imgJapan from './../../../images/japon.png'
 import imgWok from './../../../images/wok.png'
