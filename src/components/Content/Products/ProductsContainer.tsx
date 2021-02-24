@@ -12,7 +12,7 @@ type TOwnProps = {
 }
 
 type TMapDispatchProps = {
-	updateBasket : (selectedElem : Array<TElem>, elem : any, weightPizza : boolean) => void
+	updateBasket : (elem : any, weightPizza : boolean) => void
 }
 
 type TProps = TOwnProps & TMapDispatchProps;

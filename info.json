@@ -852,38 +852,8 @@
     }
   ],
   "basket": {
-    "selectedElem": [
-      {
-        "id": 351,
-        "name": "Гречневая лапша с говядиной",
-        "composition": "Гречневая лапша, говядина, морковь, болгарский перчик, лук порей, соль, говяжий бульон, кунжут, соус терияки, масло растительное",
-        "image": "./images/wok/lapshawok.jpg",
-        "price": 300,
-        "weight": 360,
-        "countProduct": 1,
-        "weightPizza": "Тонкое"
-      },
-      {
-        "id": 252,
-        "name": "Сет Горячий",
-        "composition": " Горячий ролл Цезарь, Горячий ролл Кайсен Чиз 0,5, Горячий ролл Темпура 0,5, Горячий ролл Фудзи 0,5",
-        "image": "./images/sets/setgoryachiy.jpg",
-        "price": 605,
-        "weight": 690,
-        "countProduct": 2
-      },
-      {
-        "id": 451,
-        "name": "Бургер Мехико",
-        "composition": "Пшеничная булочка, двойной сыр Чеддер, фирменный соус Донателло, котлета из 100% говядины, перчик Халапеньо, томаты, Гуакамоле, соус Сальса, красный лук",
-        "image": "./images/burgers/mehiko.jpg",
-        "price": 339,
-        "weight": 260,
-        "countProduct": 1,
-        "weightPizza": "Тонкое"
-      }
-    ],
-    "amountElem": 4,
-    "sum": 2454
+    "selectedElem": [],
+    "amountElem": 0,
+    "sum": 0
   }
 }

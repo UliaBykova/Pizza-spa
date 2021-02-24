@@ -6,16 +6,14 @@ import s from './../Products.module.css';
 type TProps = {
 	basket : TBasket
 	products : Array<TElem> 
-	updateBasket : (selectedElem : Array<TElem>, elem : TElem,  weightPizza : boolean) => void
+	updateBasket : ( elem : TElem,  weightPizza : boolean) => void
 }
 
 const ProductElem: React.FC<TProps> = (props) => {
 
 	let weightPizza : boolean;
-	const selectedElem = props.basket.selectedElem;
-	const sum = props.basket.sum;
 	const onAddElemToBasket = (elem : TElem) => {
-		props.updateBasket(selectedElem, elem, weightPizza);
+		props.updateBasket(elem, weightPizza);
 	};
 
 	const [price, setPrice] = useState<number>(1);

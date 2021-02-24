@@ -47,7 +47,7 @@ export const basketAPI = {
 				{
 					...product,
 					countProduct: 1,
-					weightPizza: weightPizza ? 'Традиционное' : 'Тонкое',
+				    weightPizza: weightPizza ? 'Традиционное' : 'Тонкое' 
 				},
 			],
 			amountElem: [...basketResponse.selectedElem].reduce(
@@ -55,26 +55,6 @@ export const basketAPI = {
 				1
 			),
 			sum: basketResponse.sum + product.price,
-		});
-	},
-	async checkBasket(repeatElem) {
-		const basketResponse = await basketAPI.getBasket();
-		return await istance.post(`basket`, {
-			...basketResponse,
-			selectedElem: [
-				...[...basketResponse.selectedElem].filter(
-					(elem) => elem.id !== repeatElem.id
-				),
-				{
-					...repeatElem,
-					countProduct: (repeatElem.countProduct ? repeatElem.countProduct : 1) + 1,
-				},
-			],
-			amountElem: [...basketResponse.selectedElem].reduce(
-				(sum, elem) => sum + elem.countProduct,
-				1
-			),
-			sum: basketResponse.sum + repeatElem.price,
 		});
 	},
 

@@ -76,12 +76,10 @@ export const requestSelectedElem = () => {
 };
 
 export const updateBasket = (
-	selectedElem: Array<TElem>,
 	elem: TElem,
 	weightPizza: boolean
 ) => {
 	return (dispatch: DispatchType, getState: GetStateType) => {
-		const repeatElem = selectedElem.find((product) => product.id === elem.id);
 			basketAPI.updateBasket(elem, weightPizza).then((response) => {
 				dispatch(
 					setSelectedElemAC(
@@ -93,37 +91,6 @@ export const updateBasket = (
 			});
 	};
 };
-
-/* export const updateBasket = (
-	selectedElem: Array<TElem>,
-	elem: TElem,
-	weightPizza: boolean
-) => {
-	return (dispatch: DispatchType, getState: GetStateType) => {
-		const repeatElem = selectedElem.find((product) => product.id === elem.id);
-		if (repeatElem) {
-			basketAPI.checkBasket(repeatElem).then((response) => {
-				dispatch(
-					setSelectedElemAC(
-						response.data.selectedElem,
-						response.data.amountElem,
-						response.data.sum
-					)
-				);
-			});
-		} else {
-			basketAPI.updateBasket(elem, weightPizza).then((response) => {
-				dispatch(
-					setSelectedElemAC(
-						response.data.selectedElem,
-						response.data.amountElem,
-						response.data.sum
-					)
-				);
-			});
-		}
-	};
-}; */
 
 export const deleteProductTC = (elem: TElem) => {
 	return (dispatch: DispatchType, getState: GetStateType) => {

@@ -7,7 +7,7 @@ import { TBasket, TElem } from '../../../../types/types';
 type TProps = {
 	basket : TBasket
 	products : Array<TElem> 
-	updateBasket : (selectedElem : Array<TElem>, elem : any, weightPizza : boolean) => void, 
+	updateBasket : (elem : any, weightPizza : boolean) => void, 
 	title : string
 	indicatorHit? : boolean
 }
