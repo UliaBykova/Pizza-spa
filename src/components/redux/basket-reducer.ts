@@ -75,20 +75,17 @@ export const requestSelectedElem = () => {
 	};
 };
 
-export const updateBasket = (
-	elem: TElem,
-	weightPizza: boolean
-) => {
+export const updateBasket = (elem: TElem, weightPizza: boolean) => {
 	return (dispatch: DispatchType, getState: GetStateType) => {
-			basketAPI.updateBasket(elem, weightPizza).then((response) => {
-				dispatch(
-					setSelectedElemAC(
-						response.data.selectedElem,
-						response.data.amountElem,
-						response.data.sum
-					)
-				);
-			});
+		basketAPI.updateBasket(elem, weightPizza).then((response) => {
+			dispatch(
+				setSelectedElemAC(
+					response.data.selectedElem,
+					response.data.amountElem,
+					response.data.sum
+				)
+			);
+		});
 	};
 };
 
@@ -99,6 +96,44 @@ export const deleteProductTC = (elem: TElem) => {
 			.then((response: Array<Array<TElem> & number>) => {
 				dispatch(deleteProductToBasketAC(response[0], response[1], response[2]));
 			});
+	};
+};
+
+export const deleteProductAll = (elem: TElem) => {
+	return (dispatch: DispatchType, getState: GetStateType) => {
+		basketAPI
+			.deleteProductAll(elem)
+			.then((response: Array<Array<TElem> & number>) => {
+				dispatch(deleteProductToBasketAC(response[0], response[1], response[2]));
+			});
+	};
+};
+
+export const incProduct = (elem: TElem) => {
+	return (dispatch: DispatchType, getState: GetStateType) => {
+		basketAPI.incProduct(elem).then((response) => {
+			dispatch(
+				setSelectedElemAC(
+					response.data.selectedElem,
+					response.data.amountElem,
+					response.data.sum
+				)
+			);
+		});
+	};
+};
+
+export const decProduct = (elem: TElem) => {
+	return (dispatch: DispatchType, getState: GetStateType) => {
+		basketAPI.decProduct(elem).then((response) => {
+			dispatch(
+				setSelectedElemAC(
+					response.data.selectedElem,
+					response.data.amountElem,
+					response.data.sum
+				)
+			);
+		});
 	};
 };
 

@@ -6,6 +6,9 @@ import OrderItem from './OrderItem/OrderItem';
 type TProps = {
 	basket : TBasket
 	deleteProductToBasket : (elem : TElem) => void
+	deleteProductAll : (elem : TElem) => void
+	incProduct : (elem : TElem) => void
+	decProduct : (elem : TElem) => void
 }
 
 const Order: React.FC<TProps> = (props) => {
@@ -17,6 +20,9 @@ const Order: React.FC<TProps> = (props) => {
 					key={elem.id}
 					elem={elem}
 					deleteProductToBasket={props.deleteProductToBasket}
+					deleteProductAll = {props.deleteProductAll}
+					incProduct={props.incProduct}
+					decProduct={props.decProduct}
 				/>
 			))}
 			<div className={s.deliveryInfo}>

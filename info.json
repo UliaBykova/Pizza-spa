@@ -852,8 +852,32 @@
     }
   ],
   "basket": {
-    "selectedElem": [],
-    "amountElem": 0,
-    "sum": 0
+    "selectedElem": [
+      {
+        "id": 201,
+        "name": "Cпайси Лосось",
+        "composition": "Рис, лосось, Спайси соус",
+        "image": "./images/japan/spicylosos.jpg",
+        "price": 80,
+        "weight": 90,
+        "countProduct": 1
+      },
+      {
+        "id": 103,
+        "name": "#ХОЧУЕСТЬ",
+        "composition": "Пиццы: Чоризо, Мясная, Фета-Томато,Грибная",
+        "image": "./images/pizza/HochuEst.jpg",
+        "priceSizeSmall": 820,
+        "priceSizeMiddle": 980,
+        "price": 980,
+        "weightSmall": 750,
+        "weightMiddle": 1020,
+        "weight": 1020,
+        "indicatorPizza": true,
+        "countProduct": 2
+      }
+    ],
+    "amountElem": 5,
+    "sum": 3520
   }
 }
