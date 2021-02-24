@@ -1,11 +1,11 @@
 import React from 'react';
-import { TBasket } from '../../../../types/types';
+import { TBasket, TElem } from '../../../../types/types';
 import s from './Order.module.css';
 import OrderItem from './OrderItem/OrderItem';
 
 type TProps = {
 	basket : TBasket
-	deleteProductToBasket : (id : number) => void
+	deleteProductToBasket : (elem : TElem) => void
 }
 
 const Order: React.FC<TProps> = (props) => {

@@ -4,14 +4,14 @@ import s from './../Order.module.css';
 
 type TProps = {
 	elem : TElem
-	deleteProductToBasket : (id : number) => void
+	deleteProductToBasket : (elem : TElem) => void
 }
 
 const OrderItem: React.FC<TProps> = (props) => {
 
 	const elem = props.elem;
-	const onDeleteProductToBasket = (id : number) => {
-		props.deleteProductToBasket(id);
+	const onDeleteProductToBasket = (elem : TElem) => {
+		props.deleteProductToBasket(elem);
 	};
 
 	return (
@@ -39,7 +39,7 @@ const OrderItem: React.FC<TProps> = (props) => {
 				<button
 					className={s.close}
 					onClick={() => {
-						onDeleteProductToBasket(elem.id);
+						onDeleteProductToBasket(elem);
 					}}
 				/>
 			</div>

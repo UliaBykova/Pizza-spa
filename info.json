@@ -860,26 +860,30 @@
         "image": "./images/wok/lapshawok.jpg",
         "price": 300,
         "weight": 360,
-        "countProduct": 2,
+        "countProduct": 1,
         "weightPizza": "Тонкое"
       },
       {
-        "id": 101,
-        "name": "#ВСЁИСРАЗУ",
-        "composition": "Пиццы: Охотничья, Делюкс, Карри, 4сыра",
-        "image": "./images/pizza/vseISrazu.jpg",
-        "priceSizeSmall": 760,
-        "priceSizeMiddle": 890,
-        "price": 760,
-        "weightSmall": 680,
-        "weightMiddle": 1130,
-        "weight": 680,
-        "indicatorPizza": true,
-        "countProduct": 2,
+        "id": 252,
+        "name": "Сет Горячий",
+        "composition": " Горячий ролл Цезарь, Горячий ролл Кайсен Чиз 0,5, Горячий ролл Темпура 0,5, Горячий ролл Фудзи 0,5",
+        "image": "./images/sets/setgoryachiy.jpg",
+        "price": 605,
+        "weight": 690,
+        "countProduct": 2
+      },
+      {
+        "id": 451,
+        "name": "Бургер Мехико",
+        "composition": "Пшеничная булочка, двойной сыр Чеддер, фирменный соус Донателло, котлета из 100% говядины, перчик Халапеньо, томаты, Гуакамоле, соус Сальса, красный лук",
+        "image": "./images/burgers/mehiko.jpg",
+        "price": 339,
+        "weight": 260,
+        "countProduct": 1,
         "weightPizza": "Тонкое"
       }
     ],
     "amountElem": 4,
-    "sum": 2120
+    "sum": 2454
   }
 }

@@ -82,22 +82,53 @@ export const updateBasket = (
 ) => {
 	return (dispatch: DispatchType, getState: GetStateType) => {
 		const repeatElem = selectedElem.find((product) => product.id === elem.id);
-		if (repeatElem) {
-			basketAPI.checkBasket(repeatElem).then((response) => {     
-               dispatch(setSelectedElemAC(response.data.selectedElem, response.data.amountElem, response.data.sum));
+			basketAPI.updateBasket(elem, weightPizza).then((response) => {
+				dispatch(
+					setSelectedElemAC(
+						response.data.selectedElem,
+						response.data.amountElem,
+						response.data.sum
+					)
+				);
 			});
-		} else {
-			basketAPI.updateBasket(elem, weightPizza).then((response) => {    
-                dispatch(setSelectedElemAC(response.data.selectedElem, response.data.amountElem, response.data.sum));
-			});
-		}
 	};
 };
 
-export const deleteProductTC = (productId: number) => {
+/* export const updateBasket = (
+	selectedElem: Array<TElem>,
+	elem: TElem,
+	weightPizza: boolean
+) => {
+	return (dispatch: DispatchType, getState: GetStateType) => {
+		const repeatElem = selectedElem.find((product) => product.id === elem.id);
+		if (repeatElem) {
+			basketAPI.checkBasket(repeatElem).then((response) => {
+				dispatch(
+					setSelectedElemAC(
+						response.data.selectedElem,
+						response.data.amountElem,
+						response.data.sum
+					)
+				);
+			});
+		} else {
+			basketAPI.updateBasket(elem, weightPizza).then((response) => {
+				dispatch(
+					setSelectedElemAC(
+						response.data.selectedElem,
+						response.data.amountElem,
+						response.data.sum
+					)
+				);
+			});
+		}
+	};
+}; */
+
+export const deleteProductTC = (elem: TElem) => {
 	return (dispatch: DispatchType, getState: GetStateType) => {
 		basketAPI
-			.deleteProduct(productId)
+			.deleteProduct(elem)
 			.then((response: Array<Array<TElem> & number>) => {
 				dispatch(deleteProductToBasketAC(response[0], response[1], response[2]));
 			});
@@ -106,9 +137,7 @@ export const deleteProductTC = (productId: number) => {
 
 export default basketReducer;
 
-type ActionTypes =
-	| SetSelectedElemACType
-	| DeleteProductToBasketACType
+type ActionTypes = SetSelectedElemACType | DeleteProductToBasketACType;
 
 type SetSelectedElemACType = {
 	type: typeof SET_SELECTED_ELEM;
@@ -116,7 +145,6 @@ type SetSelectedElemACType = {
 	amountElem: number;
 	sum: number;
 };
-
 
 type DeleteProductToBasketACType = {
 	type: typeof DELETE_PRODUCT_TO_BASKET;

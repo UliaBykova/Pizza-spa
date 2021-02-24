@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { TBasket } from '../../../types/types';
+import { TBasket, TElem } from '../../../types/types';
 import { deleteProductTC } from '../../redux/basket-reducer';
 import Order from './Order/Order';
 
@@ -9,7 +9,7 @@ type TOwnProps = {
 }
 
 type TMapDispatchProps = {
-	deleteProductToBasket : (id : number) => void
+	deleteProductToBasket : (elem : TElem) => void
 }
 
 type TProps = TOwnProps & TMapDispatchProps;
