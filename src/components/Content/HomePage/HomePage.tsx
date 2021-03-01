@@ -11,6 +11,7 @@ type TProps = {
 	  }]
 	products : Array<TElem>
 	title : string
+	keys : string
 	basket : TBasket
 	indicatorHit : boolean
 }
@@ -22,6 +23,7 @@ const HomePage:React.FC<TProps> = (props) => {
 			<ProductsContainer
 				products={props.products}
 				title="Хиты"
+				keys="hit"
 				basket={props.basket}
 				indicatorHit={props.indicatorHit}
 			/>

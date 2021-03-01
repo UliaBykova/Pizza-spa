@@ -860,7 +860,7 @@
         "image": "./images/japan/spicylosos.jpg",
         "price": 80,
         "weight": 90,
-        "countProduct": 1
+        "countProduct": 3
       },
       {
         "id": 103,
@@ -877,7 +877,7 @@
         "countProduct": 2
       }
     ],
-    "amountElem": 5,
-    "sum": 3520
+    "amountElem": 7,
+    "sum": 3680
   }
 }

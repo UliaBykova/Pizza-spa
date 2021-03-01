@@ -7,8 +7,8 @@ const istance = axios.create({
 
 export const productsAPI = {
 	getProducts() {
-		return istance.get(`products`).then((data) => {
-			return data;
+		return istance.get(`products`).then((response) => {
+			return response.data;
 		});
 	},
 };
@@ -16,7 +16,7 @@ export const productsAPI = {
 export const promoAPI = {
 	getPromo() {
 		return istance.get(`promo`).then((response) => {
-			return response;
+			return response.data;
 		});
 	},
 };
