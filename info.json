@@ -850,8 +850,29 @@
     }
   ],
   "basket": {
-    "selectedElem": [],
-    "amountElem": 0,
-    "sum": 0
+    "selectedElem": [
+      {
+        "id": 452,
+        "name": "Бургер «Донателло»",
+        "composition": "Пшеничная булочка, котлета из говяжего фарша, бекон, сыр, томаты, листья салата, лук, соленый огурец, фирменный Бургер соус",
+        "image": "./images/burgers/donatello.jpg",
+        "price": 329,
+        "weight": 300,
+        "countProduct": 1,
+        "weightPizza": "Тонкое"
+      },
+      {
+        "id": 554,
+        "name": "Coca-Cola",
+        "composition": "",
+        "image": "./images/potables/cola.png",
+        "price": 139,
+        "weight": 0.5,
+        "countProduct": 3,
+        "weightPizza": "Тонкое"
+      }
+    ],
+    "amountElem": 4,
+    "sum": 746
   }
 }

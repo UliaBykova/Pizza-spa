@@ -1,5 +1,3 @@
-![Header](https://github.com/yTemnik/Pizza-spa/blob/master/assets/firstImg.png)]
-
 <h1 align="center">PIZZA_SPA</h1>
 <h2 align="center">
 
@@ -7,13 +5,13 @@
 
 </h2>
 
+![Section](https://github.com/yTemnik/Pizza-spa/blob/master/assets/firstImg.png)]
 
 
 ## Description
 
-
 <p align="center">
-<img src="https://media.giphy.com/media/7OWdOQupgCClrZb19P/giphy.gif" width="80%"></p>
+<img src="https://media.giphy.com/media/C8HFvJrwYIvcPkzGoc/giphy.gif" width="80%"></p>
 
 Solitaire implemented by scratch on vue.js. It contains 3 types of solitaire namely spider(which was made famous by microsoft back when I was a kid) ,spider 4 suit and klondike. I've learned web development myself without any course or coaching so don't expect too much from the source code xD.
 
