@@ -1,41 +1,67 @@
 <h1 align="center">PIZZA_SPA</h1>
+<h2 align="center">
 
+[![My repository](https://img.shields.io/badge/my-code-yellow)](https://github.com/yTemnik/Pizza-spa)
 
-![Section](https://github.com/yTemnik/Pizza-spa/blob/master/assets/firstImg.png)]
-
+</h2>
 
 ## Description
 
 <p align="center">
 <img src="https://media.giphy.com/media/C8HFvJrwYIvcPkzGoc/giphy.gif" width="80%"></p>
-
-Pizza implemented by scratch on React+Redux. 
-
+Pizza implemented by scratch on React+Redux. User has ability to select desired sections of the menu, add or remove products from the basket, specify how many products he wants to add to the basket.
+App contains implementations of map and swiper. 
+Next plan is to add forms and authorization.
+ Don't judge too harshly, I'm just learning xD.
 
 # Screenshots
-
-## **Modal**
-
+## Modal
 <p align="center">
 <img  src="./assets/modal.png" width="80%">
 </p>
-<!-- <img src="./readme_assets/3.png" width="50%"> -->
 
-## **Spider 4 Suit**
-
+## Swiper
 <p align="center">
-<img  src="./readme_assets/5.png" width="80%">
+<img  src="./assets/swiper.png" width="80%">
 </p>
 
-## **Spider 1 Suit**
-
+## Slide Pizza
 <p align="center">
-<img  src="./readme_assets/1.png" width="80%">
+<img  src="./assets/slide2.png" width="80%">
 </p>
+
+## Slide Japan
+<p align="center">
+<img  src="./assets/slide3.png" width="80%">
+</p>
+
+## Slide Basket
+<p align="center">
+<img  src="./assets/slide4.png" width="80%">
+</p>
+
+## Slide Map
+<p align="center">
+<img  src="./assets/slide5.png" width="80%">
+</p>
+
+## Slide Promo
+<p align="center">
+<img  src="./assets/slide6.png" width="80%">
+</p>
+
+
 
 ## Project setup
 
+I am using a local server, so:
+
+First terminal:
 ```
-json-server --watch info.json
+json-server --watch info.json 
+```
+
+Second terminal:
+```
 npm run start
 ```
