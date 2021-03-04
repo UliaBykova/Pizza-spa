@@ -1,9 +1,12 @@
+![Header](https://github.com/yTemnik/Pizza-spa/blob/master/assets/firstImg.png)]
+
 <h1 align="center">PIZZA_SPA</h1>
 <h2 align="center">
 
 [![My repository](https://img.shields.io/badge/my-code-yellow)](https://github.com/yTemnik/Pizza-spa)
 
 </h2>
+
 
 
 ## Description
