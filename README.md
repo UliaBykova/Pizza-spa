@@ -5,36 +5,9 @@
 
 </h2>
 
-<p align="center">
-  
-<img src="https://img.shields.io/npm/dy/silentlad">
-
-<img src="https://img.shields.io/badge/made%20by-silentlad-blue.svg" >
-
-<img src="https://img.shields.io/badge/vue-2.2.4-green.svg">
-
-<img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" >
-
-<img src="https://beerpay.io/silent-lad/VueSolitaire/badge.svg?style=flat">
-
-<img src="https://img.shields.io/github/stars/silent-lad/VueSolitaire.svg?style=flat">
-
-<img src="https://img.shields.io/github/languages/top/silent-lad/VueSolitaire.svg">
-
-<img src="https://img.shields.io/github/issues/silent-lad/VueSolitaire.svg">
-
-<img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat">
-</p>
-
-<img src="./readme_assets/h2.png" width="100%">
-
-<h2 align="center"><a  href="https://solitairevue.firebaseapp.com">Live Demo</a></h2>
-
-### [Contributions are Welcome](https://github.com/silent-lad/VueSolitaire/blob/master/CONTRIBUTING.md)
 
 ## Description
 
-**NOW WITH DRAG AND DROP**
 
 <p align="center">
 <img src="https://media.giphy.com/media/7OWdOQupgCClrZb19P/giphy.gif" width="80%"></p>
@@ -102,16 +75,6 @@ Choose from 3 variants of solitaire form the main menu
 ## Project setup
 
 ```
-npm install
-npm run serve
+json-server --watch info.json
+npm run start
 ```
-
-## Future scope
-
-- Add winning animation.
-
-## Support on Beerpay
-
-Hey dude! Help me out for a couple of :beers:!
-
-[![Beerpay](https://beerpay.io/silent-lad/VueSolitaire/badge.svg?style=beer-square)](https://beerpay.io/silent-lad/VueSolitaire) [![Beerpay](https://beerpay.io/silent-lad/VueSolitaire/make-wish.svg?style=flat-square)](https://beerpay.io/silent-lad/VueSolitaire?focus=wish)

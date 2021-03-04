@@ -22,7 +22,7 @@ const MySwiper:React.FC<TProps> = (props) => {
         speed: 1000,
         autoHeight : true,
 		autoplay: {
-			delay: 4000,
+			delay: 2000,
 			disableOnInteraction: false,
 		},
 		coverflowEffect: {

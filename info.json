@@ -850,33 +850,8 @@
     }
   ],
   "basket": {
-    "selectedElem": [
-      {
-        "id": 103,
-        "name": "#ХОЧУЕСТЬ",
-        "composition": "Пиццы: Чоризо, Мясная, Фета-Томато,Грибная",
-        "image": "./images/pizza/HochuEst.jpg",
-        "priceSizeSmall": 820,
-        "priceSizeMiddle": 980,
-        "price": 980,
-        "weightSmall": 750,
-        "weightMiddle": 1020,
-        "weight": 1020,
-        "indicatorPizza": true,
-        "countProduct": 1
-      },
-      {
-        "id": 210,
-        "name": "Суши Сяке (лосось)",
-        "composition": "Рис, лосось",
-        "image": "./images/japan/sushisyake.jpg",
-        "price": 70,
-        "weight": 80,
-        "countProduct": 1,
-        "weightPizza": "Тонкое"
-      }
-    ],
-    "amountElem": 2,
-    "sum": 1050
+    "selectedElem": [],
+    "amountElem": 0,
+    "sum": 0
   }
 }
