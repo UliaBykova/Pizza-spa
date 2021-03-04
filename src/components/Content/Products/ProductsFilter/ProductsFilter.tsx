@@ -26,7 +26,7 @@ const ProductsFilter:React.FC<TProps> = (props) => {
 			   <div className={s.titleBlock}>
 				   <h2 className={s.title}>{props.title}</h2>
 				   {props.indicatorHit ? null : (
-					   <select className={s.filter} onChange={handleChange}>
+					   <select className={s.filter} onChange={handleChange} value={filterState}>
 						   <option value="popular">По популярности</option>
 						   <option value="lowPrice">По цене (по возрастанию)</option>
 						   <option value="highPrice">По цене (по убыванию)</option>

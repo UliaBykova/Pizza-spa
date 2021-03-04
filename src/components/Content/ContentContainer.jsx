@@ -30,7 +30,7 @@ const ContentContainer = () => {
        <>
         <Switch>
             <Route path='/pizza' render={() => <ProductsContainer products={products.pizza} title="Пицца" basket={state.basketPage} keys="pizza" />} />
-            <Route path='/japan' render={() => <ProductsContainer products={products.sets.concat(products.japan)} title="Япония" basket={state.basketPage} keys="japan" />} />
+            <Route path='/japan' render={() => <ProductsContainer products={products.japan} title="Япония" basket={state.basketPage} keys="japan" />} />
             <Route path='/wok' render={() => <ProductsContainer products={products.wok} title="Wok" basket={state.basketPage} keys="wok" />} />
             <Route path='/paste' render={() => <ProductsContainer products={products.paste} title="Паста" basket={state.basketPage} keys="paste"  />} />
             <Route path='/burgers' render={() => <ProductsContainer products={products.burgers} title="Бургеры" basket={state.basketPage} keys="burgers" />} />

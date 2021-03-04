@@ -11,7 +11,7 @@ type ActionTypes = SetProductsACType | FilterLowPriceACType;
 
 let initialState = {
 	products: [] as Array<TElem>,
-	loading: false,
+	loading: false
 };
 
 const productReducer = (state = initialState, action: any) => {
@@ -20,7 +20,6 @@ const productReducer = (state = initialState, action: any) => {
 			return { ...state, products: action.products, loading : true};
 		}
 		case FILTER_LOW_PRICE: {
-			const key = action.key;
 			console.log(action);
 			
        		return {

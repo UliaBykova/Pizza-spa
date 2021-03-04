@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+<h1 align="center">PIZZA_SPA</h1>
+<h2 align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![My repository](https://img.shields.io/badge/my-code-yellow)](https://github.com/yTemnik/Pizza-spa)
 
-## Available Scripts
+</h2>
 
-In the project directory, you can run:
+<p align="center">
+  
+<img src="https://img.shields.io/npm/dy/silentlad">
 
-### `npm start`
+<img src="https://img.shields.io/badge/made%20by-silentlad-blue.svg" >
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<img src="https://img.shields.io/badge/vue-2.2.4-green.svg">
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" >
 
-### `npm test`
+<img src="https://beerpay.io/silent-lad/VueSolitaire/badge.svg?style=flat">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="https://img.shields.io/github/stars/silent-lad/VueSolitaire.svg?style=flat">
 
-### `npm run build`
+<img src="https://img.shields.io/github/languages/top/silent-lad/VueSolitaire.svg">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="https://img.shields.io/github/issues/silent-lad/VueSolitaire.svg">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat">
+</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="./readme_assets/h2.png" width="100%">
 
-### `npm run eject`
+<h2 align="center"><a  href="https://solitairevue.firebaseapp.com">Live Demo</a></h2>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### [Contributions are Welcome](https://github.com/silent-lad/VueSolitaire/blob/master/CONTRIBUTING.md)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Description
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**NOW WITH DRAG AND DROP**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<p align="center">
+<img src="https://media.giphy.com/media/7OWdOQupgCClrZb19P/giphy.gif" width="80%"></p>
 
-## Learn More
+Solitaire implemented by scratch on vue.js. It contains 3 types of solitaire namely spider(which was made famous by microsoft back when I was a kid) ,spider 4 suit and klondike. I've learned web development myself without any course or coaching so don't expect too much from the source code xD.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**This project is inspired by [AadumKhor](https://github.com/AadumKhor) Go check out his flutter implementation of the same [Here](https://github.com/AadumKhor/Solitaire_Flutter)** .
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## How to play
 
-### Code Splitting
+### Drag and Drop [__Chrome,Opera__]:-
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Drag** the card or the card pile you want to move.
+- **Drop** the dragged card pile on the target and if the move is legal card will move
+- Note:- Drag and Drop doesn't work for properly for **firefox** due to their lack of support to html Drag and drop API - https://bugzilla.mozilla.org/show_bug.cgi?id=505521 .
 
-### Analyzing the Bundle Size
+### Click edition [__Mobile,Firefox,Chrome,Safari,Opera__]-
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Click** on the card or card pile you want to move .The pile turns to **blue**.
+- **Click** on the
+  destination card and if the move is legal the cards will
+  stack below the target.
 
-### Making a Progressive Web App
+## About the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Drag and Drop
 
-### Advanced Configuration
+- Drag and drop is implemented with native html5 drag and drop api with @drag, @dragend, @dragenter eventlisteners on the Card.vue component.
+- Libraries like Vue.draggable were not used as i had to write most of the drag and drop logic according to the solitaire game type and I also had to **MOVE** the stack of cards.
+- Ghost image in drag is removed instead the **whole stack** of card moves with cursor change.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### CSS
 
-### Deployment
+- Each and every card is 100% css except the SVG of the suit in the center of the card,which is made by illustrator tool.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  <p align="center"><img  src="./readme_assets/4.png" width="30%"></p>
 
-### `npm run build` fails to minify
+### 3 mode menu
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Choose from 3 variants of solitaire form the main menu
+
+<p align="center"><img  src="./readme_assets/menu.png" width="70%"></p>
+
+# Variants
+
+## **Klondike**
+
+<p align="center">
+<img  src="./readme_assets/3.png" width="80%">
+</p>
+<!-- <img src="./readme_assets/3.png" width="50%"> -->
+
+## **Spider 4 Suit**
+
+<p align="center">
+<img  src="./readme_assets/5.png" width="80%">
+</p>
+
+## **Spider 1 Suit**
+
+<p align="center">
+<img  src="./readme_assets/1.png" width="80%">
+</p>
+
+## Project setup
+
+```
+npm install
+npm run serve
+```
+
+## Future scope
+
+- Add winning animation.
+
+## Support on Beerpay
+
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/silent-lad/VueSolitaire/badge.svg?style=beer-square)](https://beerpay.io/silent-lad/VueSolitaire) [![Beerpay](https://beerpay.io/silent-lad/VueSolitaire/make-wish.svg?style=flat-square)](https://beerpay.io/silent-lad/VueSolitaire?focus=wish)

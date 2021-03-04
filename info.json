@@ -422,9 +422,7 @@
         "image": "./images/japan/ovoshnoy.jpg",
         "price": 180,
         "weight": 210
-      }
-    ],
-    "sets": [
+      },
       {
         "id": 251,
         "name": "Сет Вегетарианский",
@@ -854,15 +852,6 @@
   "basket": {
     "selectedElem": [
       {
-        "id": 201,
-        "name": "Cпайси Лосось",
-        "composition": "Рис, лосось, Спайси соус",
-        "image": "./images/japan/spicylosos.jpg",
-        "price": 80,
-        "weight": 90,
-        "countProduct": 3
-      },
-      {
         "id": 103,
         "name": "#ХОЧУЕСТЬ",
         "composition": "Пиццы: Чоризо, Мясная, Фета-Томато,Грибная",
@@ -874,10 +863,20 @@
         "weightMiddle": 1020,
         "weight": 1020,
         "indicatorPizza": true,
-        "countProduct": 2
+        "countProduct": 1
+      },
+      {
+        "id": 210,
+        "name": "Суши Сяке (лосось)",
+        "composition": "Рис, лосось",
+        "image": "./images/japan/sushisyake.jpg",
+        "price": 70,
+        "weight": 80,
+        "countProduct": 1,
+        "weightPizza": "Тонкое"
       }
     ],
-    "amountElem": 7,
-    "sum": 3680
+    "amountElem": 2,
+    "sum": 1050
   }
 }
