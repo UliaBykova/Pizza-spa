@@ -852,6 +852,36 @@
   "basket": {
     "selectedElem": [
       {
+        "id": 401,
+        "name": "Фетучини сальмоне",
+        "composition": "Фетучини в сливочном соусе, нежное филе красной рыбы, икра красная, сыр пармезан, помидоры черри",
+        "image": "./images/paste/salmone.jpg",
+        "price": 395,
+        "weight": 220,
+        "countProduct": 3,
+        "weightPizza": "Тонкое"
+      },
+      {
+        "id": 202,
+        "name": "Икра Лосося",
+        "composition": "Рис, икра лосося",
+        "image": "./images/japan/ikralososya.jpg",
+        "price": 100,
+        "weight": 70,
+        "countProduct": 1,
+        "weightPizza": "Тонкое"
+      },
+      {
+        "id": 201,
+        "name": "Cпайси Лосось",
+        "composition": "Рис, лосось, Спайси соус",
+        "image": "./images/japan/spicylosos.jpg",
+        "price": 80,
+        "weight": 90,
+        "countProduct": 1,
+        "weightPizza": "Тонкое"
+      },
+      {
         "id": 452,
         "name": "Бургер «Донателло»",
         "composition": "Пшеничная булочка, котлета из говяжего фарша, бекон, сыр, томаты, листья салата, лук, соленый огурец, фирменный Бургер соус",
@@ -860,19 +890,9 @@
         "weight": 300,
         "countProduct": 1,
         "weightPizza": "Тонкое"
-      },
-      {
-        "id": 554,
-        "name": "Coca-Cola",
-        "composition": "",
-        "image": "./images/potables/cola.png",
-        "price": 139,
-        "weight": 0.5,
-        "countProduct": 3,
-        "weightPizza": "Тонкое"
       }
     ],
-    "amountElem": 4,
-    "sum": 746
+    "amountElem": 6,
+    "sum": 1694
   }
 }
