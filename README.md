@@ -11,7 +11,7 @@
 <img src="https://media.giphy.com/media/C8HFvJrwYIvcPkzGoc/giphy.gif" width="80%"></p>
 Pizza implemented by scratch on React+Redux. User has ability to select desired sections of the menu, add or remove products from the basket, specify how many products he wants to add to the basket.
 App contains implementations of map and swiper. 
-Next plan is to add forms and authorization.
+Next plan is to add authorization.
  Don't judge too harshly, I'm just learning xD.
 
 # Screenshots
