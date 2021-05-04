@@ -24,7 +24,9 @@
     "yup": "^0.32.9"
   },
   "scripts": {
-    "start": "set PORT=3006 && react-scripts start",
+    "dev": "set PORT=3006 && react-scripts start",
+    "serve": "json-server --watch info.json",
+    "start": "concurrently \"npm run serve\" \"npm run dev\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -48,6 +50,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-router-dom": "^5.1.7"
+    "@types/react-router-dom": "^5.1.7",
+    "concurrently": "^6.0.2"
   }
 }

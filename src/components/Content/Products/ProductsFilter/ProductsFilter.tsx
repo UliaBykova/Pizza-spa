@@ -16,7 +16,6 @@ const ProductsFilter:React.FC<TProps> = (props) => {
     const handleChange = (event : any) => {
 	  const selectedFilter = event.target.value;
 	  setFilterState(selectedFilter);
-	  console.log(filterState);
        props.filterProducts(props.products, props.keys);
    }
 

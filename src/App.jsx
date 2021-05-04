@@ -1,15 +1,14 @@
 import './App.css';
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
-import { Provider } from "react-redux";
 import store from './components/redux/redux-store';
 import ContentContainer from './components/Content/ContentContainer';
 import ModalElem from './components/common/Modal/ModalElem';
 import Auth from './components/Auth/Auth';
+import { Provider } from 'react-redux';
 
-const App= () => {
-
+const App = () => {
   const [modalActive, setModalActive] = useState(false);
 
   return (
@@ -20,15 +19,14 @@ const App= () => {
         <div className="content">
           <ContentContainer />
           <ModalElem modalActive={modalActive} setModalActive={setModalActive}>
-              <Auth />
+            <Auth />
           </ModalElem>
         </div>
       </div>
     </Provider>
-  )
-}
+  );
+};
 
-export default App;/*  */
+export default App; /*  */
 
 //json-server --watch info.json
-

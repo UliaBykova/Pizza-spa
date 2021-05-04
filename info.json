@@ -890,9 +890,23 @@
         "weight": 300,
         "countProduct": 1,
         "weightPizza": "Тонкое"
+      },
+      {
+        "id": 103,
+        "name": "#ХОЧУЕСТЬ",
+        "composition": "Пиццы: Чоризо, Мясная, Фета-Томато,Грибная",
+        "image": "./images/pizza/HochuEst.jpg",
+        "priceSizeSmall": 820,
+        "priceSizeMiddle": 980,
+        "price": 980,
+        "weightSmall": 750,
+        "weightMiddle": 1020,
+        "weight": 1020,
+        "indicatorPizza": true,
+        "countProduct": 2
       }
     ],
-    "amountElem": 6,
-    "sum": 1694
+    "amountElem": 8,
+    "sum": 3654
   }
 }
