@@ -54,14 +54,7 @@ Next plan is to add authorization.
 
 ## Project setup
 
-I am using a local server, so:
-
-First terminal:
-```
-json-server --watch info.json 
-```
-
-Second terminal:
+In terminal:
 ```
 npm run start
 ```
